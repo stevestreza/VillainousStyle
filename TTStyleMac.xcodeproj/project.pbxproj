@@ -1,0 +1,682 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
+		1E0FDD61101A79F0007AFA92 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E0FDD60101A79F0007AFA92 /* AppKit.framework */; };
+		1E0FDD63101A79F0007AFA92 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E0FDD62101A79F0007AFA92 /* Cocoa.framework */; };
+		1E0FDD65101A79F0007AFA92 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E0FDD64101A79F0007AFA92 /* Foundation.framework */; };
+		1E0FDD6C101A7A0A007AFA92 /* NSColor+CGColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E68218B10182C4B005A22F6 /* NSColor+CGColor.m */; };
+		1E0FDD6D101A7A0A007AFA92 /* NSImage+CGImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E0FDD2510184C18007AFA92 /* NSImage+CGImage.m */; };
+		1E0FDD6E101A7A0A007AFA92 /* TTShape.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E681DAF10181ABB005A22F6 /* TTShape.m */; };
+		1E0FDD6F101A7A0A007AFA92 /* TTInnerShadowStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E0FDCD5101844D7007AFA92 /* TTInnerShadowStyle.m */; };
+		1E0FDD70101A7A0A007AFA92 /* TTPartStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E681E0C10181DAE005A22F6 /* TTPartStyle.m */; };
+		1E0FDD71101A7A0A007AFA92 /* TTSolidFillStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E682090101825C3005A22F6 /* TTSolidFillStyle.m */; };
+		1E0FDD72101A7A0A007AFA92 /* TTInsetStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E68212510182924005A22F6 /* TTInsetStyle.m */; };
+		1E0FDD73101A7A0A007AFA92 /* NSView+TTStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E682065101822B0005A22F6 /* NSView+TTStyle.m */; };
+		1E0FDD74101A7A0A007AFA92 /* TTRectangleShape.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E681E3F101820D7005A22F6 /* TTRectangleShape.m */; };
+		1E0FDD75101A7A0A007AFA92 /* TTMaskStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E0FDD1C10184B86007AFA92 /* TTMaskStyle.m */; };
+		1E0FDD76101A7A0A007AFA92 /* NSColorAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E0FDBCE1018395E007AFA92 /* NSColorAdditions.m */; };
+		1E0FDD77101A7A0A007AFA92 /* TTSolidBorderStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E6821AB10182DA0005A22F6 /* TTSolidBorderStyle.m */; };
+		1E0FDD78101A7A0A007AFA92 /* TTLinearGradientFillStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E68214310182A1F005A22F6 /* TTLinearGradientFillStyle.m */; };
+		1E0FDD79101A7A0A007AFA92 /* TTShapeStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E6821EC10182FD5005A22F6 /* TTShapeStyle.m */; };
+		1E0FDD7A101A7A0A007AFA92 /* TTStyleContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E681E0710181C6C005A22F6 /* TTStyleContext.m */; };
+		1E0FDD7B101A7A0A007AFA92 /* TTStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E6819CE10181810005A22F6 /* TTStyle.m */; };
+		1E0FDD7C101A7A0A007AFA92 /* TTRoundedRightArrowShape.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E682228101835DA005A22F6 /* TTRoundedRightArrowShape.m */; };
+		1E0FDD7D101A7A0A007AFA92 /* TTReflectiveFillStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E68228810183826005A22F6 /* TTReflectiveFillStyle.m */; };
+		1E0FDD7E101A7A0A007AFA92 /* TTShadowStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E6821C110182EBA005A22F6 /* TTShadowStyle.m */; };
+		1E0FDD7F101A7A0A007AFA92 /* TTBoxStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E0FDD0610184A48007AFA92 /* TTBoxStyle.m */; };
+		1E0FDD80101A7A0A007AFA92 /* TTRoundedLeftArrowShape.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E68222B10183602005A22F6 /* TTRoundedLeftArrowShape.m */; };
+		1E0FDD81101A7A0A007AFA92 /* TTBevelBorderStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E0FDC5C101840EF007AFA92 /* TTBevelBorderStyle.m */; };
+		1E0FDD82101A7A0A007AFA92 /* TTFourBorderStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E0FDCE210184535007AFA92 /* TTFourBorderStyle.m */; };
+		1E0FDD83101A7A0A007AFA92 /* TTRoundedRectangleShape.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E6821F210183192005A22F6 /* TTRoundedRectangleShape.m */; };
+		1E0FDD84101A7A0A007AFA92 /* TTSpeechBubbleShape.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E0FDCAB101843DA007AFA92 /* TTSpeechBubbleShape.m */; };
+		1E0FDDA5101A7A20007AFA92 /* NSColor+CGColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E68218A10182C4B005A22F6 /* NSColor+CGColor.h */; };
+		1E0FDDA6101A7A20007AFA92 /* NSColorAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E0FDBCD1018395E007AFA92 /* NSColorAdditions.h */; };
+		1E0FDDA7101A7A20007AFA92 /* NSImage+CGImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E0FDD2410184C18007AFA92 /* NSImage+CGImage.h */; };
+		1E0FDDA8101A7A20007AFA92 /* NSView+TTStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E682064101822B0005A22F6 /* NSView+TTStyle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1E0FDDA9101A7A20007AFA92 /* TTBevelBorderStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E0FDC5B101840EF007AFA92 /* TTBevelBorderStyle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1E0FDDAA101A7A20007AFA92 /* TTBoxStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E0FDD0510184A48007AFA92 /* TTBoxStyle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1E0FDDAB101A7A20007AFA92 /* TTFourBorderStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E0FDCE110184535007AFA92 /* TTFourBorderStyle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1E0FDDAC101A7A20007AFA92 /* TTGlobal.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E6820301018219E005A22F6 /* TTGlobal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1E0FDDAD101A7A20007AFA92 /* TTInnerShadowStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E0FDCD4101844D7007AFA92 /* TTInnerShadowStyle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1E0FDDAE101A7A20007AFA92 /* TTInsetStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E68212410182924005A22F6 /* TTInsetStyle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1E0FDDAF101A7A20007AFA92 /* TTLinearGradientFillStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E68214210182A1F005A22F6 /* TTLinearGradientFillStyle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1E0FDDB0101A7A20007AFA92 /* TTMaskStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E0FDD1B10184B86007AFA92 /* TTMaskStyle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1E0FDDB1101A7A20007AFA92 /* TTPartStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E681E0B10181DAE005A22F6 /* TTPartStyle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1E0FDDB2101A7A20007AFA92 /* TTRectangleShape.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E681E3E101820D7005A22F6 /* TTRectangleShape.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1E0FDDB3101A7A20007AFA92 /* TTReflectiveFillStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E68228710183826005A22F6 /* TTReflectiveFillStyle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1E0FDDB4101A7A20007AFA92 /* TTRoundedLeftArrowShape.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E68222A10183602005A22F6 /* TTRoundedLeftArrowShape.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1E0FDDB5101A7A20007AFA92 /* TTRoundedRectangleShape.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E6821F110183192005A22F6 /* TTRoundedRectangleShape.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1E0FDDB6101A7A20007AFA92 /* TTRoundedRightArrowShape.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E682227101835DA005A22F6 /* TTRoundedRightArrowShape.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1E0FDDB7101A7A20007AFA92 /* TTShadowStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E6821C010182EBA005A22F6 /* TTShadowStyle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1E0FDDB8101A7A20007AFA92 /* TTShape.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E681DAE10181ABB005A22F6 /* TTShape.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1E0FDDB9101A7A20007AFA92 /* TTShapes.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E68220E10183237005A22F6 /* TTShapes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1E0FDDBA101A7A20007AFA92 /* TTShapeStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E6821EB10182FD5005A22F6 /* TTShapeStyle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1E0FDDBB101A7A20007AFA92 /* TTSolidBorderStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E6821AA10182DA0005A22F6 /* TTSolidBorderStyle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1E0FDDBC101A7A20007AFA92 /* TTSolidFillStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E68208F101825C3005A22F6 /* TTSolidFillStyle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1E0FDDBD101A7A20007AFA92 /* TTSpeechBubbleShape.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E0FDCAA101843DA007AFA92 /* TTSpeechBubbleShape.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1E0FDDBE101A7A20007AFA92 /* TTStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E6819CD10181810005A22F6 /* TTStyle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1E0FDDBF101A7A20007AFA92 /* TTStyleContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E681E0610181C6C005A22F6 /* TTStyleContext.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1E0FDDC1101A7A20007AFA92 /* TTStyles.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E68220F1018324D005A22F6 /* TTStyles.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1E0FDDD7101A7ABE007AFA92 /* TTStyle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E0FDD5B101A79DF007AFA92 /* TTStyle.framework */; };
+		1E68206D10182404005A22F6 /* TTStyleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E68206C10182404005A22F6 /* TTStyleController.m */; };
+		1E682071101824A0005A22F6 /* TTStyleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E682070101824A0005A22F6 /* TTStyleView.m */; };
+		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
+		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
+		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1E0FDDD5101A7AB8007AFA92 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1E0FDD5A101A79DF007AFA92;
+			remoteInfo = TTStyle;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		13E42FB307B3F0F600E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+		1DDD58150DA1D0A300B32029 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		1E0FDBCD1018395E007AFA92 /* NSColorAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSColorAdditions.h; sourceTree = "<group>"; };
+		1E0FDBCE1018395E007AFA92 /* NSColorAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSColorAdditions.m; sourceTree = "<group>"; };
+		1E0FDC5B101840EF007AFA92 /* TTBevelBorderStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTBevelBorderStyle.h; sourceTree = "<group>"; };
+		1E0FDC5C101840EF007AFA92 /* TTBevelBorderStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTBevelBorderStyle.m; sourceTree = "<group>"; };
+		1E0FDCAA101843DA007AFA92 /* TTSpeechBubbleShape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTSpeechBubbleShape.h; sourceTree = "<group>"; };
+		1E0FDCAB101843DA007AFA92 /* TTSpeechBubbleShape.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTSpeechBubbleShape.m; sourceTree = "<group>"; };
+		1E0FDCD4101844D7007AFA92 /* TTInnerShadowStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTInnerShadowStyle.h; sourceTree = "<group>"; };
+		1E0FDCD5101844D7007AFA92 /* TTInnerShadowStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTInnerShadowStyle.m; sourceTree = "<group>"; };
+		1E0FDCE110184535007AFA92 /* TTFourBorderStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTFourBorderStyle.h; sourceTree = "<group>"; };
+		1E0FDCE210184535007AFA92 /* TTFourBorderStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTFourBorderStyle.m; sourceTree = "<group>"; };
+		1E0FDD0510184A48007AFA92 /* TTBoxStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTBoxStyle.h; sourceTree = "<group>"; };
+		1E0FDD0610184A48007AFA92 /* TTBoxStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTBoxStyle.m; sourceTree = "<group>"; };
+		1E0FDD1B10184B86007AFA92 /* TTMaskStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTMaskStyle.h; sourceTree = "<group>"; };
+		1E0FDD1C10184B86007AFA92 /* TTMaskStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTMaskStyle.m; sourceTree = "<group>"; };
+		1E0FDD2410184C18007AFA92 /* NSImage+CGImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSImage+CGImage.h"; sourceTree = "<group>"; };
+		1E0FDD2510184C18007AFA92 /* NSImage+CGImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSImage+CGImage.m"; sourceTree = "<group>"; };
+		1E0FDD5B101A79DF007AFA92 /* TTStyle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TTStyle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E0FDD5C101A79DF007AFA92 /* TTStyle-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TTStyle-Info.plist"; sourceTree = "<group>"; };
+		1E0FDD60101A79F0007AFA92 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		1E0FDD62101A79F0007AFA92 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		1E0FDD64101A79F0007AFA92 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1E6819CD10181810005A22F6 /* TTStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTStyle.h; sourceTree = "<group>"; };
+		1E6819CE10181810005A22F6 /* TTStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTStyle.m; sourceTree = "<group>"; };
+		1E681DAE10181ABB005A22F6 /* TTShape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTShape.h; sourceTree = "<group>"; };
+		1E681DAF10181ABB005A22F6 /* TTShape.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTShape.m; sourceTree = "<group>"; };
+		1E681E0610181C6C005A22F6 /* TTStyleContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTStyleContext.h; sourceTree = "<group>"; };
+		1E681E0710181C6C005A22F6 /* TTStyleContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTStyleContext.m; sourceTree = "<group>"; };
+		1E681E0B10181DAE005A22F6 /* TTPartStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTPartStyle.h; sourceTree = "<group>"; };
+		1E681E0C10181DAE005A22F6 /* TTPartStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTPartStyle.m; sourceTree = "<group>"; };
+		1E681E3E101820D7005A22F6 /* TTRectangleShape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTRectangleShape.h; sourceTree = "<group>"; };
+		1E681E3F101820D7005A22F6 /* TTRectangleShape.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTRectangleShape.m; sourceTree = "<group>"; };
+		1E6820301018219E005A22F6 /* TTGlobal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTGlobal.h; sourceTree = "<group>"; };
+		1E682064101822B0005A22F6 /* NSView+TTStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSView+TTStyle.h"; sourceTree = "<group>"; };
+		1E682065101822B0005A22F6 /* NSView+TTStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSView+TTStyle.m"; sourceTree = "<group>"; };
+		1E68206B10182404005A22F6 /* TTStyleController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTStyleController.h; sourceTree = "<group>"; };
+		1E68206C10182404005A22F6 /* TTStyleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTStyleController.m; sourceTree = "<group>"; };
+		1E68206F101824A0005A22F6 /* TTStyleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTStyleView.h; sourceTree = "<group>"; };
+		1E682070101824A0005A22F6 /* TTStyleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTStyleView.m; sourceTree = "<group>"; };
+		1E68208F101825C3005A22F6 /* TTSolidFillStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTSolidFillStyle.h; sourceTree = "<group>"; };
+		1E682090101825C3005A22F6 /* TTSolidFillStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTSolidFillStyle.m; sourceTree = "<group>"; };
+		1E68212410182924005A22F6 /* TTInsetStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTInsetStyle.h; sourceTree = "<group>"; };
+		1E68212510182924005A22F6 /* TTInsetStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTInsetStyle.m; sourceTree = "<group>"; };
+		1E68214210182A1F005A22F6 /* TTLinearGradientFillStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTLinearGradientFillStyle.h; sourceTree = "<group>"; };
+		1E68214310182A1F005A22F6 /* TTLinearGradientFillStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTLinearGradientFillStyle.m; sourceTree = "<group>"; };
+		1E68218A10182C4B005A22F6 /* NSColor+CGColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSColor+CGColor.h"; sourceTree = "<group>"; };
+		1E68218B10182C4B005A22F6 /* NSColor+CGColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSColor+CGColor.m"; sourceTree = "<group>"; };
+		1E6821AA10182DA0005A22F6 /* TTSolidBorderStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTSolidBorderStyle.h; sourceTree = "<group>"; };
+		1E6821AB10182DA0005A22F6 /* TTSolidBorderStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTSolidBorderStyle.m; sourceTree = "<group>"; };
+		1E6821C010182EBA005A22F6 /* TTShadowStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTShadowStyle.h; sourceTree = "<group>"; };
+		1E6821C110182EBA005A22F6 /* TTShadowStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTShadowStyle.m; sourceTree = "<group>"; };
+		1E6821EB10182FD5005A22F6 /* TTShapeStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTShapeStyle.h; sourceTree = "<group>"; };
+		1E6821EC10182FD5005A22F6 /* TTShapeStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTShapeStyle.m; sourceTree = "<group>"; };
+		1E6821F110183192005A22F6 /* TTRoundedRectangleShape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTRoundedRectangleShape.h; sourceTree = "<group>"; };
+		1E6821F210183192005A22F6 /* TTRoundedRectangleShape.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTRoundedRectangleShape.m; sourceTree = "<group>"; };
+		1E68220E10183237005A22F6 /* TTShapes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTShapes.h; sourceTree = "<group>"; };
+		1E68220F1018324D005A22F6 /* TTStyles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTStyles.h; sourceTree = "<group>"; };
+		1E682227101835DA005A22F6 /* TTRoundedRightArrowShape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTRoundedRightArrowShape.h; sourceTree = "<group>"; };
+		1E682228101835DA005A22F6 /* TTRoundedRightArrowShape.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTRoundedRightArrowShape.m; sourceTree = "<group>"; };
+		1E68222A10183602005A22F6 /* TTRoundedLeftArrowShape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTRoundedLeftArrowShape.h; sourceTree = "<group>"; };
+		1E68222B10183602005A22F6 /* TTRoundedLeftArrowShape.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTRoundedLeftArrowShape.m; sourceTree = "<group>"; };
+		1E68228710183826005A22F6 /* TTReflectiveFillStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTReflectiveFillStyle.h; sourceTree = "<group>"; };
+		1E68228810183826005A22F6 /* TTReflectiveFillStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTReflectiveFillStyle.m; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		32CA4F630368D1EE00C91783 /* TTStyleMacTest_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTStyleMacTest_Prefix.pch; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D1107320486CEB800E47090 /* TTStyleMacTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TTStyleMacTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1E0FDD59101A79DF007AFA92 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E0FDD61101A79F0007AFA92 /* AppKit.framework in Frameworks */,
+				1E0FDD63101A79F0007AFA92 /* Cocoa.framework in Frameworks */,
+				1E0FDD65101A79F0007AFA92 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+				1E0FDDD7101A7ABE007AFA92 /* TTStyle.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				1E68206A10182392005A22F6 /* Test View */,
+				1E6820301018219E005A22F6 /* TTGlobal.h */,
+				1E681E3D101820CB005A22F6 /* TTShape */,
+				1E681985101816AF005A22F6 /* TTStyle */,
+				1E682064101822B0005A22F6 /* NSView+TTStyle.h */,
+				1E682065101822B0005A22F6 /* NSView+TTStyle.m */,
+				1E68218A10182C4B005A22F6 /* NSColor+CGColor.h */,
+				1E68218B10182C4B005A22F6 /* NSColor+CGColor.m */,
+				1E0FDBCD1018395E007AFA92 /* NSColorAdditions.h */,
+				1E0FDBCE1018395E007AFA92 /* NSColorAdditions.m */,
+				1E0FDD2410184C18007AFA92 /* NSImage+CGImage.h */,
+				1E0FDD2510184C18007AFA92 /* NSImage+CGImage.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+				13E42FB307B3F0F600E4EEF1 /* CoreData.framework */,
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107320486CEB800E47090 /* TTStyleMacTest.app */,
+				1E0FDD5B101A79DF007AFA92 /* TTStyle.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1E681985101816AF005A22F6 /* TTStyle */ = {
+			isa = PBXGroup;
+			children = (
+				1E68220F1018324D005A22F6 /* TTStyles.h */,
+				1E681E0610181C6C005A22F6 /* TTStyleContext.h */,
+				1E681E0710181C6C005A22F6 /* TTStyleContext.m */,
+				1E6819CD10181810005A22F6 /* TTStyle.h */,
+				1E6819CE10181810005A22F6 /* TTStyle.m */,
+				1E681E0B10181DAE005A22F6 /* TTPartStyle.h */,
+				1E681E0C10181DAE005A22F6 /* TTPartStyle.m */,
+				1E68208F101825C3005A22F6 /* TTSolidFillStyle.h */,
+				1E682090101825C3005A22F6 /* TTSolidFillStyle.m */,
+				1E68212410182924005A22F6 /* TTInsetStyle.h */,
+				1E68212510182924005A22F6 /* TTInsetStyle.m */,
+				1E68214210182A1F005A22F6 /* TTLinearGradientFillStyle.h */,
+				1E68214310182A1F005A22F6 /* TTLinearGradientFillStyle.m */,
+				1E6821AA10182DA0005A22F6 /* TTSolidBorderStyle.h */,
+				1E6821AB10182DA0005A22F6 /* TTSolidBorderStyle.m */,
+				1E6821C010182EBA005A22F6 /* TTShadowStyle.h */,
+				1E6821C110182EBA005A22F6 /* TTShadowStyle.m */,
+				1E6821EB10182FD5005A22F6 /* TTShapeStyle.h */,
+				1E6821EC10182FD5005A22F6 /* TTShapeStyle.m */,
+				1E68228710183826005A22F6 /* TTReflectiveFillStyle.h */,
+				1E68228810183826005A22F6 /* TTReflectiveFillStyle.m */,
+				1E0FDC5B101840EF007AFA92 /* TTBevelBorderStyle.h */,
+				1E0FDC5C101840EF007AFA92 /* TTBevelBorderStyle.m */,
+				1E0FDCD4101844D7007AFA92 /* TTInnerShadowStyle.h */,
+				1E0FDCD5101844D7007AFA92 /* TTInnerShadowStyle.m */,
+				1E0FDCE110184535007AFA92 /* TTFourBorderStyle.h */,
+				1E0FDCE210184535007AFA92 /* TTFourBorderStyle.m */,
+				1E0FDD0510184A48007AFA92 /* TTBoxStyle.h */,
+				1E0FDD0610184A48007AFA92 /* TTBoxStyle.m */,
+				1E0FDD1B10184B86007AFA92 /* TTMaskStyle.h */,
+				1E0FDD1C10184B86007AFA92 /* TTMaskStyle.m */,
+			);
+			name = TTStyle;
+			sourceTree = "<group>";
+		};
+		1E681E3D101820CB005A22F6 /* TTShape */ = {
+			isa = PBXGroup;
+			children = (
+				1E68220E10183237005A22F6 /* TTShapes.h */,
+				1E681DAE10181ABB005A22F6 /* TTShape.h */,
+				1E681DAF10181ABB005A22F6 /* TTShape.m */,
+				1E681E3E101820D7005A22F6 /* TTRectangleShape.h */,
+				1E681E3F101820D7005A22F6 /* TTRectangleShape.m */,
+				1E6821F110183192005A22F6 /* TTRoundedRectangleShape.h */,
+				1E6821F210183192005A22F6 /* TTRoundedRectangleShape.m */,
+				1E682227101835DA005A22F6 /* TTRoundedRightArrowShape.h */,
+				1E682228101835DA005A22F6 /* TTRoundedRightArrowShape.m */,
+				1E68222A10183602005A22F6 /* TTRoundedLeftArrowShape.h */,
+				1E68222B10183602005A22F6 /* TTRoundedLeftArrowShape.m */,
+				1E0FDCAA101843DA007AFA92 /* TTSpeechBubbleShape.h */,
+				1E0FDCAB101843DA007AFA92 /* TTSpeechBubbleShape.m */,
+			);
+			name = TTShape;
+			sourceTree = "<group>";
+		};
+		1E68206A10182392005A22F6 /* Test View */ = {
+			isa = PBXGroup;
+			children = (
+				1E68206B10182404005A22F6 /* TTStyleController.h */,
+				1E68206C10182404005A22F6 /* TTStyleController.m */,
+				1E68206F101824A0005A22F6 /* TTStyleView.h */,
+				1E682070101824A0005A22F6 /* TTStyleView.m */,
+			);
+			name = "Test View";
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* TTStyleMacTest */ = {
+			isa = PBXGroup;
+			children = (
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+				1E0FDD5C101A79DF007AFA92 /* TTStyle-Info.plist */,
+				1E0FDD60101A79F0007AFA92 /* AppKit.framework */,
+				1E0FDD62101A79F0007AFA92 /* Cocoa.framework */,
+				1E0FDD64101A79F0007AFA92 /* Foundation.framework */,
+			);
+			name = TTStyleMacTest;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* TTStyleMacTest_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107310486CEB800E47090 /* Info.plist */,
+				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
+				1DDD58140DA1D0A300B32029 /* MainMenu.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1E0FDD56101A79DF007AFA92 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E0FDDA5101A7A20007AFA92 /* NSColor+CGColor.h in Headers */,
+				1E0FDDA6101A7A20007AFA92 /* NSColorAdditions.h in Headers */,
+				1E0FDDA7101A7A20007AFA92 /* NSImage+CGImage.h in Headers */,
+				1E0FDDA8101A7A20007AFA92 /* NSView+TTStyle.h in Headers */,
+				1E0FDDA9101A7A20007AFA92 /* TTBevelBorderStyle.h in Headers */,
+				1E0FDDAA101A7A20007AFA92 /* TTBoxStyle.h in Headers */,
+				1E0FDDAB101A7A20007AFA92 /* TTFourBorderStyle.h in Headers */,
+				1E0FDDAC101A7A20007AFA92 /* TTGlobal.h in Headers */,
+				1E0FDDAD101A7A20007AFA92 /* TTInnerShadowStyle.h in Headers */,
+				1E0FDDAE101A7A20007AFA92 /* TTInsetStyle.h in Headers */,
+				1E0FDDAF101A7A20007AFA92 /* TTLinearGradientFillStyle.h in Headers */,
+				1E0FDDB0101A7A20007AFA92 /* TTMaskStyle.h in Headers */,
+				1E0FDDB1101A7A20007AFA92 /* TTPartStyle.h in Headers */,
+				1E0FDDB2101A7A20007AFA92 /* TTRectangleShape.h in Headers */,
+				1E0FDDB3101A7A20007AFA92 /* TTReflectiveFillStyle.h in Headers */,
+				1E0FDDB4101A7A20007AFA92 /* TTRoundedLeftArrowShape.h in Headers */,
+				1E0FDDB5101A7A20007AFA92 /* TTRoundedRectangleShape.h in Headers */,
+				1E0FDDB6101A7A20007AFA92 /* TTRoundedRightArrowShape.h in Headers */,
+				1E0FDDB7101A7A20007AFA92 /* TTShadowStyle.h in Headers */,
+				1E0FDDB8101A7A20007AFA92 /* TTShape.h in Headers */,
+				1E0FDDB9101A7A20007AFA92 /* TTShapes.h in Headers */,
+				1E0FDDBA101A7A20007AFA92 /* TTShapeStyle.h in Headers */,
+				1E0FDDBB101A7A20007AFA92 /* TTSolidBorderStyle.h in Headers */,
+				1E0FDDBC101A7A20007AFA92 /* TTSolidFillStyle.h in Headers */,
+				1E0FDDBD101A7A20007AFA92 /* TTSpeechBubbleShape.h in Headers */,
+				1E0FDDBE101A7A20007AFA92 /* TTStyle.h in Headers */,
+				1E0FDDBF101A7A20007AFA92 /* TTStyleContext.h in Headers */,
+				1E0FDDC1101A7A20007AFA92 /* TTStyles.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1E0FDD5A101A79DF007AFA92 /* TTStyle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1E0FDD5F101A79E1007AFA92 /* Build configuration list for PBXNativeTarget "TTStyle" */;
+			buildPhases = (
+				1E0FDD56101A79DF007AFA92 /* Headers */,
+				1E0FDD57101A79DF007AFA92 /* Resources */,
+				1E0FDD58101A79DF007AFA92 /* Sources */,
+				1E0FDD59101A79DF007AFA92 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TTStyle;
+			productName = TTStyle;
+			productReference = 1E0FDD5B101A79DF007AFA92 /* TTStyle.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8D1107260486CEB800E47090 /* TTStyleMacTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "TTStyleMacTest" */;
+			buildPhases = (
+				8D1107290486CEB800E47090 /* Resources */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1E0FDDD6101A7AB8007AFA92 /* PBXTargetDependency */,
+			);
+			name = TTStyleMacTest;
+			productInstallPath = "$(HOME)/Applications";
+			productName = TTStyleMacTest;
+			productReference = 8D1107320486CEB800E47090 /* TTStyleMacTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "TTStyleMac" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 29B97314FDCFA39411CA2CEA /* TTStyleMacTest */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D1107260486CEB800E47090 /* TTStyleMacTest */,
+				1E0FDD5A101A79DF007AFA92 /* TTStyle */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1E0FDD57101A79DF007AFA92 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
+				1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1E0FDD58101A79DF007AFA92 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E0FDD6C101A7A0A007AFA92 /* NSColor+CGColor.m in Sources */,
+				1E0FDD6D101A7A0A007AFA92 /* NSImage+CGImage.m in Sources */,
+				1E0FDD6E101A7A0A007AFA92 /* TTShape.m in Sources */,
+				1E0FDD6F101A7A0A007AFA92 /* TTInnerShadowStyle.m in Sources */,
+				1E0FDD70101A7A0A007AFA92 /* TTPartStyle.m in Sources */,
+				1E0FDD71101A7A0A007AFA92 /* TTSolidFillStyle.m in Sources */,
+				1E0FDD72101A7A0A007AFA92 /* TTInsetStyle.m in Sources */,
+				1E0FDD73101A7A0A007AFA92 /* NSView+TTStyle.m in Sources */,
+				1E0FDD74101A7A0A007AFA92 /* TTRectangleShape.m in Sources */,
+				1E0FDD75101A7A0A007AFA92 /* TTMaskStyle.m in Sources */,
+				1E0FDD76101A7A0A007AFA92 /* NSColorAdditions.m in Sources */,
+				1E0FDD77101A7A0A007AFA92 /* TTSolidBorderStyle.m in Sources */,
+				1E0FDD78101A7A0A007AFA92 /* TTLinearGradientFillStyle.m in Sources */,
+				1E0FDD79101A7A0A007AFA92 /* TTShapeStyle.m in Sources */,
+				1E0FDD7A101A7A0A007AFA92 /* TTStyleContext.m in Sources */,
+				1E0FDD7B101A7A0A007AFA92 /* TTStyle.m in Sources */,
+				1E0FDD7C101A7A0A007AFA92 /* TTRoundedRightArrowShape.m in Sources */,
+				1E0FDD7D101A7A0A007AFA92 /* TTReflectiveFillStyle.m in Sources */,
+				1E0FDD7E101A7A0A007AFA92 /* TTShadowStyle.m in Sources */,
+				1E0FDD7F101A7A0A007AFA92 /* TTBoxStyle.m in Sources */,
+				1E0FDD80101A7A0A007AFA92 /* TTRoundedLeftArrowShape.m in Sources */,
+				1E0FDD81101A7A0A007AFA92 /* TTBevelBorderStyle.m in Sources */,
+				1E0FDD82101A7A0A007AFA92 /* TTFourBorderStyle.m in Sources */,
+				1E0FDD83101A7A0A007AFA92 /* TTRoundedRectangleShape.m in Sources */,
+				1E0FDD84101A7A0A007AFA92 /* TTSpeechBubbleShape.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D11072C0486CEB800E47090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072D0486CEB800E47090 /* main.m in Sources */,
+				1E68206D10182404005A22F6 /* TTStyleController.m in Sources */,
+				1E682071101824A0005A22F6 /* TTStyleView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1E0FDDD6101A7AB8007AFA92 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1E0FDD5A101A79DF007AFA92 /* TTStyle */;
+			targetProxy = 1E0FDDD5101A7AB8007AFA92 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C165DFE840E0CC02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1DDD58140DA1D0A300B32029 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1DDD58150DA1D0A300B32029 /* English */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1E0FDD5D101A79E1007AFA92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "TTStyle-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Frameworks";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = TTStyle;
+			};
+			name = Debug;
+		};
+		1E0FDD5E101A79E1007AFA92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "TTStyle-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Frameworks";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = TTStyle;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		C01FCF4B08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/build/Debug\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = TTStyleMacTest_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = TTStyleMacTest;
+			};
+			name = Debug;
+		};
+		C01FCF4C08A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/build/Debug\"",
+				);
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = TTStyleMacTest_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = TTStyleMacTest;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.5;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.5;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1E0FDD5F101A79E1007AFA92 /* Build configuration list for PBXNativeTarget "TTStyle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E0FDD5D101A79E1007AFA92 /* Debug */,
+				1E0FDD5E101A79E1007AFA92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "TTStyleMacTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4B08A954540054247B /* Debug */,
+				C01FCF4C08A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "TTStyleMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
