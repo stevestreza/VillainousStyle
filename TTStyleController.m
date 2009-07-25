@@ -26,13 +26,26 @@
 	NSColor* blue = RGBCOLOR(191, 197, 208);
 	NSColor* darkBlue = RGBCOLOR(109, 132, 162);
 	
+	NSImage *doomIcon = [NSImage imageNamed:@"doom-icon"];
+	
 	styleView1.style = 
 	[TTInsetStyle styleWithInset:UIEdgeInsetsMake(10., 10., 10., 10.) next:
 	 [TTShapeStyle styleWithShape:[TTRoundedRectangleShape shapeWithRadius:10] next:
 	  [TTShadowStyle styleWithColor:NSColorRGBA(1.0,1.0,1.0,0.9) blur:1 offset:CGSizeMake(0, 1) next:
 	   [TTLinearGradientFillStyle styleWithColor1:NSColorRGBA(1.0, 1.0, 1.0, 1.0)
 										   color2:NSColorRGBA(0.845, 0.86, 0.9, 1.0) next:
-		[TTSolidBorderStyle styleWithColor:blue width:1 next:nil]]]]
+		[TTSolidBorderStyle styleWithColor:blue width:1 next:
+		 [TTImageStyle styleWithImage:doomIcon
+						 defaultImage:nil
+						  contentMode: UIViewContentModeScaleAspectFit
+								 size:NSSizeToCGSize(doomIcon.size)
+								 next:
+		 nil
+		]
+	   ]
+	  ]
+	   ]
+	 ]
 	 ];
 	
 	styleView2.style = 

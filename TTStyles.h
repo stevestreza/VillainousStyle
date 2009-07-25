@@ -25,5 +25,6 @@
 #import "TTBoxStyle.h"
 #import "TTInsetStyle.h"
 
+#import "TTImageStyle.h"
 #import "TTMaskStyle.h"
 #import "TTShapeStyle.h"

@@ -67,6 +67,11 @@
 		1E0FDDD7101A7ABE007AFA92 /* TTStyle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E0FDD5B101A79DF007AFA92 /* TTStyle.framework */; };
 		1E68206D10182404005A22F6 /* TTStyleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E68206C10182404005A22F6 /* TTStyleController.m */; };
 		1E682071101824A0005A22F6 /* TTStyleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E682070101824A0005A22F6 /* TTStyleView.m */; };
+		1E97CF33101B8049003135D3 /* TTImageStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E97CF31101B8049003135D3 /* TTImageStyle.h */; };
+		1E97CF34101B8049003135D3 /* TTImageStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E97CF32101B8049003135D3 /* TTImageStyle.m */; };
+		1E97CF3B101B80F2003135D3 /* NSImage+ContentMode.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E97CF39101B80F2003135D3 /* NSImage+ContentMode.h */; };
+		1E97CF3C101B80F2003135D3 /* NSImage+ContentMode.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E97CF3A101B80F2003135D3 /* NSImage+ContentMode.m */; };
+		1E97CFB9101B8497003135D3 /* doom-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E97CF82101B83D1003135D3 /* doom-icon.png */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
@@ -149,6 +154,11 @@
 		1E68222B10183602005A22F6 /* TTRoundedLeftArrowShape.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTRoundedLeftArrowShape.m; sourceTree = "<group>"; };
 		1E68228710183826005A22F6 /* TTReflectiveFillStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTReflectiveFillStyle.h; sourceTree = "<group>"; };
 		1E68228810183826005A22F6 /* TTReflectiveFillStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTReflectiveFillStyle.m; sourceTree = "<group>"; };
+		1E97CF31101B8049003135D3 /* TTImageStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTImageStyle.h; sourceTree = "<group>"; };
+		1E97CF32101B8049003135D3 /* TTImageStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTImageStyle.m; sourceTree = "<group>"; };
+		1E97CF39101B80F2003135D3 /* NSImage+ContentMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSImage+ContentMode.h"; sourceTree = "<group>"; };
+		1E97CF3A101B80F2003135D3 /* NSImage+ContentMode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSImage+ContentMode.m"; sourceTree = "<group>"; };
+		1E97CF82101B83D1003135D3 /* doom-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "doom-icon.png"; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
@@ -195,6 +205,8 @@
 				1E0FDBCE1018395E007AFA92 /* NSColorAdditions.m */,
 				1E0FDD2410184C18007AFA92 /* NSImage+CGImage.h */,
 				1E0FDD2510184C18007AFA92 /* NSImage+CGImage.m */,
+				1E97CF39101B80F2003135D3 /* NSImage+ContentMode.h */,
+				1E97CF3A101B80F2003135D3 /* NSImage+ContentMode.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -242,6 +254,8 @@
 				1E68212510182924005A22F6 /* TTInsetStyle.m */,
 				1E68214210182A1F005A22F6 /* TTLinearGradientFillStyle.h */,
 				1E68214310182A1F005A22F6 /* TTLinearGradientFillStyle.m */,
+				1E97CF31101B8049003135D3 /* TTImageStyle.h */,
+				1E97CF32101B8049003135D3 /* TTImageStyle.m */,
 				1E6821AA10182DA0005A22F6 /* TTSolidBorderStyle.h */,
 				1E6821AB10182DA0005A22F6 /* TTSolidBorderStyle.m */,
 				1E6821C010182EBA005A22F6 /* TTShadowStyle.h */,
@@ -323,6 +337,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				1E97CF82101B83D1003135D3 /* doom-icon.png */,
 				8D1107310486CEB800E47090 /* Info.plist */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
 				1DDD58140DA1D0A300B32029 /* MainMenu.xib */,
@@ -374,6 +389,8 @@
 				1E0FDDBE101A7A20007AFA92 /* TTStyle.h in Headers */,
 				1E0FDDBF101A7A20007AFA92 /* TTStyleContext.h in Headers */,
 				1E0FDDC1101A7A20007AFA92 /* TTStyles.h in Headers */,
+				1E97CF33101B8049003135D3 /* TTImageStyle.h in Headers */,
+				1E97CF3B101B80F2003135D3 /* NSImage+ContentMode.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -447,6 +464,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E97CFB9101B8497003135D3 /* doom-icon.png in Resources */,
 				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
 				1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */,
 			);
@@ -484,6 +502,8 @@
 				1E0FDD82101A7A0A007AFA92 /* TTFourBorderStyle.m in Sources */,
 				1E0FDD83101A7A0A007AFA92 /* TTRoundedRectangleShape.m in Sources */,
 				1E0FDD84101A7A0A007AFA92 /* TTSpeechBubbleShape.m in Sources */,
+				1E97CF34101B8049003135D3 /* TTImageStyle.m in Sources */,
+				1E97CF3C101B80F2003135D3 /* NSImage+ContentMode.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

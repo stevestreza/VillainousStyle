@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "TTGlobal.h"
 #import "TTShape.h"
-#import "TTStyleContext.h"
+#import "TTStyleContext.h"s
 
 static const NSInteger kDefaultLightSource = 125;
 
