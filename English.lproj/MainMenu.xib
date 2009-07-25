@@ -1125,33 +1125,33 @@
 					<int key="NSvFlags">256</int>
 					<object class="NSMutableArray" key="NSSubviews">
 						<bool key="EncodedWithXMLCoder">YES</bool>
-						<object class="NSCustomView" id="235695045">
+						<object class="NSCustomView" id="525737878">
 							<reference key="NSNextResponder" ref="439893737"/>
 							<int key="NSvFlags">286</int>
 							<string key="NSFrame">{{20, 190}, {210, 150}}</string>
 							<reference key="NSSuperview" ref="439893737"/>
 							<string key="NSClassName">TTStyleView</string>
 						</object>
-						<object class="NSCustomView" id="633375548">
+						<object class="NSCustomView" id="1061936695">
 							<reference key="NSNextResponder" ref="439893737"/>
 							<int key="NSvFlags">283</int>
 							<string key="NSFrame">{{250, 190}, {210, 150}}</string>
 							<reference key="NSSuperview" ref="439893737"/>
 							<string key="NSClassName">TTStyleView</string>
 						</object>
-						<object class="NSCustomView" id="92036181">
+						<object class="NSCustomView" id="468171495">
 							<reference key="NSNextResponder" ref="439893737"/>
 							<int key="NSvFlags">310</int>
 							<string key="NSFrame">{{20, 20}, {210, 150}}</string>
 							<reference key="NSSuperview" ref="439893737"/>
 							<string key="NSClassName">TTStyleView</string>
 						</object>
-						<object class="NSCustomView" id="174274030">
+						<object class="NSCustomView" id="631509026">
 							<reference key="NSNextResponder" ref="439893737"/>
 							<int key="NSvFlags">307</int>
 							<string key="NSFrame">{{250, 20}, {210, 150}}</string>
 							<reference key="NSSuperview" ref="439893737"/>
-							<string key="NSClassName">TTStyleView</string>
+							<string key="NSClassName">TTStyleLabel</string>
 						</object>
 					</object>
 					<string key="NSFrameSize">{480, 360}</string>
@@ -1163,7 +1163,7 @@
 			<object class="NSCustomObject" id="755631768">
 				<string key="NSClassName">NSFontManager</string>
 			</object>
-			<object class="NSCustomObject" id="809313852">
+			<object class="NSCustomObject" id="1004951731">
 				<string key="NSClassName">TTStyleController</string>
 			</object>
 		</object>
@@ -1701,39 +1701,39 @@
 				<object class="IBConnectionRecord">
 					<object class="IBOutletConnection" key="connection">
 						<string key="label">styleView1</string>
-						<reference key="source" ref="809313852"/>
-						<reference key="destination" ref="235695045"/>
+						<reference key="source" ref="1004951731"/>
+						<reference key="destination" ref="525737878"/>
 					</object>
 					<int key="connectionID">455</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBOutletConnection" key="connection">
 						<string key="label">styleView2</string>
-						<reference key="source" ref="809313852"/>
-						<reference key="destination" ref="633375548"/>
+						<reference key="source" ref="1004951731"/>
+						<reference key="destination" ref="1061936695"/>
 					</object>
 					<int key="connectionID">456</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBOutletConnection" key="connection">
 						<string key="label">styleView3</string>
-						<reference key="source" ref="809313852"/>
-						<reference key="destination" ref="92036181"/>
+						<reference key="source" ref="1004951731"/>
+						<reference key="destination" ref="468171495"/>
 					</object>
 					<int key="connectionID">457</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBOutletConnection" key="connection">
 						<string key="label">styleView4</string>
-						<reference key="source" ref="809313852"/>
-						<reference key="destination" ref="174274030"/>
+						<reference key="source" ref="1004951731"/>
+						<reference key="destination" ref="631509026"/>
 					</object>
 					<int key="connectionID">458</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBOutletConnection" key="connection">
 						<string key="label">window</string>
-						<reference key="source" ref="809313852"/>
+						<reference key="source" ref="1004951731"/>
 						<reference key="destination" ref="972006081"/>
 					</object>
 					<int key="connectionID">459</int>
@@ -2324,10 +2324,10 @@
 						<reference key="object" ref="439893737"/>
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<reference ref="235695045"/>
-							<reference ref="633375548"/>
-							<reference ref="92036181"/>
-							<reference ref="174274030"/>
+							<reference ref="525737878"/>
+							<reference ref="1061936695"/>
+							<reference ref="468171495"/>
+							<reference ref="631509026"/>
 						</object>
 						<reference key="parent" ref="972006081"/>
 					</object>
@@ -2643,27 +2643,27 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">450</int>
-						<reference key="object" ref="235695045"/>
+						<reference key="object" ref="525737878"/>
 						<reference key="parent" ref="439893737"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">451</int>
-						<reference key="object" ref="633375548"/>
+						<reference key="object" ref="1061936695"/>
 						<reference key="parent" ref="439893737"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">452</int>
-						<reference key="object" ref="92036181"/>
+						<reference key="object" ref="468171495"/>
 						<reference key="parent" ref="439893737"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">453</int>
-						<reference key="object" ref="174274030"/>
+						<reference key="object" ref="631509026"/>
 						<reference key="parent" ref="439893737"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">454</int>
-						<reference key="object" ref="809313852"/>
+						<reference key="object" ref="1004951731"/>
 						<reference key="parent" ref="1049"/>
 					</object>
 				</object>
@@ -3187,6 +3187,14 @@
 					</object>
 				</object>
 				<object class="IBPartialClassDescription">
+					<string key="className">TTStyleLabel</string>
+					<string key="superclassName">TTStyleView</string>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBProjectSource</string>
+						<string key="minorKey">TTStyleLabel.h</string>
+					</object>
+				</object>
+				<object class="IBPartialClassDescription">
 					<string key="className">TTStyleView</string>
 					<string key="superclassName">NSView</string>
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
@@ -3197,7 +3205,7 @@
 			</object>
 		</object>
 		<int key="IBDocument.localizationMode">0</int>
-		<string key="IBDocument.LastKnownRelativeProjectPath">../TTStyleMacTest.xcodeproj</string>
+		<string key="IBDocument.LastKnownRelativeProjectPath">../TTStyleMac.xcodeproj</string>
 		<int key="IBDocument.defaultPropertyAccessControl">3</int>
 	</data>
 </archive>

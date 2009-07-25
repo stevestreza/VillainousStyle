@@ -72,6 +72,10 @@
 		1E97CF3B101B80F2003135D3 /* NSImage+ContentMode.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E97CF39101B80F2003135D3 /* NSImage+ContentMode.h */; };
 		1E97CF3C101B80F2003135D3 /* NSImage+ContentMode.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E97CF3A101B80F2003135D3 /* NSImage+ContentMode.m */; };
 		1E97CFB9101B8497003135D3 /* doom-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E97CF82101B83D1003135D3 /* doom-icon.png */; };
+		1E97CFD0101B8C7C003135D3 /* TTStyleLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E97CFCE101B8C7C003135D3 /* TTStyleLabel.h */; };
+		1E97CFD4101B8CCE003135D3 /* TTTextStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E97CFD2101B8CCE003135D3 /* TTTextStyle.h */; };
+		1E97CFD5101B8CCE003135D3 /* TTTextStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E97CFD3101B8CCE003135D3 /* TTTextStyle.m */; };
+		1E97CFF4101B977B003135D3 /* TTStyleLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E97CFCF101B8C7C003135D3 /* TTStyleLabel.m */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
@@ -159,6 +163,10 @@
 		1E97CF39101B80F2003135D3 /* NSImage+ContentMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSImage+ContentMode.h"; sourceTree = "<group>"; };
 		1E97CF3A101B80F2003135D3 /* NSImage+ContentMode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSImage+ContentMode.m"; sourceTree = "<group>"; };
 		1E97CF82101B83D1003135D3 /* doom-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "doom-icon.png"; sourceTree = "<group>"; };
+		1E97CFCE101B8C7C003135D3 /* TTStyleLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTStyleLabel.h; sourceTree = "<group>"; };
+		1E97CFCF101B8C7C003135D3 /* TTStyleLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTStyleLabel.m; sourceTree = "<group>"; };
+		1E97CFD2101B8CCE003135D3 /* TTTextStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTextStyle.h; sourceTree = "<group>"; };
+		1E97CFD3101B8CCE003135D3 /* TTTextStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTTextStyle.m; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
@@ -255,6 +263,8 @@
 				1E68214210182A1F005A22F6 /* TTLinearGradientFillStyle.h */,
 				1E68214310182A1F005A22F6 /* TTLinearGradientFillStyle.m */,
 				1E97CF31101B8049003135D3 /* TTImageStyle.h */,
+				1E97CFD2101B8CCE003135D3 /* TTTextStyle.h */,
+				1E97CFD3101B8CCE003135D3 /* TTTextStyle.m */,
 				1E97CF32101B8049003135D3 /* TTImageStyle.m */,
 				1E6821AA10182DA0005A22F6 /* TTSolidBorderStyle.h */,
 				1E6821AB10182DA0005A22F6 /* TTSolidBorderStyle.m */,
@@ -305,6 +315,8 @@
 				1E68206C10182404005A22F6 /* TTStyleController.m */,
 				1E68206F101824A0005A22F6 /* TTStyleView.h */,
 				1E682070101824A0005A22F6 /* TTStyleView.m */,
+				1E97CFCE101B8C7C003135D3 /* TTStyleLabel.h */,
+				1E97CFCF101B8C7C003135D3 /* TTStyleLabel.m */,
 			);
 			name = "Test View";
 			sourceTree = "<group>";
@@ -391,6 +403,8 @@
 				1E0FDDC1101A7A20007AFA92 /* TTStyles.h in Headers */,
 				1E97CF33101B8049003135D3 /* TTImageStyle.h in Headers */,
 				1E97CF3B101B80F2003135D3 /* NSImage+ContentMode.h in Headers */,
+				1E97CFD0101B8C7C003135D3 /* TTStyleLabel.h in Headers */,
+				1E97CFD4101B8CCE003135D3 /* TTTextStyle.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -504,6 +518,7 @@
 				1E0FDD84101A7A0A007AFA92 /* TTSpeechBubbleShape.m in Sources */,
 				1E97CF34101B8049003135D3 /* TTImageStyle.m in Sources */,
 				1E97CF3C101B80F2003135D3 /* NSImage+ContentMode.m in Sources */,
+				1E97CFD5101B8CCE003135D3 /* TTTextStyle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -511,6 +526,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E97CFF4101B977B003135D3 /* TTStyleLabel.m in Sources */,
 				8D11072D0486CEB800E47090 /* main.m in Sources */,
 				1E68206D10182404005A22F6 /* TTStyleController.m in Sources */,
 				1E682071101824A0005A22F6 /* TTStyleView.m in Sources */,

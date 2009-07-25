@@ -1,0 +1,213 @@
+//
+//  TTTextStyle.m
+//  TTStyleMac
+//
+//  Created by Steve Streza on 7/25/09.
+//  Copyright 2009 __MyCompanyName__. All rights reserved.
+//
+
+#import "TTTextStyle.h"
+
+
+@implementation TTTextStyle
+
+@synthesize font = _font, color = _color, shadowColor = _shadowColor, shadowOffset = _shadowOffset,
+minimumFontSize = _minimumFontSize, textAlignment = _textAlignment,
+verticalAlignment = _verticalAlignment, lineBreakMode = _lineBreakMode;
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+// class public
+
++ (TTTextStyle*)styleWithFont:(NSFont*)font next:(TTStyle*)next {
+	TTTextStyle* style = [[[self alloc] initWithNext:next] autorelease];
+	style.font = font;
+	return style;
+}
+
++ (TTTextStyle*)styleWithColor:(NSColor*)color next:(TTStyle*)next {
+	TTTextStyle* style = [[[self alloc] initWithNext:next] autorelease];
+	style.color = color;
+	return style;
+}
+
++ (TTTextStyle*)styleWithFont:(NSFont*)font color:(NSColor*)color next:(TTStyle*)next {
+	TTTextStyle* style = [[[self alloc] initWithNext:next] autorelease];
+	style.font = font;
+	style.color = color;
+	return style;
+}
+
++ (TTTextStyle*)styleWithFont:(NSFont*)font color:(NSColor*)color
+                textAlignment:(UITextAlignment)textAlignment next:(TTStyle*)next {
+	TTTextStyle* style = [[[self alloc] initWithNext:next] autorelease];
+	style.font = font;
+	style.color = color;
+	style.textAlignment = textAlignment;
+	return style;
+}
+
++ (TTTextStyle*)styleWithFont:(NSFont*)font color:(NSColor*)color
+				  shadowColor:(NSColor*)shadowColor shadowOffset:(CGSize)shadowOffset
+						 next:(TTStyle*)next {
+	TTTextStyle* style = [[[self alloc] initWithNext:next] autorelease];
+	style.font = font;
+	style.color = color;
+	style.shadowColor = shadowColor;
+	style.shadowOffset = shadowOffset;
+	return style;
+}
+
++ (TTTextStyle*)styleWithFont:(NSFont*)font color:(NSColor*)color
+			  minimumFontSize:(CGFloat)minimumFontSize
+				  shadowColor:(NSColor*)shadowColor shadowOffset:(CGSize)shadowOffset
+						 next:(TTStyle*)next {
+	TTTextStyle* style = [[[self alloc] initWithNext:next] autorelease];
+	style.font = font;
+	style.color = color;
+	style.minimumFontSize = minimumFontSize;
+	style.shadowColor = shadowColor;
+	style.shadowOffset = shadowOffset;
+	return style;
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+// private
+
+-(NSDictionary *)textAttributes{
+	return [NSDictionary dictionaryWithObjectsAndKeys:
+	 _font, NSFontAttributeName,
+	 nil];
+}
+
+- (CGRect)rectForText:(NSString*)text forSize:(CGSize)size withFont:(NSFont*)font {
+	CGRect rect = CGRectZero;
+	if (_textAlignment == UITextAlignmentLeft
+		&& _verticalAlignment == UIControlContentVerticalAlignmentTop) {
+		rect.size = size;
+	} else {
+		CGSize textSize = NSSizeToCGSize( [text sizeWithAttributes:[self textAttributes]] );
+		
+		if (size.width < textSize.width) {
+			size.width = textSize.width;
+		}
+		
+		rect.size = textSize;
+		
+		if (_textAlignment == UITextAlignmentCenter) {
+			rect.origin.x = round(size.width/2 - textSize.width/2);
+		} else if (_textAlignment == UITextAlignmentRight) {
+			rect.origin.x = size.width - textSize.width;
+		}
+		
+		if (_verticalAlignment == UIControlContentVerticalAlignmentCenter) {
+			rect.origin.y = round(size.height/2 - textSize.height/2);
+		} else if (_verticalAlignment == UIControlContentVerticalAlignmentBottom) {
+			rect.origin.y = size.height - textSize.height;
+		}
+	}
+	return rect;
+}
+
+- (void)drawText:(NSString*)text context:(TTStyleContext*)context {
+	CGContextRef ctx = UIGraphicsGetCurrentContext();
+	CGContextSaveGState(ctx);
+	
+	NSFont* font = _font ? _font : context.font;
+	
+	if (_shadowColor) {
+		CGSize offset = CGSizeMake(_shadowOffset.width, -_shadowOffset.height);
+		CGContextSetShadowWithColor(ctx, offset, 0, _shadowColor.CGColor);
+	}
+	
+	if (_color) {
+		[_color setFill];
+	}
+	
+	CGRect rect = context.contentFrame;
+	CGRect titleRect = [self rectForText:text forSize:rect.size withFont:font];
+//	NSRect textRect = NSMakeRect(titleRect.origin.x+rect.origin.x, titleRect.origin.y+rect.origin.y,rect.size.width,rect.size.height);
+	
+	NSDictionary *attributes = [self textAttributes];
+	titleRect.size = NSSizeToCGSize([text sizeWithAttributes: attributes ]);
+	[text drawInRect:NSRectFromCGRect(titleRect)
+	  withAttributes:attributes];
+	//							  forWidth:rect.size.width withFont:font
+//						   minFontSize:_minimumFontSize ? _minimumFontSize : font.pointSize
+//						actualFontSize:nil lineBreakMode:_lineBreakMode
+//					baselineAdjustment:UIBaselineAdjustmentAlignCenters];
+	context.contentFrame = titleRect;
+	
+	CGContextRestoreGState(ctx);
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+// NSObject
+
+- (id)initWithNext:(TTStyle*)next {  
+	if (self = [super initWithNext:next]) {
+		_font = nil;
+		_color = nil;
+		_minimumFontSize = 0;
+		_shadowColor = nil;
+		_shadowOffset = CGSizeZero;
+		_textAlignment = UITextAlignmentCenter;
+		_verticalAlignment = UIControlContentVerticalAlignmentCenter;
+		_lineBreakMode = UILineBreakModeTailTruncation;
+	}
+	return self;
+}
+
+- (void)dealloc {
+	[_font release];
+	[_color release];
+	[_shadowColor release];
+	[super dealloc];
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+// TTStyle
+
+- (void)draw:(TTStyleContext*)context {
+	if ([context.delegate respondsToSelector:@selector(textForLayerWithStyle:)]) {
+		NSString* text = [context.delegate textForLayerWithStyle:self];
+		if (text) {
+			context.didDrawContent = YES;
+			[self drawText:text context:context];
+		}
+	}
+	
+	if (!context.didDrawContent
+		&& [context.delegate respondsToSelector:@selector(drawLayer:withStyle:)]) {
+		[context.delegate drawLayer:context withStyle:self];
+		context.didDrawContent = YES;
+	}
+	
+	[self.next draw:context];
+}
+
+- (CGSize)addToSize:(CGSize)size context:(TTStyleContext*)context {
+	if ([context.delegate respondsToSelector:@selector(textForLayerWithStyle:)]) {
+		NSString* text = [context.delegate textForLayerWithStyle:self];
+		NSFont* font = _font ? _font : context.font;
+		
+		CGSize textSize = NSSizeToCGSize([text sizeWithAttributes:[self textAttributes]]);
+		
+		
+		
+		CGFloat maxWidth = context.contentFrame.size.width;
+		if (maxWidth && textSize.width > maxWidth) {
+			textSize.width = maxWidth;
+		}
+		
+		size.width += textSize.width;
+		size.height += textSize.height;
+	}
+	
+	if (_next) {
+		return [self.next addToSize:size context:context];
+	} else {
+		return size;
+	}
+}
+
+@end

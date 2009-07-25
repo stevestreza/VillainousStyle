@@ -26,6 +26,8 @@
 	NSColor* blue = RGBCOLOR(191, 197, 208);
 	NSColor* darkBlue = RGBCOLOR(109, 132, 162);
 	
+	styleView4.stringValue = @"Hello world!";
+	
 	NSImage *doomIcon = [NSImage imageNamed:@"doom-icon"];
 	
 	styleView1.style = 
@@ -82,7 +84,7 @@
 	   ]
 	  ]
 	 ];
-
+	
 	styleView4.style =
 	[TTShadowStyle styleWithColor:[NSColor colorWithCalibratedWhite:0.0 alpha:0.5]
 							 blur:5.0 
@@ -93,18 +95,22 @@
 		[TTLinearGradientFillStyle styleWithColor1:NSColorRGBA(0.3, 0.3, 0.5, 1.0)
 											color2:NSColorRGBA(0.4, 0.4, 0.6, 1.0)
 											  next:
-		 nil
+		 [TTTextStyle styleWithFont:[NSFont fontWithName:@"Helvetica" size:14.] 
+							  color:[NSColor colorWithCalibratedWhite:0.9 alpha:1.0] 
+							   next:
+		  nil
+		  ]
 		 ]
 		]
 	   ]
 	  ]
 	 ];
 }
+
+-(void)dealloc{
+	//STUB release your objects here
 	
-	-(void)dealloc{
-		//STUB release your objects here
-		
-		[super dealloc];
-	}
-	
-	@end
+	[super dealloc];
+}
+
+@end
