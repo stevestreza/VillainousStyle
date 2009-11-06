@@ -24,6 +24,8 @@ Stylesheets
 
 TTStyleSheet is an abstract superclass for a set of styles. Subclass it and add methods for each style you wish to add. You will likely want to create a protocol for your styles to implement, to ensure that your stylesheet implements all the necessary styles.
 
+There is a global stylesheet, which can be thought of as the "active" stylesheet. Call `+[TTStyleSheet setGlobalStyleSheet:]` to change the active theme, which will fire a `TTStyleSheetChangedNotification`. When that gets fired, you'll want to tell your views to update their styles and redraw.
+
 Styles
 ======
 
