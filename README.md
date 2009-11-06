@@ -22,6 +22,8 @@ Clone or download the repository, and build the framework. You can also build an
 Styles
 ======
 
+Styles affect drawing and positioning. Most will affect the next TTStyle objects in the chain.
+
 * Fills
  * TTSolidFillStyle - Fills the current shape with a solid color
  * TTLinearGradientFillStyle - Fills the current shape with a gradient between two colors
@@ -44,6 +46,8 @@ Styles
 
 Shapes
 ======
+
+Shapes affect the fills and borders, but do not clip the content styles.
 
 * TTRectangleShape
 * TTRoundedRectangleShape
