@@ -19,10 +19,10 @@ Install
 
 Clone or download the repository, and build the framework. You can also build and run the test application.
 
-Screenshots
+Stylesheets
 ===========
 
-![Light Test Style](http://github.com/amazingsyco/TTStyleMac/raw/master/Screenshots/light-test-style.png "Light Test Style") ![Dark Test Style](http://github.com/amazingsyco/TTStyleMac/raw/master/Screenshots/dark-test-style.png "Dark Test Style")
+TTStyleSheet is an abstract superclass for a set of styles. Subclass it and add methods for each style you wish to add. You will likely want to create a protocol for your styles to implement, to ensure that your stylesheet implements all the necessary styles.
 
 Styles
 ======
@@ -58,3 +58,15 @@ Shapes affect the fills and borders, but do not clip the content styles.
 * TTRoundedRectangleShape
 * TTRoundedLeftArrowShape - a rounded rectangle with a left-facing arrow
 * TTRoundedRightArrowShape - a rounded rectangle with a right-facing arrow
+
+Future Ideas
+============
+
+* File-based stylesheets that can be read/written from TTStyleSheet objects
+* GUI builder for styles
+* More styles!
+
+Screenshots
+===========
+
+![Light Test Style](http://github.com/amazingsyco/TTStyleMac/raw/master/Screenshots/light-test-style.png "Light Test Style") ![Dark Test Style](http://github.com/amazingsyco/TTStyleMac/raw/master/Screenshots/dark-test-style.png "Dark Test Style")
