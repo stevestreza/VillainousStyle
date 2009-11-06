@@ -12,9 +12,11 @@
 @interface TTStyleView : NSView {
     //STUB add your instance variables here
 	TTStyle *style;
+	NSString *styleName;
 }
 
 //STUB add your method declarations here
 @property (nonatomic,retain) TTStyle *style;
+@property (nonatomic,copy)   NSString *styleName;
 
 @end

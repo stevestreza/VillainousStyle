@@ -58,6 +58,10 @@ const NSString *TTStyleSheetChangedNotification = @"TTStyleSheetChangedNotificat
 	[super dealloc];
 }
 
++ (id) styleSheet{
+	return [[[self alloc] init] autorelease];
+}
+
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 // public
 

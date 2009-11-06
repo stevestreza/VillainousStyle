@@ -29,3 +29,7 @@
 #import "TTImageStyle.h"
 #import "TTMaskStyle.h"
 #import "TTShapeStyle.h"
+
+#import "TTStyleSheet.h"
+
+#define TTStyleNamed(__nm) (TTStyle *)([[TTStyleSheet globalStyleSheet] styleWithSelector:(__nm)])

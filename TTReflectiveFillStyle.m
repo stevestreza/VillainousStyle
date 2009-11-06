@@ -7,17 +7,6 @@
 //
 
 #import "TTReflectiveFillStyle.h"
-
-#define RGBCOLOR(r,g,b) [NSColor colorWithRed:r/256.0 green:g/256.0 blue:b/256.0 alpha:1]
-#define RGBACOLOR(r,g,b,a) [NSColor colorWithRed:r/256.0 green:g/256.0 blue:b/256.0 alpha:a]
-
-#define HSVCOLOR(h,s,v) [NSColor colorWithHue:h saturation:s value:v alpha:1]
-#define HSVACOLOR(h,s,v,a) [NSColor colorWithHue:h saturation:s value:v alpha:a]
-
-#define RGBA(r,g,b,a) r/256.0, g/256.0, b/256.0, a
-
-#define ZEROLIMIT(_VALUE) (_VALUE < 0 ? 0 : (_VALUE > 1 ? 1 : _VALUE))
-
 #import "NSColorAdditions.h"
 
 @implementation TTReflectiveFillStyle

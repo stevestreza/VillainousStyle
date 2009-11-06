@@ -16,11 +16,10 @@ extern const NSString *TTStyleSheetChangedNotification;
 	NSMutableDictionary* _styles;
 }
 
++ (id) styleSheet;
+
 + (TTStyleSheet*)globalStyleSheet;
 + (void)setGlobalStyleSheet:(TTStyleSheet*)styleSheet;
 
 - (TTStyle*)styleWithSelector:(NSString*)selector;
-
-- (void)freeMemory;
-
 @end
