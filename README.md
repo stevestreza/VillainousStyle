@@ -19,6 +19,11 @@ Install
 
 Clone or download the repository, and build the framework. You can also build and run the test application.
 
+Screenshots
+===========
+
+![Light Test Style](http://github.com/amazingsyco/TTStyleMac/raw/master/Screenshots/light-test-style.png "Light Test Style") ![Dark Test Style](http://github.com/amazingsyco/TTStyleMac/raw/master/Screenshots/dark-test-style.png "Dark Test Style")
+
 Styles
 ======
 
