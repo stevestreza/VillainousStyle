@@ -11,13 +11,16 @@
 #import "TTStyleLabel.h"
 
 @interface TTStyleController : NSWindowController {
-    //STUB add your instance variables here
+	IBOutlet TTStyleView *backgroundView;
+	
 	IBOutlet TTStyleView *styleView1;
 	IBOutlet TTStyleView *styleView2;
 	IBOutlet TTStyleView *styleView3;
 	IBOutlet TTStyleLabel *styleView4;
+	
+	NSArray *styleSheets;
 }
 
-//STUB add your method declarations here
-
+-(void)selectStyleSheetAtIndex:(NSUInteger)index;
+-(IBAction)changeStyleSheet:sender;
 @end

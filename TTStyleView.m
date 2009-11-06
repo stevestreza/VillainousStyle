@@ -52,14 +52,18 @@
 }
 
 -(void)setNeedsDisplay{
+	NSLog(@"Updating style named %@",styleName);
+	[self setStyle:TTStyleNamed(styleName)];
 	[self setNeedsDisplay:YES];
 }
 
 -(void)setStyleName:(NSString *)aStyleName{
+	if([styleName isEqualToString:aStyleName]) return;
+	
 	[styleName autorelease];
 	styleName = [aStyleName copy];
 	
-	[self setStyle:TTStyleNamed(styleName)];
+	[self setNeedsDisplay];
 }
 
 -(void)setStyle:(TTStyle *)aStyle{
@@ -70,6 +74,7 @@
 }
 
 -(void)drawRect:(NSRect)aRect{
+	NSLog(@"Drawing style in rect - %@", [[TTStyleSheet globalStyleSheet] className]);
 	[self drawStyle:style inRect:[self bounds]];
 }
 

@@ -68,6 +68,7 @@
 		1E526FB810A3D8440008B89D /* TTStyleSheet.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E526FB610A3D8440008B89D /* TTStyleSheet.h */; };
 		1E526FB910A3D8440008B89D /* TTStyleSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E526FB710A3D8440008B89D /* TTStyleSheet.m */; };
 		1E526FC310A3DAC40008B89D /* LightStyleSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E526FC210A3DAC40008B89D /* LightStyleSheet.m */; };
+		1E5270BB10A3E4D40008B89D /* DarkStyleSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E5270BA10A3E4D40008B89D /* DarkStyleSheet.m */; };
 		1E68206D10182404005A22F6 /* TTStyleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E68206C10182404005A22F6 /* TTStyleController.m */; };
 		1E682071101824A0005A22F6 /* TTStyleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E682070101824A0005A22F6 /* TTStyleView.m */; };
 		1E97CF33101B8049003135D3 /* TTImageStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E97CF31101B8049003135D3 /* TTImageStyle.h */; };
@@ -124,6 +125,8 @@
 		1E526FB710A3D8440008B89D /* TTStyleSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTStyleSheet.m; sourceTree = "<group>"; };
 		1E526FC110A3DAC40008B89D /* LightStyleSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LightStyleSheet.h; sourceTree = "<group>"; };
 		1E526FC210A3DAC40008B89D /* LightStyleSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LightStyleSheet.m; sourceTree = "<group>"; };
+		1E5270B910A3E4D40008B89D /* DarkStyleSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DarkStyleSheet.h; sourceTree = "<group>"; };
+		1E5270BA10A3E4D40008B89D /* DarkStyleSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DarkStyleSheet.m; sourceTree = "<group>"; };
 		1E6819CD10181810005A22F6 /* TTStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTStyle.h; sourceTree = "<group>"; };
 		1E6819CE10181810005A22F6 /* TTStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTStyle.m; sourceTree = "<group>"; };
 		1E681DAE10181ABB005A22F6 /* TTShape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTShape.h; sourceTree = "<group>"; };
@@ -258,6 +261,8 @@
 			children = (
 				1E526FC110A3DAC40008B89D /* LightStyleSheet.h */,
 				1E526FC210A3DAC40008B89D /* LightStyleSheet.m */,
+				1E5270B910A3E4D40008B89D /* DarkStyleSheet.h */,
+				1E5270BA10A3E4D40008B89D /* DarkStyleSheet.m */,
 			);
 			name = Stylesheets;
 			sourceTree = "<group>";
@@ -552,6 +557,7 @@
 				1E68206D10182404005A22F6 /* TTStyleController.m in Sources */,
 				1E682071101824A0005A22F6 /* TTStyleView.m in Sources */,
 				1E526FC310A3DAC40008B89D /* LightStyleSheet.m in Sources */,
+				1E5270BB10A3E4D40008B89D /* DarkStyleSheet.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
