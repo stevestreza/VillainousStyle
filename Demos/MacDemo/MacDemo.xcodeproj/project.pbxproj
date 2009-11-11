@@ -26,14 +26,14 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = 1E31228210AA81B500D72994 /* TTStyle.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = 1E0FDD5B101A79DF007AFA92 /* TTStyle.framework */;
+			remoteGlobalIDString = 1E0FDD5B101A79DF007AFA92;
 			remoteInfo = TTStyle;
 		};
 		1E31228A10AA81C100D72994 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 1E31228210AA81B500D72994 /* TTStyle.xcodeproj */;
 			proxyType = 1;
-			remoteGlobalIDString = 1E0FDD5A101A79DF007AFA92 /* TTStyle */;
+			remoteGlobalIDString = 1E0FDD5A101A79DF007AFA92;
 			remoteInfo = TTStyle;
 		};
 /* End PBXContainerItemProxy section */
