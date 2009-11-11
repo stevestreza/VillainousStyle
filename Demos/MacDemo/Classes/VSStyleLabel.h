@@ -1,15 +1,15 @@
 //
-//  TTStyleLabel.h
-//  TTStyleMac
+//  VSStyleLabel.h
+//  VSStyleMac
 //
 //  Created by Steve Streza on 7/25/09.
 //  Copyright 2009 __MyCompanyName__. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
-#import "TTStyleView.h"
+#import "VSStyleView.h"
 
-@interface TTStyleLabel : TTStyleView {
+@interface VSStyleLabel : VSStyleView {
     //STUB add your instance variables here
 	NSString *stringValue;
 }

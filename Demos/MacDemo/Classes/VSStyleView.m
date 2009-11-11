@@ -1,19 +1,19 @@
 //
-//  TTStyleView.m
-//  TTStyleMacTest
+//  VSStyleView.m
+//  VSStyleMacTest
 //
 //  Created by Steve Streza on 7/23/09.
 //  Copyright 2009 __MyCompanyName__. All rights reserved.
 //
 
-#import "TTStyleView.h"
-#import <TTStyle/NSView+TTStyle.h>
-#import <TTStyle/TTStyleSheet.h>
+#import "VSStyleView.h"
+#import <VillainousStyle/NSView+VSStyle.h>
+#import <VillainousStyle/VSStyleSheet.h>
 
-#import <TTStyle/TTStyles.h>
-#import <TTStyle/TTShapes.h>
+#import <VillainousStyle/VSStyles.h>
+#import <VillainousStyle/VSShapes.h>
 
-@implementation TTStyleView
+@implementation VSStyleView
 
 @synthesize style, styleName;
 
@@ -41,19 +41,19 @@
 -(void)addObservers{
 	[[NSNotificationCenter defaultCenter] addObserver:self
 											 selector:@selector(setNeedsDisplay) 
-												 name:TTStyleSheetChangedNotification 
+												 name:VSStyleSheetChangedNotification 
 											   object:nil];	
 }
 
 -(void)removeObservers{
 	[[NSNotificationCenter defaultCenter] removeObserver:self
-													name:TTStyleSheetChangedNotification 
+													name:VSStyleSheetChangedNotification 
 												  object:nil];
 }
 
 -(void)setNeedsDisplay{
 //	NSLog(@"Updating style named %@",styleName);
-	[self setStyle:TTStyleNamed(styleName)];
+	[self setStyle:VSStyleNamed(styleName)];
 	[self setNeedsDisplay:YES];
 }
 
@@ -66,7 +66,7 @@
 	[self setNeedsDisplay];
 }
 
--(void)setStyle:(TTStyle *)aStyle{
+-(void)setStyle:(VSStyle *)aStyle{
 	[style autorelease];
 	style = [aStyle retain];
 	
@@ -74,7 +74,7 @@
 }
 
 -(void)drawRect:(NSRect)aRect{
-//	NSLog(@"Drawing style in rect - %@", [[TTStyleSheet globalStyleSheet] className]);
+//	NSLog(@"Drawing style in rect - %@", [[VSStyleSheet globalStyleSheet] className]);
 	[self drawStyle:style inRect:[self bounds]];
 }
 

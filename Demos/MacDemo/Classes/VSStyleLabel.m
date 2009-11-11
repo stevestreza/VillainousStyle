@@ -1,19 +1,19 @@
 //
-//  TTStyleLabel.m
-//  TTStyleMac
+//  VSStyleLabel.m
+//  VSStyleMac
 //
 //  Created by Steve Streza on 7/25/09.
 //  Copyright 2009 __MyCompanyName__. All rights reserved.
 //
 
-#import "TTStyleLabel.h"
+#import "VSStyleLabel.h"
 
 
-@implementation TTStyleLabel
+@implementation VSStyleLabel
 
 @synthesize stringValue;
 
-- (NSString*)textForLayerWithStyle:(TTStyle*)style{
+- (NSString*)textForLayerWithStyle:(VSStyle*)style{
 	return self.stringValue;
 }
 

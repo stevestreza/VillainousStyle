@@ -10,11 +10,11 @@
 		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
 		1E311FD410AA6CD700D72994 /* DarkStyleSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E311FD110AA6CD700D72994 /* DarkStyleSheet.m */; };
 		1E311FD510AA6CD700D72994 /* LightStyleSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E311FD310AA6CD700D72994 /* LightStyleSheet.m */; };
-		1E311FDC10AA6D2200D72994 /* TTStyleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E311FD710AA6D2200D72994 /* TTStyleController.m */; };
-		1E311FDD10AA6D2200D72994 /* TTStyleLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E311FD910AA6D2200D72994 /* TTStyleLabel.m */; };
-		1E311FDE10AA6D2200D72994 /* TTStyleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E311FDB10AA6D2200D72994 /* TTStyleView.m */; };
-		1E3120B410AA7B9100D72994 /* TTStyle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E3120B310AA7B9100D72994 /* TTStyle.framework */; };
-		1E3120D810AA7B9F00D72994 /* TTStyle.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 1E3120B310AA7B9100D72994 /* TTStyle.framework */; };
+		1E311FDC10AA6D2200D72994 /* VSStyleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E311FD710AA6D2200D72994 /* VSStyleController.m */; };
+		1E311FDD10AA6D2200D72994 /* VSStyleLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E311FD910AA6D2200D72994 /* VSStyleLabel.m */; };
+		1E311FDE10AA6D2200D72994 /* VSStyleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E311FDB10AA6D2200D72994 /* VSStyleView.m */; };
+		1E3120B410AA7B9100D72994 /* VillainousStyle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E3120B310AA7B9100D72994 /* VillainousStyle.framework */; };
+		1E3120D810AA7B9F00D72994 /* VillainousStyle.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 1E3120B310AA7B9100D72994 /* VillainousStyle.framework */; };
 		1E31210410AA7E1900D72994 /* doom-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E31210310AA7E1900D72994 /* doom-icon.png */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
@@ -22,19 +22,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		1E31228810AA81B500D72994 /* PBXContainerItemProxy */ = {
+		1E3122F210AA8B1A00D72994 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 1E31228210AA81B500D72994 /* TTStyle.xcodeproj */;
+			containerPortal = 1E31228210AA81B500D72994 /* VillainousStyle.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = 1E0FDD5B101A79DF007AFA92;
-			remoteInfo = TTStyle;
-		};
-		1E31228A10AA81C100D72994 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1E31228210AA81B500D72994 /* TTStyle.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 1E0FDD5A101A79DF007AFA92;
-			remoteInfo = TTStyle;
+			remoteGlobalIDString = 1E0FDD5B101A79DF007AFA92 /* VillainousStyle.framework */;
+			remoteInfo = VillainousStyle;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -45,7 +38,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				1E3120D810AA7B9F00D72994 /* TTStyle.framework in Copy Frameworks */,
+				1E3120D810AA7B9F00D72994 /* VillainousStyle.framework in Copy Frameworks */,
 			);
 			name = "Copy Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -61,15 +54,15 @@
 		1E311FD110AA6CD700D72994 /* DarkStyleSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DarkStyleSheet.m; sourceTree = "<group>"; };
 		1E311FD210AA6CD700D72994 /* LightStyleSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LightStyleSheet.h; sourceTree = "<group>"; };
 		1E311FD310AA6CD700D72994 /* LightStyleSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LightStyleSheet.m; sourceTree = "<group>"; };
-		1E311FD610AA6D2200D72994 /* TTStyleController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTStyleController.h; sourceTree = "<group>"; };
-		1E311FD710AA6D2200D72994 /* TTStyleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTStyleController.m; sourceTree = "<group>"; };
-		1E311FD810AA6D2200D72994 /* TTStyleLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTStyleLabel.h; sourceTree = "<group>"; };
-		1E311FD910AA6D2200D72994 /* TTStyleLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTStyleLabel.m; sourceTree = "<group>"; };
-		1E311FDA10AA6D2200D72994 /* TTStyleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTStyleView.h; sourceTree = "<group>"; };
-		1E311FDB10AA6D2200D72994 /* TTStyleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTStyleView.m; sourceTree = "<group>"; };
-		1E3120B310AA7B9100D72994 /* TTStyle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TTStyle.framework; path = ../../Source/build/Release/TTStyle.framework; sourceTree = "<group>"; };
+		1E311FD610AA6D2200D72994 /* VSStyleController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSStyleController.h; sourceTree = "<group>"; };
+		1E311FD710AA6D2200D72994 /* VSStyleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSStyleController.m; sourceTree = "<group>"; };
+		1E311FD810AA6D2200D72994 /* VSStyleLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSStyleLabel.h; sourceTree = "<group>"; };
+		1E311FD910AA6D2200D72994 /* VSStyleLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSStyleLabel.m; sourceTree = "<group>"; };
+		1E311FDA10AA6D2200D72994 /* VSStyleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSStyleView.h; sourceTree = "<group>"; };
+		1E311FDB10AA6D2200D72994 /* VSStyleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSStyleView.m; sourceTree = "<group>"; };
+		1E3120B310AA7B9100D72994 /* VillainousStyle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VillainousStyle.framework; path = ../../Source/build/Release/VillainousStyle.framework; sourceTree = "<group>"; };
 		1E31210310AA7E1900D72994 /* doom-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "doom-icon.png"; sourceTree = "<group>"; };
-		1E31228210AA81B500D72994 /* TTStyle.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TTStyle.xcodeproj; path = ../../Source/TTStyle.xcodeproj; sourceTree = "<group>"; };
+		1E31228210AA81B500D72994 /* VillainousStyle.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = VillainousStyle.xcodeproj; path = ../../Source/VillainousStyle.xcodeproj; sourceTree = "<group>"; };
 		256AC3F00F4B6AF500CF3369 /* MacDemo_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MacDemo_Prefix.pch; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
@@ -83,7 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E3120B410AA7B9100D72994 /* TTStyle.framework in Frameworks */,
+				1E3120B410AA7B9100D72994 /* VillainousStyle.framework in Frameworks */,
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -94,12 +87,12 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				1E311FD610AA6D2200D72994 /* TTStyleController.h */,
-				1E311FD710AA6D2200D72994 /* TTStyleController.m */,
-				1E311FD810AA6D2200D72994 /* TTStyleLabel.h */,
-				1E311FD910AA6D2200D72994 /* TTStyleLabel.m */,
-				1E311FDA10AA6D2200D72994 /* TTStyleView.h */,
-				1E311FDB10AA6D2200D72994 /* TTStyleView.m */,
+				1E311FD610AA6D2200D72994 /* VSStyleController.h */,
+				1E311FD710AA6D2200D72994 /* VSStyleController.m */,
+				1E311FD810AA6D2200D72994 /* VSStyleLabel.h */,
+				1E311FD910AA6D2200D72994 /* VSStyleLabel.m */,
+				1E311FDA10AA6D2200D72994 /* VSStyleView.h */,
+				1E311FDB10AA6D2200D72994 /* VSStyleView.m */,
 				1E311FCF10AA6CD700D72994 /* Stylesheets */,
 			);
 			path = Classes;
@@ -142,19 +135,19 @@
 			path = Stylesheets;
 			sourceTree = "<group>";
 		};
-		1E31209210AA78DB00D72994 /* TTStyle */ = {
+		1E31209210AA78DB00D72994 /* VSStyle */ = {
 			isa = PBXGroup;
 			children = (
-				1E31228210AA81B500D72994 /* TTStyle.xcodeproj */,
-				1E3120B310AA7B9100D72994 /* TTStyle.framework */,
+				1E31228210AA81B500D72994 /* VillainousStyle.xcodeproj */,
+				1E3120B310AA7B9100D72994 /* VillainousStyle.framework */,
 			);
-			name = TTStyle;
+			name = VSStyle;
 			sourceTree = "<group>";
 		};
-		1E31228510AA81B500D72994 /* Products */ = {
+		1E3122EF10AA8B1A00D72994 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1E31228910AA81B500D72994 /* TTStyle.framework */,
+				1E3122F310AA8B1A00D72994 /* VillainousStyle.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -162,7 +155,7 @@
 		29B97314FDCFA39411CA2CEA /* MacDemo */ = {
 			isa = PBXGroup;
 			children = (
-				1E31209210AA78DB00D72994 /* TTStyle */,
+				1E31209210AA78DB00D72994 /* VSStyle */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
@@ -216,7 +209,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				1E31228B10AA81C100D72994 /* PBXTargetDependency */,
 			);
 			name = MacDemo;
 			productInstallPath = "$(HOME)/Applications";
@@ -236,8 +228,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 1E31228510AA81B500D72994 /* Products */;
-					ProjectRef = 1E31228210AA81B500D72994 /* TTStyle.xcodeproj */;
+					ProductGroup = 1E3122EF10AA8B1A00D72994 /* Products */;
+					ProjectRef = 1E31228210AA81B500D72994 /* VillainousStyle.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -248,11 +240,11 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		1E31228910AA81B500D72994 /* TTStyle.framework */ = {
+		1E3122F310AA8B1A00D72994 /* VillainousStyle.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
-			path = TTStyle.framework;
-			remoteRef = 1E31228810AA81B500D72994 /* PBXContainerItemProxy */;
+			path = VillainousStyle.framework;
+			remoteRef = 1E3122F210AA8B1A00D72994 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -278,21 +270,13 @@
 				8D11072D0486CEB800E47090 /* main.m in Sources */,
 				1E311FD410AA6CD700D72994 /* DarkStyleSheet.m in Sources */,
 				1E311FD510AA6CD700D72994 /* LightStyleSheet.m in Sources */,
-				1E311FDC10AA6D2200D72994 /* TTStyleController.m in Sources */,
-				1E311FDD10AA6D2200D72994 /* TTStyleLabel.m in Sources */,
-				1E311FDE10AA6D2200D72994 /* TTStyleView.m in Sources */,
+				1E311FDC10AA6D2200D72994 /* VSStyleController.m in Sources */,
+				1E311FDD10AA6D2200D72994 /* VSStyleLabel.m in Sources */,
+				1E311FDE10AA6D2200D72994 /* VSStyleView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		1E31228B10AA81C100D72994 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = TTStyle;
-			targetProxy = 1E31228A10AA81C100D72994 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {

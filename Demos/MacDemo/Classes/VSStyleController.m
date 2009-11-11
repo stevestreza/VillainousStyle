@@ -1,20 +1,20 @@
 //
-//  TTStyleController.m
-//  TTStyleMacTest
+//  VSStyleController.m
+//  VSStyleMacTest
 //
 //  Created by Steve Streza on 7/23/09.
 //  Copyright 2009 __MyCompanyName__. All rights reserved.
 //
 
-#import "TTStyleController.h"
+#import "VSStyleController.h"
 
-#import <TTStyle/TTStyles.h>
-#import <TTStyle/TTShapes.h>
+#import <VillainousStyle/VSStyles.h>
+#import <VillainousStyle/VSShapes.h>
 
 #import "LightStyleSheet.h"
 #import "DarkStyleSheet.h"
 
-@implementation TTStyleController
+@implementation VSStyleController
 
 -(id)init{
     if(self = [super init]){
@@ -31,7 +31,7 @@
 }
 
 -(void)selectStyleSheetAtIndex:(NSUInteger)index{
-	[TTStyleSheet setGlobalStyleSheet:[styleSheets objectAtIndex:index]];	
+	[VSStyleSheet setGlobalStyleSheet:[styleSheets objectAtIndex:index]];	
 }
 
 -(IBAction)changeStyleSheet:sender{

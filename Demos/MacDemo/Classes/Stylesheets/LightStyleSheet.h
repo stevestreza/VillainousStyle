@@ -1,23 +1,23 @@
 //
 //  LightStyleSheet.h
-//  TTStyleMac
+//  VSStyleMac
 //
 //  Created by Steve Streza on 11/5/09.
 //  Copyright 2009 __MyCompanyName__. All rights reserved.
 //
 
 #import <Cocoa/Cocoa.h>
-#import <TTStyle/TTStyleSheet.h>
+#import <VillainousStyle/VSStyleSheet.h>
 
-@interface LightStyleSheet : TTStyleSheet {
+@interface LightStyleSheet : VSStyleSheet {
 
 }
 
--(TTStyle *)backgroundStyle;
+-(VSStyle *)backgroundStyle;
 
--(TTStyle *)upperLeftStyle;
--(TTStyle *)upperRightStyle;
--(TTStyle *)lowerLeftStyle;
--(TTStyle *)lowerRightStyle;
+-(VSStyle *)upperLeftStyle;
+-(VSStyle *)upperRightStyle;
+-(VSStyle *)lowerLeftStyle;
+-(VSStyle *)lowerRightStyle;
 
 @end
