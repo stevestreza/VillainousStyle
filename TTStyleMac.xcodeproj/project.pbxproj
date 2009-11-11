@@ -65,6 +65,7 @@
 		1E0FDDBF101A7A20007AFA92 /* TTStyleContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E681E0610181C6C005A22F6 /* TTStyleContext.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1E0FDDC1101A7A20007AFA92 /* TTStyles.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E68220F1018324D005A22F6 /* TTStyles.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1E0FDDD7101A7ABE007AFA92 /* TTStyle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E0FDD5B101A79DF007AFA92 /* TTStyle.framework */; };
+		1E311F5D10AA645600D72994 /* TTStyle.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 1E0FDD5B101A79DF007AFA92 /* TTStyle.framework */; };
 		1E526FB810A3D8440008B89D /* TTStyleSheet.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E526FB610A3D8440008B89D /* TTStyleSheet.h */; };
 		1E526FB910A3D8440008B89D /* TTStyleSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E526FB710A3D8440008B89D /* TTStyleSheet.m */; };
 		1E526FC310A3DAC40008B89D /* LightStyleSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E526FC210A3DAC40008B89D /* LightStyleSheet.m */; };
@@ -94,6 +95,20 @@
 			remoteInfo = TTStyle;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1E311F7D10AA645B00D72994 /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1E311F5D10AA645600D72994 /* TTStyle.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -458,6 +473,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "TTStyleMacTest" */;
 			buildPhases = (
+				1E311F7D10AA645B00D72994 /* Copy Frameworks */,
 				8D1107290486CEB800E47090 /* Resources */,
 				8D11072C0486CEB800E47090 /* Sources */,
 				8D11072E0486CEB800E47090 /* Frameworks */,
@@ -607,7 +623,8 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
 				INFOPLIST_FILE = "TTStyle-Info.plist";
-				INSTALL_PATH = "$(HOME)/Library/Frameworks";
+				INSTALL_PATH = "@loader_path/../Frameworks/${EXECUTABLE_PATH}";
+				LD_DYLIB_INSTALL_NAME = "@loader_path/../Frameworks/${EXECUTABLE_PATH}";
 				OTHER_LDFLAGS = (
 					"-framework",
 					Foundation,
@@ -634,7 +651,8 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
 				INFOPLIST_FILE = "TTStyle-Info.plist";
-				INSTALL_PATH = "$(HOME)/Library/Frameworks";
+				INSTALL_PATH = "@loader_path/../Frameworks/${EXECUTABLE_PATH}";
+				LD_DYLIB_INSTALL_NAME = "@loader_path/../Frameworks/${EXECUTABLE_PATH}";
 				OTHER_LDFLAGS = (
 					"-framework",
 					Foundation,
@@ -653,10 +671,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/build/Debug\"",
-				);
+				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_MODEL_TUNING = G5;
@@ -675,10 +690,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/build/Debug\"",
-				);
+				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = TTStyleMacTest_Prefix.pch;
