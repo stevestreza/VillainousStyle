@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1E0FDD61101A79F0007AFA92 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E0FDD60101A79F0007AFA92 /* AppKit.framework */; };
-		1E0FDD63101A79F0007AFA92 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E0FDD62101A79F0007AFA92 /* Cocoa.framework */; };
-		1E0FDD65101A79F0007AFA92 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E0FDD64101A79F0007AFA92 /* Foundation.framework */; };
 		1E0FDD6C101A7A0A007AFA92 /* NSColor+CGColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E68218B10182C4B005A22F6 /* NSColor+CGColor.m */; };
 		1E0FDD6D101A7A0A007AFA92 /* NSImage+CGImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E0FDD2510184C18007AFA92 /* NSImage+CGImage.m */; };
 		1E0FDD6E101A7A0A007AFA92 /* TTShape.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E681DAF10181ABB005A22F6 /* TTShape.m */; };
@@ -77,7 +74,6 @@
 		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		13E42FB307B3F0F600E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
-		1DDD58150DA1D0A300B32029 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		1E0FDBCD1018395E007AFA92 /* NSColorAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSColorAdditions.h; sourceTree = "<group>"; };
 		1E0FDBCE1018395E007AFA92 /* NSColorAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSColorAdditions.m; sourceTree = "<group>"; };
 		1E0FDC5B101840EF007AFA92 /* TTBevelBorderStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTBevelBorderStyle.h; sourceTree = "<group>"; };
@@ -96,9 +92,6 @@
 		1E0FDD2510184C18007AFA92 /* NSImage+CGImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSImage+CGImage.m"; sourceTree = "<group>"; };
 		1E0FDD5B101A79DF007AFA92 /* TTStyle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TTStyle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E0FDD5C101A79DF007AFA92 /* TTStyle-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TTStyle-Info.plist"; sourceTree = "<group>"; };
-		1E0FDD60101A79F0007AFA92 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
-		1E0FDD62101A79F0007AFA92 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
-		1E0FDD64101A79F0007AFA92 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1E526FB610A3D8440008B89D /* TTStyleSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTStyleSheet.h; sourceTree = "<group>"; };
 		1E526FB710A3D8440008B89D /* TTStyleSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTStyleSheet.m; sourceTree = "<group>"; };
 		1E6819CD10181810005A22F6 /* TTStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTStyle.h; sourceTree = "<group>"; };
@@ -142,7 +135,6 @@
 		1E97CF32101B8049003135D3 /* TTImageStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTImageStyle.m; sourceTree = "<group>"; };
 		1E97CF39101B80F2003135D3 /* NSImage+ContentMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSImage+ContentMode.h"; sourceTree = "<group>"; };
 		1E97CF3A101B80F2003135D3 /* NSImage+ContentMode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSImage+ContentMode.m"; sourceTree = "<group>"; };
-		1E97CF82101B83D1003135D3 /* doom-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "doom-icon.png"; sourceTree = "<group>"; };
 		1E97CFD2101B8CCE003135D3 /* TTTextStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTextStyle.h; sourceTree = "<group>"; };
 		1E97CFD3101B8CCE003135D3 /* TTTextStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTTextStyle.m; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -157,9 +149,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E0FDD61101A79F0007AFA92 /* AppKit.framework in Frameworks */,
-				1E0FDD63101A79F0007AFA92 /* Cocoa.framework in Frameworks */,
-				1E0FDD65101A79F0007AFA92 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,9 +274,6 @@
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
 				1E0FDD5C101A79DF007AFA92 /* TTStyle-Info.plist */,
-				1E0FDD60101A79F0007AFA92 /* AppKit.framework */,
-				1E0FDD62101A79F0007AFA92 /* Cocoa.framework */,
-				1E0FDD64101A79F0007AFA92 /* Foundation.framework */,
 			);
 			name = TTStyleMacTest;
 			sourceTree = "<group>";
@@ -304,10 +290,8 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				1E97CF82101B83D1003135D3 /* doom-icon.png */,
 				8D1107310486CEB800E47090 /* Info.plist */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
-				1DDD58140DA1D0A300B32029 /* MainMenu.xib */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -457,14 +441,6 @@
 				089C165DFE840E0CC02AAC07 /* English */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		1DDD58140DA1D0A300B32029 /* MainMenu.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1DDD58150DA1D0A300B32029 /* English */,
-			);
-			name = MainMenu.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
