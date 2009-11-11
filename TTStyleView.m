@@ -52,7 +52,7 @@
 }
 
 -(void)setNeedsDisplay{
-	NSLog(@"Updating style named %@",styleName);
+//	NSLog(@"Updating style named %@",styleName);
 	[self setStyle:TTStyleNamed(styleName)];
 	[self setNeedsDisplay:YES];
 }
@@ -74,7 +74,7 @@
 }
 
 -(void)drawRect:(NSRect)aRect{
-	NSLog(@"Drawing style in rect - %@", [[TTStyleSheet globalStyleSheet] className]);
+//	NSLog(@"Drawing style in rect - %@", [[TTStyleSheet globalStyleSheet] className]);
 	[self drawStyle:style inRect:[self bounds]];
 }
 
