@@ -35,9 +35,9 @@
 		1E0FDD82101A7A0A007AFA92 /* TTFourBorderStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E0FDCE210184535007AFA92 /* TTFourBorderStyle.m */; };
 		1E0FDD83101A7A0A007AFA92 /* TTRoundedRectangleShape.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E6821F210183192005A22F6 /* TTRoundedRectangleShape.m */; };
 		1E0FDD84101A7A0A007AFA92 /* TTSpeechBubbleShape.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E0FDCAB101843DA007AFA92 /* TTSpeechBubbleShape.m */; };
-		1E0FDDA5101A7A20007AFA92 /* NSColor+CGColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E68218A10182C4B005A22F6 /* NSColor+CGColor.h */; };
-		1E0FDDA6101A7A20007AFA92 /* NSColorAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E0FDBCD1018395E007AFA92 /* NSColorAdditions.h */; };
-		1E0FDDA7101A7A20007AFA92 /* NSImage+CGImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E0FDD2410184C18007AFA92 /* NSImage+CGImage.h */; };
+		1E0FDDA5101A7A20007AFA92 /* NSColor+CGColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E68218A10182C4B005A22F6 /* NSColor+CGColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1E0FDDA6101A7A20007AFA92 /* NSColorAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E0FDBCD1018395E007AFA92 /* NSColorAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1E0FDDA7101A7A20007AFA92 /* NSImage+CGImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E0FDD2410184C18007AFA92 /* NSImage+CGImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1E0FDDA8101A7A20007AFA92 /* NSView+TTStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E682064101822B0005A22F6 /* NSView+TTStyle.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1E0FDDA9101A7A20007AFA92 /* TTBevelBorderStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E0FDC5B101840EF007AFA92 /* TTBevelBorderStyle.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1E0FDDAA101A7A20007AFA92 /* TTBoxStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E0FDD0510184A48007AFA92 /* TTBoxStyle.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -63,13 +63,13 @@
 		1E0FDDBE101A7A20007AFA92 /* TTStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E6819CD10181810005A22F6 /* TTStyle.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1E0FDDBF101A7A20007AFA92 /* TTStyleContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E681E0610181C6C005A22F6 /* TTStyleContext.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1E0FDDC1101A7A20007AFA92 /* TTStyles.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E68220F1018324D005A22F6 /* TTStyles.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1E526FB810A3D8440008B89D /* TTStyleSheet.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E526FB610A3D8440008B89D /* TTStyleSheet.h */; };
+		1E526FB810A3D8440008B89D /* TTStyleSheet.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E526FB610A3D8440008B89D /* TTStyleSheet.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1E526FB910A3D8440008B89D /* TTStyleSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E526FB710A3D8440008B89D /* TTStyleSheet.m */; };
-		1E97CF33101B8049003135D3 /* TTImageStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E97CF31101B8049003135D3 /* TTImageStyle.h */; };
+		1E97CF33101B8049003135D3 /* TTImageStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E97CF31101B8049003135D3 /* TTImageStyle.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1E97CF34101B8049003135D3 /* TTImageStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E97CF32101B8049003135D3 /* TTImageStyle.m */; };
-		1E97CF3B101B80F2003135D3 /* NSImage+ContentMode.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E97CF39101B80F2003135D3 /* NSImage+ContentMode.h */; };
+		1E97CF3B101B80F2003135D3 /* NSImage+ContentMode.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E97CF39101B80F2003135D3 /* NSImage+ContentMode.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1E97CF3C101B80F2003135D3 /* NSImage+ContentMode.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E97CF3A101B80F2003135D3 /* NSImage+ContentMode.m */; };
-		1E97CFD4101B8CCE003135D3 /* TTTextStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E97CFD2101B8CCE003135D3 /* TTTextStyle.h */; };
+		1E97CFD4101B8CCE003135D3 /* TTTextStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E97CFD2101B8CCE003135D3 /* TTTextStyle.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1E97CFD5101B8CCE003135D3 /* TTTextStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E97CFD3101B8CCE003135D3 /* TTTextStyle.m */; };
 /* End PBXBuildFile section */
 
