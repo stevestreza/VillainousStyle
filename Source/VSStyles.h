@@ -1,5 +1,5 @@
 //
-//  NSImage+CGImage.h
+//  VSStyles.h
 //  VillainousStyle
 //
 //  Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,10 +17,28 @@
 
 #import <Foundation/Foundation.h>
 
+#import "VSStyle.h"
+#import "VSPartStyle.h"
 
-@interface NSImage (CGImage)
+#import "VSSolidFillStyle.h"
+#import "VSLinearGradientFillStyle.h"
+#import "VSReflectiveFillStyle.h"
 
-//STUB add your category method declarations here
-@property (readonly) CGImageRef CGImage;
+#import "VSSolidBorderStyle.h"
+#import "VSBevelBorderStyle.h"
+#import "VSFourBorderStyle.h"
 
-@end
+#import "VSShadowStyle.h"
+#import "VSInnerShadowStyle.h"
+
+#import "VSBoxStyle.h"
+#import "VSInsetStyle.h"
+
+#import "VSTextStyle.h"
+#import "VSImageStyle.h"
+#import "VSMaskStyle.h"
+#import "VSShapeStyle.h"
+
+#import "VSStyleSheet.h"
+
+#define VSStyleNamed(__nm) (VSStyle *)([[VSStyleSheet globalStyleSheet] styleWithSelector:(__nm)])

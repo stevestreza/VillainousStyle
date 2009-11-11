@@ -1,5 +1,5 @@
 //
-//  NSImage+CGImage.h
+//  NSView+VSStyle.m
 //  VillainousStyle
 //
 //  Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,12 +15,24 @@
 //  limitations under the License.
 //
 
-#import <Foundation/Foundation.h>
+#import "NSView+VSStyle.h"
+#import "VSStyleContext.h"
 
+@implementation NSView (VSStyleAdditions)
 
-@interface NSImage (CGImage)
-
-//STUB add your category method declarations here
-@property (readonly) CGImageRef CGImage;
+//STUB add your category method implementations here
+-(void)drawStyle:(VSStyle *)style inRect:(NSRect)rect{
+	if (style) {
+		VSStyleContext* context = [[[VSStyleContext alloc] init] autorelease];
+		context.delegate = self;
+		context.frame = NSRectToCGRect(rect);
+		context.contentFrame = context.frame;
+		
+		[style draw:context];
+		if (!context.didDrawContent) {
+//			[self drawContent:self.bounds];
+		}
+	}
+}
 
 @end

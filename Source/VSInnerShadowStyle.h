@@ -1,5 +1,5 @@
 //
-//  NSImage+CGImage.h
+//  VSInnerShadowStyle.h
 //  VillainousStyle
 //
 //  Licensed under the Apache License, Version 2.0 (the "License");
@@ -16,11 +16,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "VSShadowStyle.h"
 
+@interface VSInnerShadowStyle : VSShadowStyle {
+    //STUB add your instance variables here
+}
 
-@interface NSImage (CGImage)
-
-//STUB add your category method declarations here
-@property (readonly) CGImageRef CGImage;
+//STUB add your method declarations here
 
 @end

@@ -1,5 +1,5 @@
 //
-//  NSImage+CGImage.h
+//  VSRoundedLeftArrowShape.h
 //  VillainousStyle
 //
 //  Licensed under the Apache License, Version 2.0 (the "License");
@@ -16,11 +16,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "VSShape.h"
 
+@interface VSRoundedLeftArrowShape : VSShape {
+	CGFloat _radius;
+}
 
-@interface NSImage (CGImage)
+@property(nonatomic) CGFloat radius;
 
-//STUB add your category method declarations here
-@property (readonly) CGImageRef CGImage;
++ (VSRoundedLeftArrowShape*)shapeWithRadius:(CGFloat)radius;
 
 @end

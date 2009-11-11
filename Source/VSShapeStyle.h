@@ -1,5 +1,5 @@
 //
-//  NSImage+CGImage.h
+//  VSShapeStyle.h
 //  VillainousStyle
 //
 //  Licensed under the Apache License, Version 2.0 (the "License");
@@ -16,11 +16,15 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "VSstyle.h"
+#import "VSShape.h"
 
+@interface VSShapeStyle : VSStyle {
+	VSShape* _shape;
+}
 
-@interface NSImage (CGImage)
+@property(nonatomic,retain) VSShape* shape;
 
-//STUB add your category method declarations here
-@property (readonly) CGImageRef CGImage;
++ (VSShapeStyle*)styleWithShape:(VSShape*)shape next:(VSStyle*)next;
 
 @end

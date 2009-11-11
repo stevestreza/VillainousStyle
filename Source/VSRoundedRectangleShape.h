@@ -1,5 +1,5 @@
 //
-//  NSImage+CGImage.h
+//  VSRoundedRectangleShape.h
 //  VillainousStyle
 //
 //  Licensed under the Apache License, Version 2.0 (the "License");
@@ -16,11 +16,23 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "VSShape.h"
 
+@interface VSRoundedRectangleShape : VSShape {
+	CGFloat _topLeftRadius;
+	CGFloat _topRightRadius;
+	CGFloat _bottomRightRadius;
+	CGFloat _bottomLeftRadius;
+}
 
-@interface NSImage (CGImage)
+@property(nonatomic) CGFloat topLeftRadius;
+@property(nonatomic) CGFloat topRightRadius;
+@property(nonatomic) CGFloat bottomRightRadius;
+@property(nonatomic) CGFloat bottomLeftRadius;
 
-//STUB add your category method declarations here
-@property (readonly) CGImageRef CGImage;
++ (VSRoundedRectangleShape*)shapeWithRadius:(CGFloat)radius;
+
++ (VSRoundedRectangleShape*)shapeWithTopLeft:(CGFloat)topLeft topRight:(CGFloat)topRight
+								 bottomRight:(CGFloat)bottomRight bottomLeft:(CGFloat)bottomLeft;
 
 @end

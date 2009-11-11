@@ -1,5 +1,5 @@
 //
-//  NSImage+CGImage.h
+//  VSShadowStyle.h
 //  VillainousStyle
 //
 //  Licensed under the Apache License, Version 2.0 (the "License");
@@ -16,11 +16,18 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "VSStyle.h"
 
+@interface VSShadowStyle : VSStyle {
+	NSColor* _color;
+	CGFloat _blur;
+	CGSize _offset;
+}
 
-@interface NSImage (CGImage)
+@property(nonatomic,retain) NSColor* color;
+@property(nonatomic) CGFloat blur;
+@property(nonatomic) CGSize offset;
 
-//STUB add your category method declarations here
-@property (readonly) CGImageRef CGImage;
-
++ (VSShadowStyle*)styleWithColor:(NSColor*)color blur:(CGFloat)blur offset:(CGSize)offset
+							next:(VSStyle*)next;
 @end

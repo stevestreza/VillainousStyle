@@ -1,5 +1,5 @@
 //
-//  NSImage+CGImage.h
+//  VSInsetStyle.h
 //  VillainousStyle
 //
 //  Licensed under the Apache License, Version 2.0 (the "License");
@@ -16,11 +16,15 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "VSGlobal.h"
+#import "VSStyle.h";
 
+@interface VSInsetStyle : VSStyle {
+	UIEdgeInsets _inset;
+}
 
-@interface NSImage (CGImage)
+@property(nonatomic) UIEdgeInsets inset;
 
-//STUB add your category method declarations here
-@property (readonly) CGImageRef CGImage;
++ (VSInsetStyle*)styleWithInset:(UIEdgeInsets)inset next:(VSStyle*)next;
 
 @end

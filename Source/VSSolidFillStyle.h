@@ -1,5 +1,5 @@
 //
-//  NSImage+CGImage.h
+//  VSSolidFillStyle.h
 //  VillainousStyle
 //
 //  Licensed under the Apache License, Version 2.0 (the "License");
@@ -16,11 +16,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "VSStyle.h"
 
+@interface VSSolidFillStyle : VSStyle {
+	NSColor* _color;
+}
 
-@interface NSImage (CGImage)
+@property(nonatomic,retain) NSColor* color;
 
-//STUB add your category method declarations here
-@property (readonly) CGImageRef CGImage;
++ (VSSolidFillStyle*)styleWithColor:(NSColor*)color next:(VSStyle*)next;
 
 @end

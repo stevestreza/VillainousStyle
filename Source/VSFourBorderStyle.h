@@ -1,5 +1,5 @@
 //
-//  NSImage+CGImage.h
+//  VSFourBorderStyle.h
 //  VillainousStyle
 //
 //  Licensed under the Apache License, Version 2.0 (the "License");
@@ -16,11 +16,24 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "VSStyle.h"
 
+@interface VSFourBorderStyle : VSStyle {
+	NSColor* _top;
+	NSColor* _right;
+	NSColor* _bottom;
+	NSColor* _left;
+	CGFloat _width;
+}
 
-@interface NSImage (CGImage)
+@property(nonatomic,retain) NSColor* top;
+@property(nonatomic,retain) NSColor* right;
+@property(nonatomic,retain) NSColor* bottom;
+@property(nonatomic,retain) NSColor* left;
+@property(nonatomic) CGFloat width;
 
-//STUB add your category method declarations here
-@property (readonly) CGImageRef CGImage;
++ (VSFourBorderStyle*)styleWithTop:(NSColor*)top right:(NSColor*)right
+							bottom:(NSColor*)bottom left:(NSColor*)left width:(CGFloat)width
+							  next:(VSStyle*)next;
 
 @end

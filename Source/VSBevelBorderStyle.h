@@ -1,5 +1,5 @@
 //
-//  NSImage+CGImage.h
+//  VSBevelBorderStyle.h
 //  VillainousStyle
 //
 //  Licensed under the Apache License, Version 2.0 (the "License");
@@ -16,11 +16,23 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "VSStyle.h"
 
+@interface VSBevelBorderStyle : VSStyle {
+	NSColor* _highlight;
+	NSColor* _shadow;
+	CGFloat _width;
+	NSInteger _lightSource;
+}
 
-@interface NSImage (CGImage)
+@property(nonatomic,retain) NSColor* highlight;
+@property(nonatomic,retain) NSColor* shadow;
+@property(nonatomic) CGFloat width;
+@property(nonatomic) NSInteger lightSource;
 
-//STUB add your category method declarations here
-@property (readonly) CGImageRef CGImage;
++ (VSBevelBorderStyle*)styleWithColor:(NSColor*)color width:(CGFloat)width next:(VSStyle*)next;
+
++ (VSBevelBorderStyle*)styleWithHighlight:(NSColor*)highlight shadow:(NSColor*)shadow
+									width:(CGFloat)width lightSource:(NSInteger)lightSource next:(VSStyle*)next;
 
 @end

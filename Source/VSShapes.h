@@ -1,5 +1,5 @@
 //
-//  NSImage+CGImage.h
+//  VSShapes.h
 //  VillainousStyle
 //
 //  Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,9 +18,9 @@
 #import <Foundation/Foundation.h>
 
 
-@interface NSImage (CGImage)
-
-//STUB add your category method declarations here
-@property (readonly) CGImageRef CGImage;
-
-@end
+#import "VSShape.h"
+#import "VSRectangleShape.h"
+#import "VSRoundedRectangleShape.h"
+#import "VSRoundedLeftArrowShape.h"
+#import "VSRoundedRightArrowShape.h"
+#import "VSSpeechBubbleShape.h"

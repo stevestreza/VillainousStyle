@@ -1,5 +1,5 @@
 //
-//  NSImage+CGImage.h
+//  VSPartStyle.h
 //  VillainousStyle
 //
 //  Licensed under the Apache License, Version 2.0 (the "License");
@@ -16,11 +16,17 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "VSStyle.h"
 
+@interface VSPartStyle : VSStyle {
+	NSString* _name;
+	VSStyle* _style;
+}
 
-@interface NSImage (CGImage)
+@property(nonatomic,copy) NSString* name;
+@property(nonatomic,retain) VSStyle* style;
 
-//STUB add your category method declarations here
-@property (readonly) CGImageRef CGImage;
++ (VSPartStyle*)styleWithName:(NSString*)name style:(VSStyle*)style next:(VSStyle*)next;
 
+- (void)drawPart:(VSStyleContext*)context;
 @end

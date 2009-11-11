@@ -1,5 +1,5 @@
 //
-//  NSImage+CGImage.h
+//  NSView+VSStyle.h
 //  VillainousStyle
 //
 //  Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,10 +17,9 @@
 
 #import <Foundation/Foundation.h>
 
+@class VSStyle;
+@interface NSView (VSStyleAdditions)
 
-@interface NSImage (CGImage)
-
-//STUB add your category method declarations here
-@property (readonly) CGImageRef CGImage;
+-(void)drawStyle:(VSStyle *)style inRect:(NSRect)rect;
 
 @end

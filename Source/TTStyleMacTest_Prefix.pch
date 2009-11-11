@@ -1,7 +1,0 @@
-//
-// Prefix header for all source files of the 'TTStyleMacTest' target in the 'TTStyleMacTest' project
-//
-
-#ifdef __OBJC__
-    #import <Cocoa/Cocoa.h>
-#endif

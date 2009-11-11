@@ -1,5 +1,5 @@
 //
-//  NSImage+CGImage.h
+//  VSSolidBorderStyle.h
 //  VillainousStyle
 //
 //  Licensed under the Apache License, Version 2.0 (the "License");
@@ -16,11 +16,18 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "VSStyle.h"
 
+@interface VSSolidBorderStyle : VSStyle {
+    //STUB add your instance variables here
+	NSColor *_color;
+	CGFloat _width;
+}
 
-@interface NSImage (CGImage)
+//STUB add your method declarations here
+@property (nonatomic, retain) NSColor *color;
+@property (nonatomic, assign) CGFloat width;
 
-//STUB add your category method declarations here
-@property (readonly) CGImageRef CGImage;
++ (VSSolidBorderStyle*)styleWithColor:(NSColor*)color width:(CGFloat)width next:(VSStyle*)next;
 
 @end

@@ -1,5 +1,5 @@
 //
-//  NSImage+CGImage.h
+//  VSMaskStyle.h
 //  VillainousStyle
 //
 //  Licensed under the Apache License, Version 2.0 (the "License");
@@ -16,11 +16,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "VSStyle.h"
 
+@interface VSMaskStyle : VSStyle {
+	NSImage* _mask;
+}
 
-@interface NSImage (CGImage)
+@property(nonatomic,retain) NSImage* mask;
 
-//STUB add your category method declarations here
-@property (readonly) CGImageRef CGImage;
++ (VSMaskStyle*)styleWithMask:(NSImage*)mask next:(VSStyle*)next;
 
 @end

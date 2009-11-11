@@ -1,6 +1,6 @@
 //
 //  main.m
-//  TTStyleMacTest
+//  VillainousStyle
 //
 //  Created by Steve Streza on 7/22/09.
 //  Copyright __MyCompanyName__ 2009. All rights reserved.

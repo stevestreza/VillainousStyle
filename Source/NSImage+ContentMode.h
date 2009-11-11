@@ -1,13 +1,13 @@
 //
 //  NSImage+ContentMode.h
-//  TTStyleMac
+//  VSStyleMac
 //
 //  Created by Steve Streza on 7/25/09.
 //  Copyright 2009 __MyCompanyName__. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
-#import "TTGlobal.h"
+#import "VSGlobal.h"
 
 typedef enum {
     UIViewContentModeScaleToFill,

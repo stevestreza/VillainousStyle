@@ -1,5 +1,5 @@
 //
-//  NSImage+CGImage.h
+//  VSStyleContext.h
 //  VillainousStyle
 //
 //  Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,10 +17,23 @@
 
 #import <Foundation/Foundation.h>
 
+@class VSShape, VSStyleContext;
+@interface VSStyleContext : NSObject {
+    //STUB add your instance variables here
+	id _delegate;
+	CGRect _frame;
+	CGRect _contentFrame;
+	VSShape* _shape;
+	NSFont* _font;
+	BOOL _didDrawContent;
+}
 
-@interface NSImage (CGImage)
-
-//STUB add your category method declarations here
-@property (readonly) CGImageRef CGImage;
+//STUB add your method declarations here
+@property(nonatomic,assign) id delegate;
+@property(nonatomic) CGRect frame;
+@property(nonatomic) CGRect contentFrame;
+@property(nonatomic,retain) VSShape* shape;
+@property(nonatomic,retain) NSFont* font;
+@property(nonatomic) BOOL didDrawContent;
 
 @end

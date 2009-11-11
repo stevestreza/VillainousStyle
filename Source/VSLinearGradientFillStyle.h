@@ -1,5 +1,5 @@
 //
-//  NSImage+CGImage.h
+//  VSLinearGradientStyle.h
 //  VillainousStyle
 //
 //  Licensed under the Apache License, Version 2.0 (the "License");
@@ -16,11 +16,16 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "VSStyle.h"
 
+@interface VSLinearGradientFillStyle : VSStyle {
+	NSColor* _color1;
+	NSColor* _color2;
+}
 
-@interface NSImage (CGImage)
+@property(nonatomic,retain) NSColor* color1;
+@property(nonatomic,retain) NSColor* color2;
 
-//STUB add your category method declarations here
-@property (readonly) CGImageRef CGImage;
-
++ (VSLinearGradientFillStyle*)styleWithColor1:(NSColor*)color1 color2:(NSColor*)color2
+										 next:(VSStyle*)next;
 @end

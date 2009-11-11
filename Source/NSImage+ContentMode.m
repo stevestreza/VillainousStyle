@@ -1,6 +1,6 @@
 //
 //  NSImage+ContentMode.m
-//  TTStyleMac
+//  VSStyleMac
 //
 //  Created by Steve Streza on 7/25/09.
 //  Copyright 2009 __MyCompanyName__. All rights reserved.
