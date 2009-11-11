@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
 		1E0FDD61101A79F0007AFA92 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E0FDD60101A79F0007AFA92 /* AppKit.framework */; };
 		1E0FDD63101A79F0007AFA92 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E0FDD62101A79F0007AFA92 /* Cocoa.framework */; };
 		1E0FDD65101A79F0007AFA92 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E0FDD64101A79F0007AFA92 /* Foundation.framework */; };
@@ -64,51 +63,15 @@
 		1E0FDDBE101A7A20007AFA92 /* TTStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E6819CD10181810005A22F6 /* TTStyle.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1E0FDDBF101A7A20007AFA92 /* TTStyleContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E681E0610181C6C005A22F6 /* TTStyleContext.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1E0FDDC1101A7A20007AFA92 /* TTStyles.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E68220F1018324D005A22F6 /* TTStyles.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1E0FDDD7101A7ABE007AFA92 /* TTStyle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E0FDD5B101A79DF007AFA92 /* TTStyle.framework */; };
-		1E311F5D10AA645600D72994 /* TTStyle.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 1E0FDD5B101A79DF007AFA92 /* TTStyle.framework */; };
 		1E526FB810A3D8440008B89D /* TTStyleSheet.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E526FB610A3D8440008B89D /* TTStyleSheet.h */; };
 		1E526FB910A3D8440008B89D /* TTStyleSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E526FB710A3D8440008B89D /* TTStyleSheet.m */; };
-		1E526FC310A3DAC40008B89D /* LightStyleSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E526FC210A3DAC40008B89D /* LightStyleSheet.m */; };
-		1E5270BB10A3E4D40008B89D /* DarkStyleSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E5270BA10A3E4D40008B89D /* DarkStyleSheet.m */; };
-		1E68206D10182404005A22F6 /* TTStyleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E68206C10182404005A22F6 /* TTStyleController.m */; };
-		1E682071101824A0005A22F6 /* TTStyleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E682070101824A0005A22F6 /* TTStyleView.m */; };
 		1E97CF33101B8049003135D3 /* TTImageStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E97CF31101B8049003135D3 /* TTImageStyle.h */; };
 		1E97CF34101B8049003135D3 /* TTImageStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E97CF32101B8049003135D3 /* TTImageStyle.m */; };
 		1E97CF3B101B80F2003135D3 /* NSImage+ContentMode.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E97CF39101B80F2003135D3 /* NSImage+ContentMode.h */; };
 		1E97CF3C101B80F2003135D3 /* NSImage+ContentMode.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E97CF3A101B80F2003135D3 /* NSImage+ContentMode.m */; };
-		1E97CFB9101B8497003135D3 /* doom-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E97CF82101B83D1003135D3 /* doom-icon.png */; };
-		1E97CFD0101B8C7C003135D3 /* TTStyleLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E97CFCE101B8C7C003135D3 /* TTStyleLabel.h */; };
 		1E97CFD4101B8CCE003135D3 /* TTTextStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E97CFD2101B8CCE003135D3 /* TTTextStyle.h */; };
 		1E97CFD5101B8CCE003135D3 /* TTTextStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E97CFD3101B8CCE003135D3 /* TTTextStyle.m */; };
-		1E97CFF4101B977B003135D3 /* TTStyleLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E97CFCF101B8C7C003135D3 /* TTStyleLabel.m */; };
-		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
-		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
-		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		1E0FDDD5101A7AB8007AFA92 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1E0FDD5A101A79DF007AFA92;
-			remoteInfo = TTStyle;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		1E311F7D10AA645B00D72994 /* Copy Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				1E311F5D10AA645600D72994 /* TTStyle.framework in Copy Frameworks */,
-			);
-			name = "Copy Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -138,10 +101,6 @@
 		1E0FDD64101A79F0007AFA92 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1E526FB610A3D8440008B89D /* TTStyleSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTStyleSheet.h; sourceTree = "<group>"; };
 		1E526FB710A3D8440008B89D /* TTStyleSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTStyleSheet.m; sourceTree = "<group>"; };
-		1E526FC110A3DAC40008B89D /* LightStyleSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LightStyleSheet.h; sourceTree = "<group>"; };
-		1E526FC210A3DAC40008B89D /* LightStyleSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LightStyleSheet.m; sourceTree = "<group>"; };
-		1E5270B910A3E4D40008B89D /* DarkStyleSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DarkStyleSheet.h; sourceTree = "<group>"; };
-		1E5270BA10A3E4D40008B89D /* DarkStyleSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DarkStyleSheet.m; sourceTree = "<group>"; };
 		1E6819CD10181810005A22F6 /* TTStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTStyle.h; sourceTree = "<group>"; };
 		1E6819CE10181810005A22F6 /* TTStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTStyle.m; sourceTree = "<group>"; };
 		1E681DAE10181ABB005A22F6 /* TTShape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTShape.h; sourceTree = "<group>"; };
@@ -155,10 +114,6 @@
 		1E6820301018219E005A22F6 /* TTGlobal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTGlobal.h; sourceTree = "<group>"; };
 		1E682064101822B0005A22F6 /* NSView+TTStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSView+TTStyle.h"; sourceTree = "<group>"; };
 		1E682065101822B0005A22F6 /* NSView+TTStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSView+TTStyle.m"; sourceTree = "<group>"; };
-		1E68206B10182404005A22F6 /* TTStyleController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTStyleController.h; sourceTree = "<group>"; };
-		1E68206C10182404005A22F6 /* TTStyleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTStyleController.m; sourceTree = "<group>"; };
-		1E68206F101824A0005A22F6 /* TTStyleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTStyleView.h; sourceTree = "<group>"; };
-		1E682070101824A0005A22F6 /* TTStyleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTStyleView.m; sourceTree = "<group>"; };
 		1E68208F101825C3005A22F6 /* TTSolidFillStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTSolidFillStyle.h; sourceTree = "<group>"; };
 		1E682090101825C3005A22F6 /* TTSolidFillStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTSolidFillStyle.m; sourceTree = "<group>"; };
 		1E68212410182924005A22F6 /* TTInsetStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTInsetStyle.h; sourceTree = "<group>"; };
@@ -188,8 +143,6 @@
 		1E97CF39101B80F2003135D3 /* NSImage+ContentMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSImage+ContentMode.h"; sourceTree = "<group>"; };
 		1E97CF3A101B80F2003135D3 /* NSImage+ContentMode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSImage+ContentMode.m"; sourceTree = "<group>"; };
 		1E97CF82101B83D1003135D3 /* doom-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "doom-icon.png"; sourceTree = "<group>"; };
-		1E97CFCE101B8C7C003135D3 /* TTStyleLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTStyleLabel.h; sourceTree = "<group>"; };
-		1E97CFCF101B8C7C003135D3 /* TTStyleLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTStyleLabel.m; sourceTree = "<group>"; };
 		1E97CFD2101B8CCE003135D3 /* TTTextStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTextStyle.h; sourceTree = "<group>"; };
 		1E97CFD3101B8CCE003135D3 /* TTTextStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTTextStyle.m; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -197,7 +150,6 @@
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		32CA4F630368D1EE00C91783 /* TTStyleMacTest_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTStyleMacTest_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8D1107320486CEB800E47090 /* TTStyleMacTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TTStyleMacTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -211,22 +163,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8D11072E0486CEB800E47090 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
-				1E0FDDD7101A7ABE007AFA92 /* TTStyle.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				1E68206A10182392005A22F6 /* Test View */,
 				1E6820301018219E005A22F6 /* TTGlobal.h */,
 				1E681E3D101820CB005A22F6 /* TTShape */,
 				1E681985101816AF005A22F6 /* TTStyle */,
@@ -265,21 +207,9 @@
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8D1107320486CEB800E47090 /* TTStyleMacTest.app */,
 				1E0FDD5B101A79DF007AFA92 /* TTStyle.framework */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		1E526FC010A3DAB00008B89D /* Stylesheets */ = {
-			isa = PBXGroup;
-			children = (
-				1E526FC110A3DAC40008B89D /* LightStyleSheet.h */,
-				1E526FC210A3DAC40008B89D /* LightStyleSheet.m */,
-				1E5270B910A3E4D40008B89D /* DarkStyleSheet.h */,
-				1E5270BA10A3E4D40008B89D /* DarkStyleSheet.m */,
-			);
-			name = Stylesheets;
 			sourceTree = "<group>";
 		};
 		1E681985101816AF005A22F6 /* TTStyle */ = {
@@ -344,20 +274,6 @@
 				1E0FDCAB101843DA007AFA92 /* TTSpeechBubbleShape.m */,
 			);
 			name = TTShape;
-			sourceTree = "<group>";
-		};
-		1E68206A10182392005A22F6 /* Test View */ = {
-			isa = PBXGroup;
-			children = (
-				1E526FC010A3DAB00008B89D /* Stylesheets */,
-				1E68206B10182404005A22F6 /* TTStyleController.h */,
-				1E68206C10182404005A22F6 /* TTStyleController.m */,
-				1E68206F101824A0005A22F6 /* TTStyleView.h */,
-				1E682070101824A0005A22F6 /* TTStyleView.m */,
-				1E97CFCE101B8C7C003135D3 /* TTStyleLabel.h */,
-				1E97CFCF101B8C7C003135D3 /* TTStyleLabel.m */,
-			);
-			name = "Test View";
 			sourceTree = "<group>";
 		};
 		29B97314FDCFA39411CA2CEA /* TTStyleMacTest */ = {
@@ -442,7 +358,6 @@
 				1E0FDDC1101A7A20007AFA92 /* TTStyles.h in Headers */,
 				1E97CF33101B8049003135D3 /* TTImageStyle.h in Headers */,
 				1E97CF3B101B80F2003135D3 /* NSImage+ContentMode.h in Headers */,
-				1E97CFD0101B8C7C003135D3 /* TTStyleLabel.h in Headers */,
 				1E97CFD4101B8CCE003135D3 /* TTTextStyle.h in Headers */,
 				1E526FB810A3D8440008B89D /* TTStyleSheet.h in Headers */,
 			);
@@ -469,26 +384,6 @@
 			productReference = 1E0FDD5B101A79DF007AFA92 /* TTStyle.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		8D1107260486CEB800E47090 /* TTStyleMacTest */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "TTStyleMacTest" */;
-			buildPhases = (
-				1E311F7D10AA645B00D72994 /* Copy Frameworks */,
-				8D1107290486CEB800E47090 /* Resources */,
-				8D11072C0486CEB800E47090 /* Sources */,
-				8D11072E0486CEB800E47090 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				1E0FDDD6101A7AB8007AFA92 /* PBXTargetDependency */,
-			);
-			name = TTStyleMacTest;
-			productInstallPath = "$(HOME)/Applications";
-			productName = TTStyleMacTest;
-			productReference = 8D1107320486CEB800E47090 /* TTStyleMacTest.app */;
-			productType = "com.apple.product-type.application";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -501,7 +396,6 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8D1107260486CEB800E47090 /* TTStyleMacTest */,
 				1E0FDD5A101A79DF007AFA92 /* TTStyle */,
 			);
 		};
@@ -512,16 +406,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8D1107290486CEB800E47090 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1E97CFB9101B8497003135D3 /* doom-icon.png in Resources */,
-				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
-				1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -564,28 +448,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8D11072C0486CEB800E47090 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1E97CFF4101B977B003135D3 /* TTStyleLabel.m in Sources */,
-				8D11072D0486CEB800E47090 /* main.m in Sources */,
-				1E68206D10182404005A22F6 /* TTStyleController.m in Sources */,
-				1E682071101824A0005A22F6 /* TTStyleView.m in Sources */,
-				1E526FC310A3DAC40008B89D /* LightStyleSheet.m in Sources */,
-				1E5270BB10A3E4D40008B89D /* DarkStyleSheet.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		1E0FDDD6101A7AB8007AFA92 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 1E0FDD5A101A79DF007AFA92 /* TTStyle */;
-			targetProxy = 1E0FDDD5101A7AB8007AFA92 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
@@ -665,41 +528,6 @@
 			};
 			name = Release;
 		};
-		C01FCF4B08A954540054247B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
-				COPY_PHASE_STRIP = NO;
-				FRAMEWORK_SEARCH_PATHS = "";
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
-				GCC_MODEL_TUNING = G5;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = TTStyleMacTest_Prefix.pch;
-				INFOPLIST_FILE = Info.plist;
-				INSTALL_PATH = "$(HOME)/Applications";
-				PRODUCT_NAME = TTStyleMacTest;
-			};
-			name = Debug;
-		};
-		C01FCF4C08A954540054247B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				FRAMEWORK_SEARCH_PATHS = "";
-				GCC_MODEL_TUNING = G5;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = TTStyleMacTest_Prefix.pch;
-				INFOPLIST_FILE = Info.plist;
-				INSTALL_PATH = "$(HOME)/Applications";
-				PRODUCT_NAME = TTStyleMacTest;
-			};
-			name = Release;
-		};
 		C01FCF4F08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -734,15 +562,6 @@
 			buildConfigurations = (
 				1E0FDD5D101A79E1007AFA92 /* Debug */,
 				1E0FDD5E101A79E1007AFA92 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "TTStyleMacTest" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C01FCF4B08A954540054247B /* Debug */,
-				C01FCF4C08A954540054247B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
