@@ -64,6 +64,8 @@ Shapes affect the fills and borders, but do not clip the content styles.
 Future Ideas
 ============
 
+* iPhone static library
+* Cappuccino library
 * File-based stylesheets that can be read/written from VSStyleSheet objects
 * GUI builder for styles
 * More styles!
