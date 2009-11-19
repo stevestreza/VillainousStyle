@@ -7,15 +7,15 @@
 //
 
 #import "DarkStyleSheet.h"
-#import <VillainousStyle/VSStyles.h>
-#import <VillainousStyle/VSShapes.h>
+#import "VSStyles.h"
+#import "VSShapes.h"
 
 @implementation DarkStyleSheet
 
 #define kBlackColor     VSColorRGBA( 58/256.,  63/256.,  72/256., 1.0)
 #define kBlueColor      VSColorRGBA(121/256., 127/256., 128/256., 1.0)
 #define kDarkBlueColor  VSColorRGBA( 89/256., 102/256., 122/256., 0.5)
-#define kDoomIconImage  (NSImage *)([NSImage imageNamed:@"doom-icon"])
+#define kDoomIconImage  (VSImage *)([VSImage imageNamed:@"doom-icon"])
 
 -(VSStyle *)backgroundStyle{
 	return [VSLinearGradientFillStyle styleWithColor1:VSColorRGBA(0.05, 0.05, 0.05, 1.0)
@@ -34,7 +34,7 @@
 		 [VSImageStyle styleWithImage:kDoomIconImage
 						 defaultImage:nil
 						  contentMode:UIViewContentModeScaleAspectFit
-								 size:NSSizeToCGSize([kDoomIconImage size])
+								 size:[kDoomIconImage size]
 								 next:
 		  nil
 		  ]
@@ -95,7 +95,7 @@
 		[VSLinearGradientFillStyle styleWithColor1:VSColorRGBA(0.2, 0.2, 0.3, 1.0)
 											color2:VSColorRGBA(0.3, 0.3, 0.4, 1.0)
 											  next:
-		 [VSTextStyle styleWithFont:[NSFont fontWithName:@"Helvetica" size:14.] 
+		 [VSTextStyle styleWithFont:[VSFont fontWithName:@"Helvetica" size:14.] 
 							  color:VSColorRGBA(1.0,1.0,1.0,1.0)
 							   next:
 		  nil
