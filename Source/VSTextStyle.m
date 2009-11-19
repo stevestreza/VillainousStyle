@@ -79,11 +79,13 @@ verticalAlignment = _verticalAlignment, lineBreakMode = _lineBreakMode;
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 // private
 
+#if TARGET_OS_MAC
 -(NSDictionary *)textAttributes{
 	return [NSDictionary dictionaryWithObjectsAndKeys:
-//	 _font, NSFontAttributeName,
+	 _font, NSFontAttributeName,
 	 nil];
 }
+#endif
 
 - (CGRect)rectForText:(NSString*)text forSize:(CGSize)size withFont:(VSFont*)font {
 	CGRect rect = CGRectZero;

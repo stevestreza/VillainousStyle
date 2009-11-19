@@ -26,8 +26,15 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = 1E31228210AA81B500D72994 /* VillainousStyle.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = 1E0FDD5B101A79DF007AFA92 /* VillainousStyle.framework */;
+			remoteGlobalIDString = 1E0FDD5B101A79DF007AFA92;
 			remoteInfo = VillainousStyle;
+		};
+		1EFF7C3C10B50B2700354C65 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1E31228210AA81B500D72994 /* VillainousStyle.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1E3123CB10AD256C00D72994 /* libVillainousStyle.a */;
+			remoteInfo = libVillainousStyle.a;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -148,6 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				1E3122F310AA8B1A00D72994 /* VillainousStyle.framework */,
+				1EFF7C3D10B50B2700354C65 /* libVillainousStyle.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -245,6 +253,13 @@
 			fileType = wrapper.framework;
 			path = VillainousStyle.framework;
 			remoteRef = 1E3122F210AA8B1A00D72994 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1EFF7C3D10B50B2700354C65 /* libVillainousStyle.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libVillainousStyle.a;
+			remoteRef = 1EFF7C3C10B50B2700354C65 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
