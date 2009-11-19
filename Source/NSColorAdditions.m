@@ -1,5 +1,5 @@
 //
-//  NSColorAdditions.m
+//  VSColorAdditions.m
 //  VillainousStyle
 //
 //  Licensed under the Apache License, Version 2.0 (the "License");
@@ -100,15 +100,15 @@ void HSVtoRGB( float *r, float *g, float *b, float h, float s, float v )
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 
-@implementation NSColor (Additions)
+@implementation VSColor (Additions)
 
-+ (NSColor*)colorWithHue:(CGFloat)h saturation:(CGFloat)s value:(CGFloat)v alpha:(CGFloat)a {
++ (VSColor*)colorWithHue:(CGFloat)h saturation:(CGFloat)s value:(CGFloat)v alpha:(CGFloat)a {
 	CGFloat r, g, b;
 	HSVtoRGB(&r, &g, &b, h, s, v);
-	return [NSColor colorWithCalibratedRed:r green:g blue:b alpha:a];
+	return [VSColor colorWithCalibratedRed:r green:g blue:b alpha:a];
 }
 
-- (NSColor*)multiplyHue:(CGFloat)hd saturation:(CGFloat)sd value:(CGFloat)vd {
+- (VSColor*)multiplyHue:(CGFloat)hd saturation:(CGFloat)sd value:(CGFloat)vd {
 	const CGFloat* rgba = CGColorGetComponents(self.CGColor);
 	CGFloat r = rgba[0];
 	CGFloat g = rgba[1];
@@ -124,19 +124,19 @@ void HSVtoRGB( float *r, float *g, float *b, float h, float s, float v )
 	
 	HSVtoRGB(&r, &g, &b, h, s, v);
 	
-	return [NSColor colorWithCalibratedRed:r green:g blue:b alpha:a];
+	return [VSColor colorWithCalibratedRed:r green:g blue:b alpha:a];
 }
 
-- (NSColor*)copyWithAlpha:(CGFloat)newAlpha {
+- (VSColor*)copyWithAlpha:(CGFloat)newAlpha {
 	const CGFloat* rgba = CGColorGetComponents(self.CGColor);
 	CGFloat r = rgba[0];
 	CGFloat g = rgba[1];
 	CGFloat b = rgba[2];
 	
-	return [NSColor colorWithCalibratedRed:r green:g blue:b alpha:newAlpha];
+	return [VSColor colorWithCalibratedRed:r green:g blue:b alpha:newAlpha];
 }
 
-- (NSColor*)addHue:(CGFloat)hd saturation:(CGFloat)sd value:(CGFloat)vd {
+- (VSColor*)addHue:(CGFloat)hd saturation:(CGFloat)sd value:(CGFloat)vd {
 	const CGFloat* rgba = CGColorGetComponents(self.CGColor);
 	CGFloat r = rgba[0];
 	CGFloat g = rgba[1];
@@ -152,14 +152,14 @@ void HSVtoRGB( float *r, float *g, float *b, float h, float s, float v )
 	
 	HSVtoRGB(&r, &g, &b, h, s, v);
 	
-	return [[NSColor colorWithCalibratedRed:r green:g blue:b alpha:a] retain];
+	return [[VSColor colorWithCalibratedRed:r green:g blue:b alpha:a] retain];
 }
 
-- (NSColor*)highlight {
+- (VSColor*)highlight {
 	return [self multiplyHue:1 saturation:0.4 value:1.2];
 }
 
-- (NSColor*)shadow {
+- (VSColor*)shadow {
 	return [self multiplyHue:1 saturation:0.6 value:0.6];
 }
 

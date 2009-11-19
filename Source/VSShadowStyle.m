@@ -16,7 +16,6 @@
 //
 
 #import "VSShadowStyle.h"
-#import "NSColor+CGColor.h"
 
 @implementation VSShadowStyle
 
@@ -25,7 +24,7 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 // class public
 
-+ (VSShadowStyle*)styleWithColor:(NSColor*)color blur:(CGFloat)blur offset:(CGSize)offset
++ (VSShadowStyle*)styleWithColor:(VSColor*)color blur:(CGFloat)blur offset:(CGSize)offset
 							next:(VSStyle*)next {
 	VSShadowStyle* style = [[[self alloc] initWithNext:next] autorelease];
 	style.color = color;

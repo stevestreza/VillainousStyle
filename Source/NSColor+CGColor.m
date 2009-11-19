@@ -17,7 +17,12 @@
 
 #import "NSColor+CGColor.h"
 
+#ifdef TARGET_OS_MAC
 @implementation NSColor (CGColorRef)
+#else
+@implementation UIColor (CGColorRef)
+#endif
+
 @dynamic CGColor;
 
 - (CGColorRef)CGColor {

@@ -25,12 +25,12 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 // NSObject
 
-+ (VSBevelBorderStyle*)styleWithColor:(NSColor*)color width:(CGFloat)width next:(VSStyle*)next {
++ (VSBevelBorderStyle*)styleWithColor:(VSColor*)color width:(CGFloat)width next:(VSStyle*)next {
 	return [self styleWithHighlight:[color highlight] shadow:[color shadow] width:width
 						lightSource:kDefaultLightSource next:next];
 }
 
-+ (VSBevelBorderStyle*)styleWithHighlight:(NSColor*)highlight shadow:(NSColor*)shadow
++ (VSBevelBorderStyle*)styleWithHighlight:(VSColor*)highlight shadow:(VSColor*)shadow
 									width:(CGFloat)width lightSource:(NSInteger)lightSource next:(VSStyle*)next {
 	VSBevelBorderStyle* style = [[[VSBevelBorderStyle alloc] initWithNext:next] autorelease];
 	style.highlight = highlight;
@@ -69,12 +69,12 @@
 	CGContextRef ctx = UIGraphicsGetCurrentContext();
 	CGContextSetLineWidth(ctx, _width);
 	
-	NSColor* topColor = _lightSource >= 0 && _lightSource <= 180 ? _highlight : _shadow;
-	NSColor* leftColor = _lightSource >= 90 && _lightSource <= 270
+	VSColor* topColor = _lightSource >= 0 && _lightSource <= 180 ? _highlight : _shadow;
+	VSColor* leftColor = _lightSource >= 90 && _lightSource <= 270
 	? _highlight : _shadow;
-	NSColor* bottomColor = _lightSource >= 180 && _lightSource <= 360 || _lightSource == 0
+	VSColor* bottomColor = _lightSource >= 180 && _lightSource <= 360 || _lightSource == 0
 	? _highlight : _shadow;
-	NSColor* rightColor = (_lightSource >= 270 && _lightSource <= 360)
+	VSColor* rightColor = (_lightSource >= 270 && _lightSource <= 360)
 	|| (_lightSource >= 0 && _lightSource <= 90)
 	? _highlight : _shadow;
 	
@@ -87,7 +87,7 @@
 		rect.origin.y += _width;
 		rect.size.height -= _width;
 	} else {
-		[[NSColor clearColor] setStroke];
+		[[VSColor clearColor] setStroke];
 	}
 	CGContextStrokePath(ctx);
 	
@@ -97,7 +97,7 @@
 		
 		rect.size.width -= _width;
 	} else {
-		[[NSColor clearColor] setStroke];
+		[[VSColor clearColor] setStroke];
 	}
 	CGContextStrokePath(ctx);
 	
@@ -107,7 +107,7 @@
 		
 		rect.size.height -= _width;
 	} else {
-		[[NSColor clearColor] setStroke];
+		[[VSColor clearColor] setStroke];
 	}
 	CGContextStrokePath(ctx);
 	
@@ -118,7 +118,7 @@
 		rect.origin.x += _width;
 		rect.size.width -= _width;
 	} else {
-		[[NSColor clearColor] setStroke];
+		[[VSColor clearColor] setStroke];
 	}
 	CGContextStrokePath(ctx);
 	

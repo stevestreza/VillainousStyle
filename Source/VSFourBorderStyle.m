@@ -25,8 +25,8 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 // NSObject
 
-+ (VSFourBorderStyle*)styleWithTop:(NSColor*)top right:(NSColor*)right bottom:(NSColor*)bottom
-							  left:(NSColor*)left width:(CGFloat)width next:(VSStyle*)next {
++ (VSFourBorderStyle*)styleWithTop:(VSColor*)top right:(VSColor*)right bottom:(VSColor*)bottom
+							  left:(VSColor*)left width:(CGFloat)width next:(VSStyle*)next {
 	VSFourBorderStyle* style = [[[self alloc] initWithNext:next] autorelease];
 	style.top = top;
 	style.right = right;
@@ -73,7 +73,7 @@
 	if (_top) {
 		[_top setStroke];
 	} else {
-		[[NSColor clearColor] setStroke];
+		[[VSColor clearColor] setStroke];
 	}
 	CGContextStrokePath(ctx);
 	
@@ -81,7 +81,7 @@
 	if (_right) {
 		[_right setStroke];
 	} else {
-		[[NSColor clearColor] setStroke];
+		[[VSColor clearColor] setStroke];
 	}
 	CGContextStrokePath(ctx);
 	
@@ -89,7 +89,7 @@
 	if (_bottom) {
 		[_bottom setStroke];
 	} else {
-		[[NSColor clearColor] setStroke];
+		[[VSColor clearColor] setStroke];
 	}
 	CGContextStrokePath(ctx);
 	
@@ -97,7 +97,7 @@
 	if (_left) {
 		[_left setStroke];
 	} else {
-		[[NSColor clearColor] setStroke];
+		[[VSColor clearColor] setStroke];
 	}
 	CGContextStrokePath(ctx);
 	

@@ -20,14 +20,14 @@
 
 @interface VSSolidBorderStyle : VSStyle {
     //STUB add your instance variables here
-	NSColor *_color;
+	VSColor *_color;
 	CGFloat _width;
 }
 
 //STUB add your method declarations here
-@property (nonatomic, retain) NSColor *color;
+@property (nonatomic, retain) VSColor *color;
 @property (nonatomic, assign) CGFloat width;
 
-+ (VSSolidBorderStyle*)styleWithColor:(NSColor*)color width:(CGFloat)width next:(VSStyle*)next;
++ (VSSolidBorderStyle*)styleWithColor:(VSColor*)color width:(CGFloat)width next:(VSStyle*)next;
 
 @end

@@ -19,11 +19,11 @@
 #import "VSStyle.h"
 
 @interface VSSolidFillStyle : VSStyle {
-	NSColor* _color;
+	VSColor* _color;
 }
 
-@property(nonatomic,retain) NSColor* color;
+@property(nonatomic,retain) VSColor* color;
 
-+ (VSSolidFillStyle*)styleWithColor:(NSColor*)color next:(VSStyle*)next;
++ (VSSolidFillStyle*)styleWithColor:(VSColor*)color next:(VSStyle*)next;
 
 @end

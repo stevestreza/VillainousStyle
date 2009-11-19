@@ -17,7 +17,13 @@
 
 #import <Foundation/Foundation.h>
 
-
+#ifdef TARGET_OS_IPHONE
+#import <UIKit/UIKit.h>
+@interface UIColor (CGColorRef)
+#elif TARGET_OS_MAC
+#import <AppKit/AppKit.h>
 @interface NSColor (CGColorRef)
+#endif
+
 @property (readonly) CGColorRef CGColor;
 @end

@@ -39,8 +39,8 @@ typedef enum {
 
 @interface VSTextStyle : VSStyle {
 	NSFont* _font;
-	NSColor* _color;
-	NSColor* _shadowColor;
+	VSColor* _color;
+	VSColor* _shadowColor;
 	CGSize _shadowOffset;
 	CGFloat _minimumFontSize;
 	UITextAlignment _textAlignment;
@@ -49,8 +49,8 @@ typedef enum {
 }
 
 @property(nonatomic,retain) NSFont* font;
-@property(nonatomic,retain) NSColor* color;
-@property(nonatomic,retain) NSColor* shadowColor;
+@property(nonatomic,retain) VSColor* color;
+@property(nonatomic,retain) VSColor* shadowColor;
 @property(nonatomic) CGFloat minimumFontSize;
 @property(nonatomic) CGSize shadowOffset;
 @property(nonatomic) UITextAlignment textAlignment;
@@ -58,15 +58,15 @@ typedef enum {
 @property(nonatomic) UILineBreakMode lineBreakMode;
 
 + (VSTextStyle*)styleWithFont:(NSFont*)font next:(VSStyle*)next;
-+ (VSTextStyle*)styleWithColor:(NSColor*)color next:(VSStyle*)next;
-+ (VSTextStyle*)styleWithFont:(NSFont*)font color:(NSColor*)color next:(VSStyle*)next;
-+ (VSTextStyle*)styleWithFont:(NSFont*)font color:(NSColor*)color
++ (VSTextStyle*)styleWithColor:(VSColor*)color next:(VSStyle*)next;
++ (VSTextStyle*)styleWithFont:(NSFont*)font color:(VSColor*)color next:(VSStyle*)next;
++ (VSTextStyle*)styleWithFont:(NSFont*)font color:(VSColor*)color
                 textAlignment:(UITextAlignment)textAlignment next:(VSStyle*)next;
-+ (VSTextStyle*)styleWithFont:(NSFont*)font color:(NSColor*)color
-				  shadowColor:(NSColor*)shadowColor shadowOffset:(CGSize)shadowOffset
++ (VSTextStyle*)styleWithFont:(NSFont*)font color:(VSColor*)color
+				  shadowColor:(VSColor*)shadowColor shadowOffset:(CGSize)shadowOffset
 						 next:(VSStyle*)next;
-+ (VSTextStyle*)styleWithFont:(NSFont*)font color:(NSColor*)color
++ (VSTextStyle*)styleWithFont:(NSFont*)font color:(VSColor*)color
 			  minimumFontSize:(CGFloat)minimumFontSize
-				  shadowColor:(NSColor*)shadowColor shadowOffset:(CGSize)shadowOffset
+				  shadowColor:(VSColor*)shadowColor shadowOffset:(CGSize)shadowOffset
 						 next:(VSStyle*)next;
 @end

@@ -16,12 +16,39 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "NSColor+CGColor.h"
-#import "NSImage+CGImage.h"
 
+#if TARGET_OS_IPHONE
+#import <UIKit/UIKit.h>
+#else
+#import <AppKit/AppKit.h>
+#endif
+
+#if !TARGET_OS_IPHONE
 typedef struct UIEdgeInsets {
     CGFloat top, left, bottom, right;  // specify amount to inset (positive) for each of the edges. values can be negative to 'outset'
 } UIEdgeInsets;
+
+static inline UIEdgeInsets UIEdgeInsetsMake(CGFloat top, CGFloat left, CGFloat bottom, CGFloat right) {
+    UIEdgeInsets insets = {top, left, bottom, right};
+    return insets;
+}
+#endif
+
+#pragma mark Color/Image compatibility
+#if TARGET_OS_IPHONE
+#define VSColorRGB(__r, __g, __b)        ([UIColor colorWithRed:(__r) green:(__g) blue:(__b) alpha:1.0 ])
+#define VSColorRGBA(__r, __g, __b, __a) ([UIColor colorWithRed:(__r) green:(__g) blue:(__b) alpha:(__a)])
+@compatibility_alias VSColor UIColor;
+@compatibility_alias VSImage UIImage;
+#elif TARGET_OS_MAC
+#define VSColorRGB(__r, __g, __b)        ([NSColor colorWithCalibratedRed:(__r) green:(__g) blue:(__b) alpha:1.0 ])
+#define VSColorRGBA(__r, __g, __b, __a) ([NSColor colorWithCalibratedRed:(__r) green:(__g) blue:(__b) alpha:(__a)])
+@compatibility_alias VSColor NSColor;
+@compatibility_alias VSImage NSImage;
+#endif
+
+#define VSColorRGB256(__r, __g, __b)        (VSColorRGB((__r)/256.,(__g)/256.,(__b)/256.))
+#define VSColorRGBA256(__r, __g, __b, __a) (VSColorRGBA((__r)/256.,(__g)/256.,(__b)/256.,(__a)/256.))
 
 #define UIEdgeInsetsZero (UIEdgeInsets){ 0.0, 0.0, 0.0, 0.0 }
 
@@ -29,15 +56,7 @@ typedef struct UIEdgeInsets {
 
 #define UIGraphicsGetCurrentContext() ((CGContextRef)[[NSGraphicsContext currentContext] graphicsPort])
 
-static inline UIEdgeInsets UIEdgeInsetsMake(CGFloat top, CGFloat left, CGFloat bottom, CGFloat right) {
-    UIEdgeInsets insets = {top, left, bottom, right};
-    return insets;
-}
-
-#define NSColorRGB(__r, __g, __b)        ([NSColor colorWithCalibratedRed:(__r) green:(__g) blue:(__b) alpha:1.0 ])
-#define NSColorRGBA(__r, __g, __b, __a) ([NSColor colorWithCalibratedRed:(__r) green:(__g) blue:(__b) alpha:(__a)])
-
-static inline CGRect VSRectInset(CGRect rect, UIEdgeInsets insets) {
+inline CGRect VSRectInset(CGRect rect, UIEdgeInsets insets) {
 	return CGRectMake(rect.origin.x + insets.left, rect.origin.y + insets.top,
 					  rect.size.width - (insets.left + insets.right),
 					  rect.size.height - (insets.top + insets.bottom));

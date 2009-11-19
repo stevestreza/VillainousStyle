@@ -16,27 +16,27 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "VSGlobal.h"
 
+@interface VSColor (Additions)
 
-@interface NSColor (Additions)
++ (VSColor*)colorWithHue:(CGFloat)h saturation:(CGFloat)s value:(CGFloat)v alpha:(CGFloat)a;
 
-+ (NSColor*)colorWithHue:(CGFloat)h saturation:(CGFloat)s value:(CGFloat)v alpha:(CGFloat)a;
+- (VSColor*)multiplyHue:(CGFloat)hd saturation:(CGFloat)sd value:(CGFloat)vd;
 
-- (NSColor*)multiplyHue:(CGFloat)hd saturation:(CGFloat)sd value:(CGFloat)vd;
+- (VSColor*)addHue:(CGFloat)hd saturation:(CGFloat)sd value:(CGFloat)vd;
 
-- (NSColor*)addHue:(CGFloat)hd saturation:(CGFloat)sd value:(CGFloat)vd;
-
-- (NSColor*)copyWithAlpha:(CGFloat)newAlpha;
+- (VSColor*)copyWithAlpha:(CGFloat)newAlpha;
 
 /**
  * Uses multiplyHue to create a lighter version of the color.
  */
-- (NSColor*)highlight;
+- (VSColor*)highlight;
 
 /**
  * Uses multiplyHue to create a darker version of the color.
  */
-- (NSColor*)shadow;
+- (VSColor*)shadow;
 
 - (CGFloat)hue;
 

@@ -25,7 +25,7 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 // class public
 
-+ (VSReflectiveFillStyle*)styleWithColor:(NSColor*)color next:(VSStyle*)next {
++ (VSReflectiveFillStyle*)styleWithColor:(VSColor*)color next:(VSStyle*)next {
 	VSReflectiveFillStyle* style = [[[self alloc] initWithNext:next] autorelease];
 	style.color = color;
 	return style;
@@ -62,7 +62,7 @@
 	
 	// XXjoe These numbers are totally biased towards the colors I tested with.  I need to figure out
 	// a formula that works well for all colors
-	NSColor* lighter = nil, *darker = nil;
+	VSColor* lighter = nil, *darker = nil;
 	if (_color.value < 0.5) {
 		lighter = HSVCOLOR(_color.hue, ZEROLIMIT(_color.saturation-0.5), ZEROLIMIT(_color.value+0.25));
 		darker = HSVCOLOR(_color.hue, ZEROLIMIT(_color.saturation-0.1), ZEROLIMIT(_color.value+0.1));
@@ -73,9 +73,9 @@
 		lighter = HSVCOLOR(_color.hue, _color.saturation*0.4, _color.value*1.2);
 		darker = HSVCOLOR(_color.hue, _color.saturation*0.9, _color.value+0.05);
 	}
-	//  //NSColor* lighter = [_color multiplyHue:1 saturation:0.5 value:1.35];
-	//  //NSColor* darker = [_color multiplyHue:1 saturation:0.88 value:1.05];
-	NSColor* colors[] = {darker, lighter};
+	//  //VSColor* lighter = [_color multiplyHue:1 saturation:0.5 value:1.35];
+	//  //VSColor* darker = [_color multiplyHue:1 saturation:0.88 value:1.05];
+	VSColor* colors[] = {darker, lighter};
 	
 	CGGradientRef gradient = [self newGradientWithColors:colors count:2];
 	CGContextDrawLinearGradient(ctx, gradient, CGPointMake(rect.origin.x, rect.origin.y+(rect.size.height * 0.5)),

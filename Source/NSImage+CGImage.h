@@ -15,12 +15,13 @@
 //  limitations under the License.
 //
 
+#if !TARGET_OS_IPHONE
 #import <Foundation/Foundation.h>
 
-
-@interface NSImage (CGImage)
+@interface NSImage (CGColorRef)
 
 //STUB add your category method declarations here
 @property (readonly) CGImageRef CGImage;
 
 @end
+#endif

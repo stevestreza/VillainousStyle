@@ -25,7 +25,7 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 // class public
 
-+ (VSSolidFillStyle*)styleWithColor:(NSColor*)color next:(VSStyle*)next {
++ (VSSolidFillStyle*)styleWithColor:(VSColor*)color next:(VSStyle*)next {
 	VSSolidFillStyle* style = [[[self alloc] initWithNext:next] autorelease];
 	style.color = color;
 	return style;

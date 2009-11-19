@@ -19,13 +19,13 @@
 #import "VSStyle.h"
 
 @interface VSLinearGradientFillStyle : VSStyle {
-	NSColor* _color1;
-	NSColor* _color2;
+	VSColor* _color1;
+	VSColor* _color2;
 }
 
-@property(nonatomic,retain) NSColor* color1;
-@property(nonatomic,retain) NSColor* color2;
+@property(nonatomic,retain) VSColor* color1;
+@property(nonatomic,retain) VSColor* color2;
 
-+ (VSLinearGradientFillStyle*)styleWithColor1:(NSColor*)color1 color2:(NSColor*)color2
++ (VSLinearGradientFillStyle*)styleWithColor1:(VSColor*)color1 color2:(VSColor*)color2
 										 next:(VSStyle*)next;
 @end

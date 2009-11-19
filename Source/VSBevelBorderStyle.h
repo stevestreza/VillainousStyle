@@ -19,20 +19,20 @@
 #import "VSStyle.h"
 
 @interface VSBevelBorderStyle : VSStyle {
-	NSColor* _highlight;
-	NSColor* _shadow;
+	VSColor* _highlight;
+	VSColor* _shadow;
 	CGFloat _width;
 	NSInteger _lightSource;
 }
 
-@property(nonatomic,retain) NSColor* highlight;
-@property(nonatomic,retain) NSColor* shadow;
+@property(nonatomic,retain) VSColor* highlight;
+@property(nonatomic,retain) VSColor* shadow;
 @property(nonatomic) CGFloat width;
 @property(nonatomic) NSInteger lightSource;
 
-+ (VSBevelBorderStyle*)styleWithColor:(NSColor*)color width:(CGFloat)width next:(VSStyle*)next;
++ (VSBevelBorderStyle*)styleWithColor:(VSColor*)color width:(CGFloat)width next:(VSStyle*)next;
 
-+ (VSBevelBorderStyle*)styleWithHighlight:(NSColor*)highlight shadow:(NSColor*)shadow
++ (VSBevelBorderStyle*)styleWithHighlight:(VSColor*)highlight shadow:(VSColor*)shadow
 									width:(CGFloat)width lightSource:(NSInteger)lightSource next:(VSStyle*)next;
 
 @end

@@ -16,6 +16,13 @@
 //
 
 #import <Foundation/Foundation.h>
+//#import <CoreGraphics/CoreGraphics.h>
+
+#if TARGET_OS_IPHONE
+#import <UIKit/UIKit.h>
+#else
+#import <AppKit/AppKit.h>
+#endif
 
 @class VSShape, VSStyleContext;
 @interface VSStyleContext : NSObject {
@@ -24,7 +31,11 @@
 	CGRect _frame;
 	CGRect _contentFrame;
 	VSShape* _shape;
+#if TARGET_OS_IPHONE
+	UIFont *_font;
+#else
 	NSFont* _font;
+#endif
 	BOOL _didDrawContent;
 }
 
@@ -33,7 +44,11 @@
 @property(nonatomic) CGRect frame;
 @property(nonatomic) CGRect contentFrame;
 @property(nonatomic,retain) VSShape* shape;
+#if TARGET_OS_IPHONE
+@property(nonatomic,retain) UIFont* font;
+#else
 @property(nonatomic,retain) NSFont* font;
+#endif
 @property(nonatomic) BOOL didDrawContent;
 
 @end

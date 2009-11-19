@@ -91,11 +91,11 @@
 	return nil;
 }
 
-- (CGGradientRef)newGradientWithColors:(NSColor**)colors count:(int)count {
+- (CGGradientRef)newGradientWithColors:(VSColor**)colors count:(int)count {
 	CGFloat* components = malloc(sizeof(CGFloat)*4*count);
 	int i = 0;
 	for (i = 0; i < count; ++i) {
-		NSColor* color = colors[count-i-1];
+		VSColor* color = colors[count-i-1];
 		size_t n = CGColorGetNumberOfComponents(color.CGColor);
 		const CGFloat* rgba = CGColorGetComponents(color.CGColor);
 		if (n == 2) {

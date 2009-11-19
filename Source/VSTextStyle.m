@@ -7,7 +7,7 @@
 //
 
 #import "VSTextStyle.h"
-
+#import "NSColor+CGColor.h"
 
 @implementation VSTextStyle
 
@@ -24,20 +24,20 @@ verticalAlignment = _verticalAlignment, lineBreakMode = _lineBreakMode;
 	return style;
 }
 
-+ (VSTextStyle*)styleWithColor:(NSColor*)color next:(VSStyle*)next {
++ (VSTextStyle*)styleWithColor:(VSColor*)color next:(VSStyle*)next {
 	VSTextStyle* style = [[[self alloc] initWithNext:next] autorelease];
 	style.color = color;
 	return style;
 }
 
-+ (VSTextStyle*)styleWithFont:(NSFont*)font color:(NSColor*)color next:(VSStyle*)next {
++ (VSTextStyle*)styleWithFont:(NSFont*)font color:(VSColor*)color next:(VSStyle*)next {
 	VSTextStyle* style = [[[self alloc] initWithNext:next] autorelease];
 	style.font = font;
 	style.color = color;
 	return style;
 }
 
-+ (VSTextStyle*)styleWithFont:(NSFont*)font color:(NSColor*)color
++ (VSTextStyle*)styleWithFont:(NSFont*)font color:(VSColor*)color
                 textAlignment:(UITextAlignment)textAlignment next:(VSStyle*)next {
 	VSTextStyle* style = [[[self alloc] initWithNext:next] autorelease];
 	style.font = font;
@@ -46,8 +46,8 @@ verticalAlignment = _verticalAlignment, lineBreakMode = _lineBreakMode;
 	return style;
 }
 
-+ (VSTextStyle*)styleWithFont:(NSFont*)font color:(NSColor*)color
-				  shadowColor:(NSColor*)shadowColor shadowOffset:(CGSize)shadowOffset
++ (VSTextStyle*)styleWithFont:(NSFont*)font color:(VSColor*)color
+				  shadowColor:(VSColor*)shadowColor shadowOffset:(CGSize)shadowOffset
 						 next:(VSStyle*)next {
 	VSTextStyle* style = [[[self alloc] initWithNext:next] autorelease];
 	style.font = font;
@@ -57,9 +57,9 @@ verticalAlignment = _verticalAlignment, lineBreakMode = _lineBreakMode;
 	return style;
 }
 
-+ (VSTextStyle*)styleWithFont:(NSFont*)font color:(NSColor*)color
++ (VSTextStyle*)styleWithFont:(NSFont*)font color:(VSColor*)color
 			  minimumFontSize:(CGFloat)minimumFontSize
-				  shadowColor:(NSColor*)shadowColor shadowOffset:(CGSize)shadowOffset
+				  shadowColor:(VSColor*)shadowColor shadowOffset:(CGSize)shadowOffset
 						 next:(VSStyle*)next {
 	VSTextStyle* style = [[[self alloc] initWithNext:next] autorelease];
 	style.font = font;

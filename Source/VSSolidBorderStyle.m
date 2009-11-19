@@ -26,7 +26,7 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 // NSObject
 
-+ (VSSolidBorderStyle*)styleWithColor:(NSColor*)color width:(CGFloat)width next:(VSStyle*)next {
++ (VSSolidBorderStyle*)styleWithColor:(VSColor*)color width:(CGFloat)width next:(VSStyle*)next {
 	VSSolidBorderStyle* style = [[[self alloc] initWithNext:next] autorelease];
 	style.color = color;
 	style.width = width;

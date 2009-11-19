@@ -17,17 +17,18 @@
 
 #import <Foundation/Foundation.h>
 #import "VSStyle.h"
+#import "NSColor+CGColor.h"
 
 @interface VSShadowStyle : VSStyle {
-	NSColor* _color;
+	VSColor* _color;
 	CGFloat _blur;
 	CGSize _offset;
 }
 
-@property(nonatomic,retain) NSColor* color;
+@property(nonatomic,retain) VSColor* color;
 @property(nonatomic) CGFloat blur;
 @property(nonatomic) CGSize offset;
 
-+ (VSShadowStyle*)styleWithColor:(NSColor*)color blur:(CGFloat)blur offset:(CGSize)offset
++ (VSShadowStyle*)styleWithColor:(VSColor*)color blur:(CGFloat)blur offset:(CGSize)offset
 							next:(VSStyle*)next;
 @end

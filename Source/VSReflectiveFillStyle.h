@@ -19,11 +19,11 @@
 #import "VSStyle.h"
 
 @interface VSReflectiveFillStyle : VSStyle {
-	NSColor* _color;
+	VSColor* _color;
 }
 
-@property(nonatomic,retain) NSColor* color;
+@property(nonatomic,retain) VSColor* color;
 
-+ (VSReflectiveFillStyle*)styleWithColor:(NSColor*)color next:(VSStyle*)next;
++ (VSReflectiveFillStyle*)styleWithColor:(VSColor*)color next:(VSStyle*)next;
 
 @end

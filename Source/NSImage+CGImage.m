@@ -15,6 +15,7 @@
 //  limitations under the License.
 //
 
+#if !TARGET_OS_IPHONE
 #import "NSImage+CGImage.h"
 
 
@@ -43,3 +44,4 @@
 }
 
 @end
+#endif
