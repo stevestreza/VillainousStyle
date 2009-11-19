@@ -79,7 +79,7 @@ verticalAlignment = _verticalAlignment, lineBreakMode = _lineBreakMode;
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 // private
 
-#if TARGET_OS_MAC
+#if !TARGET_OS_IPHONE
 -(NSDictionary *)textAttributes{
 	return [NSDictionary dictionaryWithObjectsAndKeys:
 	 _font, NSFontAttributeName,
