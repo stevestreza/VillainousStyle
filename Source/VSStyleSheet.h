@@ -6,7 +6,7 @@
 //  Copyright 2009 __MyCompanyName__. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "VSGlobal.h"
 
 extern const NSString *VSStyleSheetChangedNotification;
 

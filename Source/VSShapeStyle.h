@@ -15,8 +15,8 @@
 //  limitations under the License.
 //
 
-#import <Foundation/Foundation.h>
-#import "VSstyle.h"
+#import "VSGlobal.h"
+#import "VSStyle.h"
 #import "VSShape.h"
 
 @interface VSShapeStyle : VSStyle {

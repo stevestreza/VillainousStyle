@@ -17,10 +17,10 @@
 
 #import "NSColor+CGColor.h"
 
-#ifdef TARGET_OS_MAC
-@implementation NSColor (CGColorRef)
-#else
+#ifdef TARGET_OS_IPHONE
 @implementation UIColor (CGColorRef)
+#else
+@implementation NSColor (CGColorRef)
 #endif
 
 @dynamic CGColor;
@@ -44,7 +44,11 @@
 		free(components);
 	} @catch (NSException *e) {
 		// We were probably passed a pattern, which isn't going to work. Return clear color constant.
+#if TARGET_OS_IPHONE
+		return [[UIColor clearColor] CGColor];
+#else
 		return CGColorGetConstantColor(kCGColorClear);
+#endif
 	}
 	
 	return (CGColorRef)[(id)color autorelease];

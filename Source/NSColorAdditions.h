@@ -15,7 +15,7 @@
 //  limitations under the License.
 //
 
-#import <Foundation/Foundation.h>
+#import "VSGlobal.h"
 #import "VSGlobal.h"
 
 @interface VSColor (Additions)

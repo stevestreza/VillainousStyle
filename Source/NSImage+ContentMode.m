@@ -8,7 +8,7 @@
 
 #import "NSImage+ContentMode.h"
 
-
+#if !TARGET_OS_IPHONE
 @implementation NSImage (ContentMode)
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
@@ -151,3 +151,5 @@
 }
 
 @end
+
+#endif

@@ -58,13 +58,11 @@ static inline UIEdgeInsets UIEdgeInsetsMake(CGFloat top, CGFloat left, CGFloat b
 
 #define VS_RELEASE_SAFELY(__POINTER) { [__POINTER release]; __POINTER = nil; }
 
-inline CGRect VSRectInset(CGRect rect, UIEdgeInsets insets) {
-	return CGRectMake(rect.origin.x + insets.left, rect.origin.y + insets.top,
-					  rect.size.width - (insets.left + insets.right),
-					  rect.size.height - (insets.top + insets.bottom));
+#define VSRectInset(rect, insets) \
+CGRectMake(rect.origin.x + insets.left, rect.origin.y + insets.top, \
+rect.size.width - (insets.left + insets.right), \
+rect.size.height - (insets.top + insets.bottom))
 	
-}
-
 #define VS_ROUNDED -1
 #define VSRadius(_RADIUS) (_RADIUS == VS_ROUNDED ? round(fh/2) : _RADIUS)
 

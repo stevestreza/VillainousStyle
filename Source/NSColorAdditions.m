@@ -105,7 +105,7 @@ void HSVtoRGB( float *r, float *g, float *b, float h, float s, float v )
 + (VSColor*)colorWithHue:(CGFloat)h saturation:(CGFloat)s value:(CGFloat)v alpha:(CGFloat)a {
 	CGFloat r, g, b;
 	HSVtoRGB(&r, &g, &b, h, s, v);
-	return [VSColor colorWithCalibratedRed:r green:g blue:b alpha:a];
+	return VSColorRGBA(r,g,b,a);
 }
 
 - (VSColor*)multiplyHue:(CGFloat)hd saturation:(CGFloat)sd value:(CGFloat)vd {
@@ -124,7 +124,7 @@ void HSVtoRGB( float *r, float *g, float *b, float h, float s, float v )
 	
 	HSVtoRGB(&r, &g, &b, h, s, v);
 	
-	return [VSColor colorWithCalibratedRed:r green:g blue:b alpha:a];
+	return VSColorRGBA(r,g,b,a);
 }
 
 - (VSColor*)copyWithAlpha:(CGFloat)newAlpha {
@@ -133,7 +133,7 @@ void HSVtoRGB( float *r, float *g, float *b, float h, float s, float v )
 	CGFloat g = rgba[1];
 	CGFloat b = rgba[2];
 	
-	return [VSColor colorWithCalibratedRed:r green:g blue:b alpha:newAlpha];
+	return VSColorRGBA(r,g,b,newAlpha);
 }
 
 - (VSColor*)addHue:(CGFloat)hd saturation:(CGFloat)sd value:(CGFloat)vd {
@@ -152,7 +152,7 @@ void HSVtoRGB( float *r, float *g, float *b, float h, float s, float v )
 	
 	HSVtoRGB(&r, &g, &b, h, s, v);
 	
-	return [[VSColor colorWithCalibratedRed:r green:g blue:b alpha:a] retain];
+	return [VSColorRGBA(r,g,b,a) retain];
 }
 
 - (VSColor*)highlight {

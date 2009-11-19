@@ -18,14 +18,18 @@
 #import "NSView+VSStyle.h"
 #import "VSStyleContext.h"
 
+#if TARGET_OS_IPHONE
+@implementation UIView (VSStyleAdditions)
+#else
 @implementation NSView (VSStyleAdditions)
+#endif
 
 //STUB add your category method implementations here
--(void)drawStyle:(VSStyle *)style inRect:(NSRect)rect{
+-(void)drawStyle:(VSStyle *)style inRect:(CGRect)rect{
 	if (style) {
 		VSStyleContext* context = [[[VSStyleContext alloc] init] autorelease];
 		context.delegate = self;
-		context.frame = NSRectToCGRect(rect);
+		context.frame = rect;
 		context.contentFrame = context.frame;
 		
 		[style draw:context];

@@ -15,10 +15,9 @@
 //  limitations under the License.
 //
 
-#if !TARGET_OS_IPHONE
 #import "NSImage+CGImage.h"
 
-
+#if !TARGET_OS_IPHONE
 @implementation NSImage (CGImage)
 
 //STUB add your category method implementations here

@@ -66,6 +66,8 @@ const NSString *VSStyleSheetChangedNotification = @"VSStyleSheetChangedNotificat
 // public
 
 - (VSStyle*)styleWithSelector:(NSString*)selector {
+	if(!selector) return nil;
+	
 	VSStyle* style = [_styles objectForKey:selector];
 	if (!style) {
 		SEL sel = NSSelectorFromString(selector);

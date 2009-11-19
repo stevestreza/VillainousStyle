@@ -6,7 +6,7 @@
 //  Copyright 2009 __MyCompanyName__. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "VSGlobal.h"
 #import "VSGlobal.h"
 
 #if !TARGET_OS_IPHONE

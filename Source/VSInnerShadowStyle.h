@@ -15,7 +15,7 @@
 //  limitations under the License.
 //
 
-#import <Foundation/Foundation.h>
+#import "VSGlobal.h"
 #import "VSShadowStyle.h"
 
 @interface VSInnerShadowStyle : VSShadowStyle {

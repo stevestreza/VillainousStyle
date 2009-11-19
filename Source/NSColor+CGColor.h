@@ -15,7 +15,7 @@
 //  limitations under the License.
 //
 
-#import <Foundation/Foundation.h>
+#import "VSGlobal.h"
 
 #ifdef TARGET_OS_IPHONE
 #import <UIKit/UIKit.h>

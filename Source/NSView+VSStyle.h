@@ -15,11 +15,16 @@
 //  limitations under the License.
 //
 
-#import <Foundation/Foundation.h>
+#import "VSGlobal.h"
 
 @class VSStyle;
-@interface NSView (VSStyleAdditions)
 
--(void)drawStyle:(VSStyle *)style inRect:(NSRect)rect;
+#if TARGET_OS_IPHONE
+@interface UIView (VSStyleAdditions)
+#else
+@interface NSView (VSStyleAdditions)
+#endif
+
+-(void)drawStyle:(VSStyle *)style inRect:(CGRect)rect;
 
 @end
