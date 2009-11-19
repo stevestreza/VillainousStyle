@@ -23,7 +23,7 @@ contentMode = _contentMode, size = _size;
 	return style;
 }
 
-+ (VSImageStyle*)styleWithImageURL:(NSString*)imageURL defaultImage:(NSImage*)defaultImage
++ (VSImageStyle*)styleWithImageURL:(NSString*)imageURL defaultImage:(VSImage*)defaultImage
 							  next:(VSStyle*)next {
 	VSImageStyle* style = [[[self alloc] initWithNext:next] autorelease];
 	style.imageURL = imageURL;
@@ -31,7 +31,7 @@ contentMode = _contentMode, size = _size;
 	return style;
 }
 
-+ (VSImageStyle*)styleWithImageURL:(NSString*)imageURL defaultImage:(NSImage*)defaultImage
++ (VSImageStyle*)styleWithImageURL:(NSString*)imageURL defaultImage:(VSImage*)defaultImage
 					   contentMode:(UIViewContentMode)contentMode size:(CGSize)size next:(VSStyle*)next {
 	VSImageStyle* style = [[[self alloc] initWithNext:next] autorelease];
 	style.imageURL = imageURL;
@@ -41,13 +41,13 @@ contentMode = _contentMode, size = _size;
 	return style;
 }
 
-+ (VSImageStyle*)styleWithImage:(NSImage*)image next:(VSStyle*)next {
++ (VSImageStyle*)styleWithImage:(VSImage*)image next:(VSStyle*)next {
 	VSImageStyle* style = [[[self alloc] initWithNext:next] autorelease];
 	style.image = image;
 	return style;
 }
 
-+ (VSImageStyle*)styleWithImage:(NSImage*)image defaultImage:(NSImage*)defaultImage
++ (VSImageStyle*)styleWithImage:(VSImage*)image defaultImage:(VSImage*)defaultImage
 						   next:(VSStyle*)next {
 	VSImageStyle* style = [[[self alloc] initWithNext:next] autorelease];
 	style.image = image;
@@ -55,7 +55,7 @@ contentMode = _contentMode, size = _size;
 	return style;
 }
 
-+ (VSImageStyle*)styleWithImage:(NSImage*)image defaultImage:(NSImage*)defaultImage
++ (VSImageStyle*)styleWithImage:(VSImage*)image defaultImage:(VSImage*)defaultImage
 					contentMode:(UIViewContentMode)contentMode size:(CGSize)size next:(VSStyle*)next {
 	VSImageStyle* style = [[[self alloc] initWithNext:next] autorelease];
 	style.image = image;
@@ -68,8 +68,8 @@ contentMode = _contentMode, size = _size;
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 // private
 
-- (NSImage*)imageForContext:(VSStyleContext*)context {
-	NSImage* image = self.image;
+- (VSImage*)imageForContext:(VSStyleContext*)context {
+	VSImage* image = self.image;
 	if (!image && [context.delegate respondsToSelector:@selector(imageForLayerWithStyle:)]) {
 		image = [context.delegate imageForLayerWithStyle:self];
 	}
@@ -101,7 +101,7 @@ contentMode = _contentMode, size = _size;
 // VSStyle
 
 - (void)draw:(VSStyleContext*)context {
-	NSImage* image = [self imageForContext:context];
+	VSImage* image = [self imageForContext:context];
 	if (image) {
 		[image drawInRect:context.contentFrame contentMode:_contentMode];
 	}
@@ -113,7 +113,7 @@ contentMode = _contentMode, size = _size;
 		size.width += _size.width;
 		size.height += _size.height;
 	} else if (_contentMode == UIViewContentModeScaleToFill) {
-		NSImage* image = [self imageForContext:context];
+		VSImage* image = [self imageForContext:context];
 		if (image) {
 			size.width += image.size.width;
 			size.height += image.size.height;
@@ -130,10 +130,10 @@ contentMode = _contentMode, size = _size;
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 // public
 
-- (NSImage*)image {
+- (VSImage*)image {
 	if (!_image && _imageURL) {
 //		_image = [[[VSURLCache sharedCache] imageForURL:_imageURL] retain];
-		_image = [[[NSImage alloc] initWithContentsOfURL:_imageURL] retain];
+		_image = [[[VSImage alloc] initWithContentsOfURL:_imageURL] retain];
 	}
 	return _image;
 }

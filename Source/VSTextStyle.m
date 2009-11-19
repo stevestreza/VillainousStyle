@@ -9,6 +9,12 @@
 #import "VSTextStyle.h"
 #import "NSColor+CGColor.h"
 
+#if TARGET_OS_IPHONE
+#define VSStringSize() [text sizeWithFont:font constrainedToSize:size];
+#else
+#define VSStringSize() NSSizeToCGSize( [text sizeWithAttributes:[self textAttributes]] )
+#endif
+
 @implementation VSTextStyle
 
 @synthesize font = _font, color = _color, shadowColor = _shadowColor, shadowOffset = _shadowOffset,
@@ -18,7 +24,7 @@ verticalAlignment = _verticalAlignment, lineBreakMode = _lineBreakMode;
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 // class public
 
-+ (VSTextStyle*)styleWithFont:(NSFont*)font next:(VSStyle*)next {
++ (VSTextStyle*)styleWithFont:(VSFont*)font next:(VSStyle*)next {
 	VSTextStyle* style = [[[self alloc] initWithNext:next] autorelease];
 	style.font = font;
 	return style;
@@ -30,14 +36,14 @@ verticalAlignment = _verticalAlignment, lineBreakMode = _lineBreakMode;
 	return style;
 }
 
-+ (VSTextStyle*)styleWithFont:(NSFont*)font color:(VSColor*)color next:(VSStyle*)next {
++ (VSTextStyle*)styleWithFont:(VSFont*)font color:(VSColor*)color next:(VSStyle*)next {
 	VSTextStyle* style = [[[self alloc] initWithNext:next] autorelease];
 	style.font = font;
 	style.color = color;
 	return style;
 }
 
-+ (VSTextStyle*)styleWithFont:(NSFont*)font color:(VSColor*)color
++ (VSTextStyle*)styleWithFont:(VSFont*)font color:(VSColor*)color
                 textAlignment:(UITextAlignment)textAlignment next:(VSStyle*)next {
 	VSTextStyle* style = [[[self alloc] initWithNext:next] autorelease];
 	style.font = font;
@@ -46,7 +52,7 @@ verticalAlignment = _verticalAlignment, lineBreakMode = _lineBreakMode;
 	return style;
 }
 
-+ (VSTextStyle*)styleWithFont:(NSFont*)font color:(VSColor*)color
++ (VSTextStyle*)styleWithFont:(VSFont*)font color:(VSColor*)color
 				  shadowColor:(VSColor*)shadowColor shadowOffset:(CGSize)shadowOffset
 						 next:(VSStyle*)next {
 	VSTextStyle* style = [[[self alloc] initWithNext:next] autorelease];
@@ -57,7 +63,7 @@ verticalAlignment = _verticalAlignment, lineBreakMode = _lineBreakMode;
 	return style;
 }
 
-+ (VSTextStyle*)styleWithFont:(NSFont*)font color:(VSColor*)color
++ (VSTextStyle*)styleWithFont:(VSFont*)font color:(VSColor*)color
 			  minimumFontSize:(CGFloat)minimumFontSize
 				  shadowColor:(VSColor*)shadowColor shadowOffset:(CGSize)shadowOffset
 						 next:(VSStyle*)next {
@@ -75,17 +81,17 @@ verticalAlignment = _verticalAlignment, lineBreakMode = _lineBreakMode;
 
 -(NSDictionary *)textAttributes{
 	return [NSDictionary dictionaryWithObjectsAndKeys:
-	 _font, NSFontAttributeName,
+//	 _font, NSFontAttributeName,
 	 nil];
 }
 
-- (CGRect)rectForText:(NSString*)text forSize:(CGSize)size withFont:(NSFont*)font {
+- (CGRect)rectForText:(NSString*)text forSize:(CGSize)size withFont:(VSFont*)font {
 	CGRect rect = CGRectZero;
 	if (_textAlignment == UITextAlignmentLeft
 		&& _verticalAlignment == UIControlContentVerticalAlignmentTop) {
 		rect.size = size;
 	} else {
-		CGSize textSize = NSSizeToCGSize( [text sizeWithAttributes:[self textAttributes]] );
+		CGSize textSize = VSStringSize();
 		
 		if (size.width < textSize.width) {
 			size.width = textSize.width;
@@ -112,7 +118,7 @@ verticalAlignment = _verticalAlignment, lineBreakMode = _lineBreakMode;
 	CGContextRef ctx = UIGraphicsGetCurrentContext();
 	CGContextSaveGState(ctx);
 	
-	NSFont* font = _font ? _font : context.font;
+	VSFont* font = _font ? _font : context.font;
 	
 	if (_shadowColor) {
 		CGSize offset = CGSizeMake(_shadowOffset.width, -_shadowOffset.height);
@@ -126,15 +132,22 @@ verticalAlignment = _verticalAlignment, lineBreakMode = _lineBreakMode;
 	CGRect rect = context.contentFrame;
 	CGRect titleRect = [self rectForText:text forSize:rect.size withFont:font];
 //	NSRect textRect = NSMakeRect(titleRect.origin.x+rect.origin.x, titleRect.origin.y+rect.origin.y,rect.size.width,rect.size.height);
+	CGSize size = rect.size;
+	titleRect.size = VSStringSize();
 	
+#if TARGET_OS_IPHONE
+	[text drawInRect:titleRect
+			forWidth:rect.size.width withFont:font
+		 minFontSize:_minimumFontSize ? _minimumFontSize : font.pointSize
+	  actualFontSize:nil lineBreakMode:_lineBreakMode
+  baselineAdjustment:UIBaselineAdjustmentAlignCenters];
+#else
 	NSDictionary *attributes = [self textAttributes];
-	titleRect.size = NSSizeToCGSize([text sizeWithAttributes: attributes ]);
+
 	[text drawInRect:NSRectFromCGRect(titleRect)
-	  withAttributes:attributes];
-	//							  forWidth:rect.size.width withFont:font
-//						   minFontSize:_minimumFontSize ? _minimumFontSize : font.pointSize
-//						actualFontSize:nil lineBreakMode:_lineBreakMode
-//					baselineAdjustment:UIBaselineAdjustmentAlignCenters];
+	  withAttributes:attributes];	
+#endif
+	
 	context.contentFrame = titleRect;
 	
 	CGContextRestoreGState(ctx);
@@ -188,11 +201,9 @@ verticalAlignment = _verticalAlignment, lineBreakMode = _lineBreakMode;
 - (CGSize)addToSize:(CGSize)size context:(VSStyleContext*)context {
 	if ([context.delegate respondsToSelector:@selector(textForLayerWithStyle:)]) {
 		NSString* text = [context.delegate textForLayerWithStyle:self];
-		NSFont* font = _font ? _font : context.font;
+		VSFont* font = _font ? _font : context.font;
 		
-		CGSize textSize = NSSizeToCGSize([text sizeWithAttributes:[self textAttributes]]);
-		
-		
+		CGSize textSize = VSStringSize();				
 		
 		CGFloat maxWidth = context.contentFrame.size.width;
 		if (maxWidth && textSize.width > maxWidth) {

@@ -20,11 +20,11 @@
 #import "NSImage+CGImage.h"
 
 @interface VSMaskStyle : VSStyle {
-	NSImage* _mask;
+	VSImage* _mask;
 }
 
-@property(nonatomic,retain) NSImage* mask;
+@property(nonatomic,retain) VSImage* mask;
 
-+ (VSMaskStyle*)styleWithMask:(NSImage*)mask next:(VSStyle*)next;
++ (VSMaskStyle*)styleWithMask:(VSImage*)mask next:(VSStyle*)next;
 
 @end

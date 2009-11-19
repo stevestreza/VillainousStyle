@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "VSGlobal.h"
 
+#if !TARGET_OS_IPHONE
 typedef enum {
     UIViewContentModeScaleToFill,
     UIViewContentModeScaleAspectFit,      // contents scaled to fit with fixed aspect. remainder is transparent
@@ -40,3 +41,5 @@ typedef enum {
 
 
 @end
+
+#endif

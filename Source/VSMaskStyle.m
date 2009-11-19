@@ -25,7 +25,7 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 // class public
 
-+ (VSMaskStyle*)styleWithMask:(NSImage*)mask next:(VSStyle*)next {
++ (VSMaskStyle*)styleWithMask:(VSImage*)mask next:(VSStyle*)next {
 	VSMaskStyle* style = [[[self alloc] initWithNext:next] autorelease];
 	style.mask = mask;
 	return style;

@@ -50,7 +50,7 @@
 // VSStyle
 
 - (void)draw:(VSStyleContext*)context {
-	CGContextRef ctx = (CGContextRef)[[NSGraphicsContext currentContext] graphicsPort];
+	CGContextRef ctx = UIGraphicsGetCurrentContext();
 	
 	CGContextSaveGState(ctx);
 	[context.shape addToPath:context.frame];

@@ -18,6 +18,13 @@
 #import "VSReflectiveFillStyle.h"
 #import "NSColorAdditions.h"
 
+#if TARGET_OS_IPHONE
+#define VSColorHSV(h,s,v) [UIColor colorWithHue:h saturation:s value:v alpha:1.0]
+#else
+#define VSColorHSV(h,s,v) [NSColor colorWithCalibratedHue:(h) saturation:(s) value:(v) alpha:1.0]
+#endif
+#define ZEROLIMIT(_VALUE) (_VALUE < 0 ? 0 : (_VALUE > 1 ? 1 : _VALUE))
+
 @implementation VSReflectiveFillStyle
 
 @synthesize color = _color;
@@ -64,14 +71,14 @@
 	// a formula that works well for all colors
 	VSColor* lighter = nil, *darker = nil;
 	if (_color.value < 0.5) {
-		lighter = HSVCOLOR(_color.hue, ZEROLIMIT(_color.saturation-0.5), ZEROLIMIT(_color.value+0.25));
-		darker = HSVCOLOR(_color.hue, ZEROLIMIT(_color.saturation-0.1), ZEROLIMIT(_color.value+0.1));
+		lighter = VSColorHSV(_color.hue, ZEROLIMIT(_color.saturation-0.5), ZEROLIMIT(_color.value+0.25));
+		darker = VSColorHSV(_color.hue, ZEROLIMIT(_color.saturation-0.1), ZEROLIMIT(_color.value+0.1));
 	} else if (_color.saturation > 0.6) {
-		lighter = HSVCOLOR(_color.hue, _color.saturation*0.3, _color.value*1);
-		darker = HSVCOLOR(_color.hue, _color.saturation*0.9, _color.value+0.05);
+		lighter = VSColorHSV(_color.hue, _color.saturation*0.3, _color.value*1);
+		darker = VSColorHSV(_color.hue, _color.saturation*0.9, _color.value+0.05);
 	} else {
-		lighter = HSVCOLOR(_color.hue, _color.saturation*0.4, _color.value*1.2);
-		darker = HSVCOLOR(_color.hue, _color.saturation*0.9, _color.value+0.05);
+		lighter = VSColorHSV(_color.hue, _color.saturation*0.4, _color.value*1.2);
+		darker = VSColorHSV(_color.hue, _color.saturation*0.9, _color.value+0.05);
 	}
 	//  //VSColor* lighter = [_color multiplyHue:1 saturation:0.5 value:1.35];
 	//  //VSColor* darker = [_color multiplyHue:1 saturation:0.88 value:1.05];

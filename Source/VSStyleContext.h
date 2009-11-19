@@ -24,6 +24,8 @@
 #import <AppKit/AppKit.h>
 #endif
 
+#import "VSGlobal.h"
+
 @class VSShape, VSStyleContext;
 @interface VSStyleContext : NSObject {
     //STUB add your instance variables here
@@ -31,11 +33,7 @@
 	CGRect _frame;
 	CGRect _contentFrame;
 	VSShape* _shape;
-#if TARGET_OS_IPHONE
-	UIFont *_font;
-#else
-	NSFont* _font;
-#endif
+	VSFont* _font;
 	BOOL _didDrawContent;
 }
 
@@ -44,11 +42,7 @@
 @property(nonatomic) CGRect frame;
 @property(nonatomic) CGRect contentFrame;
 @property(nonatomic,retain) VSShape* shape;
-#if TARGET_OS_IPHONE
-@property(nonatomic,retain) UIFont* font;
-#else
-@property(nonatomic,retain) NSFont* font;
-#endif
+@property(nonatomic,retain) VSFont* font;
 @property(nonatomic) BOOL didDrawContent;
 
 @end

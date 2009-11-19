@@ -1,24 +1,14 @@
 //
 //  VSStyle.m
-//  VillainousStyle
+//  VSStyleMacTest
 //
-//  Licensed under the Apache License, Version 2.0 (the "License");
-//  you may not use this file except in compliance with the License.
-//  You may obtain a copy of the License at
-//
-//  http://www.apache.org/licenses/LICENSE-2.0
-//
-//  Unless required by applicable law or agreed to in writing, software
-//  distributed under the License is distributed on an "AS IS" BASIS,
-//  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-//  See the License for the specific language governing permissions and
-//  limitations under the License.
+//  Created by Steve Streza on 7/23/09.
+//  Copyright 2009 __MyCompanyName__. All rights reserved.
 //
 
 #import "VSStyle.h"
 #import "VSPartStyle.h"
 #import "NSColor+CGColor.h"
-
 @implementation VSStyle
 
 @synthesize next=_next;
@@ -92,11 +82,11 @@
 	return nil;
 }
 
-- (CGGradientRef)newGradientWithColors:(VSColor**)colors count:(int)count {
+- (CGGradientRef)newGradientWithColors:(NSColor**)colors count:(int)count {
 	CGFloat* components = malloc(sizeof(CGFloat)*4*count);
 	int i = 0;
 	for (i = 0; i < count; ++i) {
-		VSColor* color = colors[count-i-1];
+		NSColor* color = colors[count-i-1];
 		size_t n = CGColorGetNumberOfComponents(color.CGColor);
 		const CGFloat* rgba = CGColorGetComponents(color.CGColor);
 		if (n == 2) {
@@ -112,20 +102,9 @@
 		}
 	}
 	
-	CGColorSpaceRef space = NULL;
-#if TARGET_OS_IPHONE
-	space = CGColorSpaceCreateDeviceRGB();
-#else
-	space = [[NSColorSpace deviceRGBColorSpace] CGColorSpace];
-#endif
-	
+	CGColorSpaceRef space = [[NSColorSpace deviceRGBColorSpace] CGColorSpace];
 	CGGradientRef gradient = CGGradientCreateWithColorComponents(space, components, nil, count);
-
-#if TARGET_OS_IPHONE
-	CGColorSpaceRelease(space);
-#endif
 	free(components);
-
 	return gradient;
 }
 

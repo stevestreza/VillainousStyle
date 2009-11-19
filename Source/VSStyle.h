@@ -20,11 +20,6 @@
 #import "VSShape.h"
 #import "VSStyleContext.h"
 
-#define HSVCOLOR(h,s,v) [NSColor colorWithHue:h saturation:s value:v alpha:1]
-#define HSVACOLOR(h,s,v,a) [NSColor colorWithHue:h saturation:s value:v alpha:a]
-
-#define ZEROLIMIT(_VALUE) (_VALUE < 0 ? 0 : (_VALUE > 1 ? 1 : _VALUE))
-
 static const NSInteger kDefaultLightSource = 125;
 
 @interface VSStyle : NSObject {

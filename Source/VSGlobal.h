@@ -34,17 +34,21 @@ static inline UIEdgeInsets UIEdgeInsetsMake(CGFloat top, CGFloat left, CGFloat b
 }
 #endif
 
-#pragma mark Color/Image compatibility
+#pragma mark Color/Image/Font compatibility
+
 #if TARGET_OS_IPHONE
 #define VSColorRGB(__r, __g, __b)        ([UIColor colorWithRed:(__r) green:(__g) blue:(__b) alpha:1.0 ])
 #define VSColorRGBA(__r, __g, __b, __a) ([UIColor colorWithRed:(__r) green:(__g) blue:(__b) alpha:(__a)])
 @compatibility_alias VSColor UIColor;
 @compatibility_alias VSImage UIImage;
+@compatibility_alias VSFont  UIFont;
 #elif TARGET_OS_MAC
 #define VSColorRGB(__r, __g, __b)        ([NSColor colorWithCalibratedRed:(__r) green:(__g) blue:(__b) alpha:1.0 ])
 #define VSColorRGBA(__r, __g, __b, __a) ([NSColor colorWithCalibratedRed:(__r) green:(__g) blue:(__b) alpha:(__a)])
+#define UIGraphicsGetCurrentContext() ((CGContextRef)[[NSGraphicsContext currentContext] graphicsPort])
 @compatibility_alias VSColor NSColor;
 @compatibility_alias VSImage NSImage;
+@compatibility_alias VSFont  NSFont;
 #endif
 
 #define VSColorRGB256(__r, __g, __b)        (VSColorRGB((__r)/256.,(__g)/256.,(__b)/256.))
@@ -53,8 +57,6 @@ static inline UIEdgeInsets UIEdgeInsetsMake(CGFloat top, CGFloat left, CGFloat b
 #define UIEdgeInsetsZero (UIEdgeInsets){ 0.0, 0.0, 0.0, 0.0 }
 
 #define VS_RELEASE_SAFELY(__POINTER) { [__POINTER release]; __POINTER = nil; }
-
-#define UIGraphicsGetCurrentContext() ((CGContextRef)[[NSGraphicsContext currentContext] graphicsPort])
 
 inline CGRect VSRectInset(CGRect rect, UIEdgeInsets insets) {
 	return CGRectMake(rect.origin.x + insets.left, rect.origin.y + insets.top,

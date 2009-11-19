@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "VSstyle.h"
 
+#if !TARGET_OS_IPHONE
 typedef enum {		
     UILineBreakModeWordWrap = 0,            // Wrap at word boundaries
     UILineBreakModeCharacterWrap,           // Wrap at character boundaries
@@ -36,9 +37,10 @@ typedef enum {
     UIControlContentVerticalAlignmentBottom  = 2,
     UIControlContentVerticalAlignmentFill    = 3,
 } UIControlContentVerticalAlignment;
+#endif
 
 @interface VSTextStyle : VSStyle {
-	NSFont* _font;
+	VSFont* _font;
 	VSColor* _color;
 	VSColor* _shadowColor;
 	CGSize _shadowOffset;
@@ -48,7 +50,7 @@ typedef enum {
 	UILineBreakMode _lineBreakMode;
 }
 
-@property(nonatomic,retain) NSFont* font;
+@property(nonatomic,retain) VSFont* font;
 @property(nonatomic,retain) VSColor* color;
 @property(nonatomic,retain) VSColor* shadowColor;
 @property(nonatomic) CGFloat minimumFontSize;
@@ -57,15 +59,15 @@ typedef enum {
 @property(nonatomic) UIControlContentVerticalAlignment verticalAlignment;
 @property(nonatomic) UILineBreakMode lineBreakMode;
 
-+ (VSTextStyle*)styleWithFont:(NSFont*)font next:(VSStyle*)next;
++ (VSTextStyle*)styleWithFont:(VSFont*)font next:(VSStyle*)next;
 + (VSTextStyle*)styleWithColor:(VSColor*)color next:(VSStyle*)next;
-+ (VSTextStyle*)styleWithFont:(NSFont*)font color:(VSColor*)color next:(VSStyle*)next;
-+ (VSTextStyle*)styleWithFont:(NSFont*)font color:(VSColor*)color
++ (VSTextStyle*)styleWithFont:(VSFont*)font color:(VSColor*)color next:(VSStyle*)next;
++ (VSTextStyle*)styleWithFont:(VSFont*)font color:(VSColor*)color
                 textAlignment:(UITextAlignment)textAlignment next:(VSStyle*)next;
-+ (VSTextStyle*)styleWithFont:(NSFont*)font color:(VSColor*)color
++ (VSTextStyle*)styleWithFont:(VSFont*)font color:(VSColor*)color
 				  shadowColor:(VSColor*)shadowColor shadowOffset:(CGSize)shadowOffset
 						 next:(VSStyle*)next;
-+ (VSTextStyle*)styleWithFont:(NSFont*)font color:(VSColor*)color
++ (VSTextStyle*)styleWithFont:(VSFont*)font color:(VSColor*)color
 			  minimumFontSize:(CGFloat)minimumFontSize
 				  shadowColor:(VSColor*)shadowColor shadowOffset:(CGSize)shadowOffset
 						 next:(VSStyle*)next;

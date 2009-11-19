@@ -12,28 +12,28 @@
 
 @interface VSImageStyle : VSStyle {
 	NSString* _imageURL;
-	NSImage* _image;
-	NSImage* _defaultImage;
+	VSImage* _image;
+	VSImage* _defaultImage;
 	UIViewContentMode _contentMode;
 	CGSize _size;
 }
 
 @property(nonatomic,copy) NSString* imageURL;
-@property(nonatomic,retain) NSImage* image;
-@property(nonatomic,retain) NSImage* defaultImage;
+@property(nonatomic,retain) VSImage* image;
+@property(nonatomic,retain) VSImage* defaultImage;
 @property(nonatomic) CGSize size;
 @property(nonatomic) UIViewContentMode contentMode;
 
 + (VSImageStyle*)styleWithImageURL:(NSString*)imageURL next:(VSStyle*)next;
-+ (VSImageStyle*)styleWithImageURL:(NSString*)imageURL defaultImage:(NSImage*)defaultImage
++ (VSImageStyle*)styleWithImageURL:(NSString*)imageURL defaultImage:(VSImage*)defaultImage
 							  next:(VSStyle*)next;
-+ (VSImageStyle*)styleWithImageURL:(NSString*)imageURL defaultImage:(NSImage*)defaultImage
++ (VSImageStyle*)styleWithImageURL:(NSString*)imageURL defaultImage:(VSImage*)defaultImage
 					   contentMode:(UIViewContentMode)contentMode
 							  size:(CGSize)size next:(VSStyle*)next;
-+ (VSImageStyle*)styleWithImage:(NSImage*)image next:(VSStyle*)next;
-+ (VSImageStyle*)styleWithImage:(NSImage*)image defaultImage:(NSImage*)defaultImage
++ (VSImageStyle*)styleWithImage:(VSImage*)image next:(VSStyle*)next;
++ (VSImageStyle*)styleWithImage:(VSImage*)image defaultImage:(VSImage*)defaultImage
 						   next:(VSStyle*)next;
-+ (VSImageStyle*)styleWithImage:(NSImage*)image defaultImage:(NSImage*)defaultImage
++ (VSImageStyle*)styleWithImage:(VSImage*)image defaultImage:(VSImage*)defaultImage
 					contentMode:(UIViewContentMode)contentMode
 						   size:(CGSize)size next:(VSStyle*)next;
 
