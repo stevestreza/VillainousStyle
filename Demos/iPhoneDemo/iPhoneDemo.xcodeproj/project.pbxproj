@@ -131,7 +131,7 @@
 				1EFF7CD210B5156C00354C65 /* LightStyleSheet.m */,
 			);
 			name = Stylesheets;
-			path = ../MacDemo/Classes/Stylesheets;
+			path = ../Stylesheets;
 			sourceTree = SOURCE_ROOT;
 		};
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {

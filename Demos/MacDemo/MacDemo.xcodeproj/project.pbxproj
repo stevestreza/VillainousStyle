@@ -29,6 +29,13 @@
 			remoteGlobalIDString = 1E0FDD5B101A79DF007AFA92;
 			remoteInfo = VillainousStyle;
 		};
+		1E478B5110B64A25003DA622 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1E31228210AA81B500D72994 /* VillainousStyle.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 1E0FDD5A101A79DF007AFA92 /* VillainousStyle.framework */;
+			remoteInfo = VillainousStyle.framework;
+		};
 		1EFF7C3C10B50B2700354C65 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 1E31228210AA81B500D72994 /* VillainousStyle.xcodeproj */;
@@ -139,7 +146,8 @@
 				1E311FD210AA6CD700D72994 /* LightStyleSheet.h */,
 				1E311FD310AA6CD700D72994 /* LightStyleSheet.m */,
 			);
-			path = Stylesheets;
+			name = Stylesheets;
+			path = ../../Stylesheets;
 			sourceTree = "<group>";
 		};
 		1E31209210AA78DB00D72994 /* VSStyle */ = {
@@ -217,6 +225,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				1E478B5210B64A25003DA622 /* PBXTargetDependency */,
 			);
 			name = MacDemo;
 			productInstallPath = "$(HOME)/Applications";
@@ -293,6 +302,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		1E478B5210B64A25003DA622 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = VillainousStyle.framework;
+			targetProxy = 1E478B5110B64A25003DA622 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
@@ -316,20 +333,15 @@
 		C01FCF4B08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				COPY_PHASE_STRIP = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)\"",
-					"\"$(SRCROOT)/../../Source/build/Release\"",
-				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = MacDemo_Prefix.pch;
-				HEADER_SEARCH_PATHS = "${PRODUCT_PATH}/Contents/Frameworks//**";
+				HEADER_SEARCH_PATHS = "${PRODUCT_PATH}/Contents/Frameworks/**";
 				INFOPLIST_FILE = "Resources/MacDemo-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				PRODUCT_NAME = MacDemo;
@@ -343,15 +355,10 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)\"",
-					"\"$(SRCROOT)/../../Source/build/Release\"",
-				);
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = MacDemo_Prefix.pch;
-				HEADER_SEARCH_PATHS = "${PRODUCT_PATH}/Contents/Frameworks//**";
+				HEADER_SEARCH_PATHS = "${PRODUCT_PATH}/Contents/Frameworks/**";
 				INFOPLIST_FILE = "Resources/MacDemo-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				PRODUCT_NAME = MacDemo;
