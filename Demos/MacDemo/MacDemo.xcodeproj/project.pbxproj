@@ -33,7 +33,7 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = 1E31228210AA81B500D72994 /* VillainousStyle.xcodeproj */;
 			proxyType = 1;
-			remoteGlobalIDString = 1E0FDD5A101A79DF007AFA92 /* VillainousStyle.framework */;
+			remoteGlobalIDString = 1E0FDD5A101A79DF007AFA92;
 			remoteInfo = VillainousStyle.framework;
 		};
 		1EFF7C3C10B50B2700354C65 /* PBXContainerItemProxy */ = {
