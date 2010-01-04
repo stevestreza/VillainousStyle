@@ -95,6 +95,10 @@ const NSString *VSStyleSheetChangedNotification = @"VSStyleSheetChangedNotificat
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 // public
 
+- (BOOL)isGlobalStyleSheet{
+	return [[[self class] globalStyleSheet] class] == [self class];
+}
+
 - (VSStyle*)styleWithSelector:(NSString*)selector {
 	if(!selector) return nil;
 	

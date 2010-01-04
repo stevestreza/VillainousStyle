@@ -23,5 +23,6 @@ extern const NSString *VSStyleSheetChangedNotification;
 
 + (void)setGlobalStyleSheet:(VSStyleSheet*)styleSheet;
 
+- (BOOL)isGlobalStyleSheet;
 - (VSStyle*)styleWithSelector:(NSString*)selector;
 @end
