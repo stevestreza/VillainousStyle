@@ -389,20 +389,9 @@
 			isa = PBXGroup;
 			children = (
 				1E6820301018219E005A22F6 /* VSGlobal.h */,
+				1EAA4DB610F189C90001A531 /* Categories */,
 				1E681E3D101820CB005A22F6 /* VSShape */,
 				1E681985101816AF005A22F6 /* VSStyle */,
-				1E682064101822B0005A22F6 /* NSView+VSStyle.h */,
-				1E682065101822B0005A22F6 /* NSView+VSStyle.m */,
-				1E23702610CB42F000A03525 /* CALayer+VSStyle.h */,
-				1E23702710CB42F000A03525 /* CALayer+VSStyle.m */,
-				1E68218A10182C4B005A22F6 /* NSColor+CGColor.h */,
-				1E68218B10182C4B005A22F6 /* NSColor+CGColor.m */,
-				1E0FDBCD1018395E007AFA92 /* NSColorAdditions.h */,
-				1E0FDBCE1018395E007AFA92 /* NSColorAdditions.m */,
-				1E0FDD2410184C18007AFA92 /* NSImage+CGImage.h */,
-				1E0FDD2510184C18007AFA92 /* NSImage+CGImage.m */,
-				1E97CF39101B80F2003135D3 /* NSImage+ContentMode.h */,
-				1E97CF3A101B80F2003135D3 /* NSImage+ContentMode.m */,
 				1E0BEA2510EEEA1C007CF5C8 /* VillainousStyle.h */,
 			);
 			name = Classes;
@@ -498,6 +487,25 @@
 				1E0FDCAB101843DA007AFA92 /* VSSpeechBubbleShape.m */,
 			);
 			name = VSShape;
+			sourceTree = "<group>";
+		};
+		1EAA4DB610F189C90001A531 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				1E682064101822B0005A22F6 /* NSView+VSStyle.h */,
+				1E682065101822B0005A22F6 /* NSView+VSStyle.m */,
+				1E23702610CB42F000A03525 /* CALayer+VSStyle.h */,
+				1E23702710CB42F000A03525 /* CALayer+VSStyle.m */,
+				1E68218A10182C4B005A22F6 /* NSColor+CGColor.h */,
+				1E68218B10182C4B005A22F6 /* NSColor+CGColor.m */,
+				1E0FDBCD1018395E007AFA92 /* NSColorAdditions.h */,
+				1E0FDBCE1018395E007AFA92 /* NSColorAdditions.m */,
+				1E0FDD2410184C18007AFA92 /* NSImage+CGImage.h */,
+				1E0FDD2510184C18007AFA92 /* NSImage+CGImage.m */,
+				1E97CF39101B80F2003135D3 /* NSImage+ContentMode.h */,
+				1E97CF3A101B80F2003135D3 /* NSImage+ContentMode.m */,
+			);
+			name = Categories;
 			sourceTree = "<group>";
 		};
 		29B97314FDCFA39411CA2CEA /* TTStyleMacTest */ = {
