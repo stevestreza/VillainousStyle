@@ -82,11 +82,24 @@
 	}
 	//  //VSColor* lighter = [_color multiplyHue:1 saturation:0.5 value:1.35];
 	//  //VSColor* darker = [_color multiplyHue:1 saturation:0.88 value:1.05];
-	VSColor* colors[] = {darker, lighter};
+	VSColor* colors[] = 
+#if TARGET_OS_IPHONE
+	{lighter, darker};
+#else
+	{darker, lighter};
+#endif
+	
+	CGPoint topPoint = CGPointMake(rect.origin.x, rect.origin.y+(rect.size.height * 0.5));
+	CGPoint bottomPoint = CGPointMake(rect.origin.x, 
+									  rect.origin.y+rect.size.height);
+#if TARGET_OS_IPHONE
+	bottomPoint.y = rect.origin.y + (rect.size.height * 0.0);
+#endif
 	
 	CGGradientRef gradient = [self newGradientWithColors:colors count:2];
-	CGContextDrawLinearGradient(ctx, gradient, CGPointMake(rect.origin.x, rect.origin.y+(rect.size.height * 0.5)),
-								CGPointMake(rect.origin.x, rect.origin.y+rect.size.height),
+	CGContextDrawLinearGradient(ctx, gradient, 
+								topPoint,
+								bottomPoint,
 								kCGGradientDrawsAfterEndLocation );
 	CGGradientRelease(gradient);
 	
