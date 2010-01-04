@@ -18,7 +18,9 @@ extern const NSString *VSStyleSheetChangedNotification;
 
 + (id) styleSheet;
 
++ (NSArray *)allStyleSheets;
 + (VSStyleSheet*)globalStyleSheet;
+
 + (void)setGlobalStyleSheet:(VSStyleSheet*)styleSheet;
 
 - (VSStyle*)styleWithSelector:(NSString*)selector;
