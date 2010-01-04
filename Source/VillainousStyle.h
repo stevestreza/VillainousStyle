@@ -8,8 +8,10 @@
 
 #import "VSGlobal.h"
 
-#import "VSStyle.h"
-#import "VSShape.h"
+#import "VSStyles.h"
+#import "VSShapes.h"
+
+#import "VSStyleSheet.h"
 
 #import "NSView+VSStyle.h"
 #import "CALayer+VSStyle.h"
