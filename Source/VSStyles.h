@@ -41,4 +41,4 @@
 
 #import "VSStyleSheet.h"
 
-#define VSStyleNamed(__nm) (VSStyle *)([[VSStyleSheet globalStyleSheet] styleWithSelector:(__nm)])
+#define VSStyleNamed(_SELECTOR) (VSStyle *)([[VSStyleSheet globalStyleSheet] styleWithSelector: @#_SELECTOR ])
