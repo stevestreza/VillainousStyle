@@ -24,7 +24,7 @@
 #define MAX3(a,b,c) (a > b ? (a > c ? a : c) : (b > c ? b : c))
 #define MIN3(a,b,c) (a < b ? (a < c ? a : c) : (b < c ? b : c))
 
-void RGBtoHSV(float r, float g, float b, float* h, float* s, float* v) {
+void VS_RGBtoHSV(float r, float g, float b, float* h, float* s, float* v) {
 	float min, max, delta;
 	min = MIN3(r, g, b);
 	max = MAX3(r, g, b);
@@ -49,7 +49,7 @@ void RGBtoHSV(float r, float g, float b, float* h, float* s, float* v) {
 		*h += 360;
 }
 
-void HSVtoRGB( float *r, float *g, float *b, float h, float s, float v )
+void VS_HSVtoRGB( float *r, float *g, float *b, float h, float s, float v )
 {
 	int i;
 	float f, p, q, t;
@@ -104,7 +104,7 @@ void HSVtoRGB( float *r, float *g, float *b, float h, float s, float v )
 
 + (VSColor*)colorWithHue:(CGFloat)h saturation:(CGFloat)s value:(CGFloat)v alpha:(CGFloat)a {
 	CGFloat r, g, b;
-	HSVtoRGB(&r, &g, &b, h, s, v);
+	VS_HSVtoRGB(&r, &g, &b, h, s, v);
 	return VSColorRGBA(r,g,b,a);
 }
 
@@ -116,13 +116,13 @@ void HSVtoRGB( float *r, float *g, float *b, float h, float s, float v )
 	CGFloat a = rgba[3];
 	
 	CGFloat h, s, v;
-	RGBtoHSV(r, g, b, &h, &s, &v);
+	VS_RGBtoHSV(r, g, b, &h, &s, &v);
 	
 	h *= hd;
 	v *= vd;
 	s *= sd;
 	
-	HSVtoRGB(&r, &g, &b, h, s, v);
+	VS_HSVtoRGB(&r, &g, &b, h, s, v);
 	
 	return VSColorRGBA(r,g,b,a);
 }
@@ -144,13 +144,13 @@ void HSVtoRGB( float *r, float *g, float *b, float h, float s, float v )
 	CGFloat a = rgba[3];
 	
 	CGFloat h, s, v;
-	RGBtoHSV(r, g, b, &h, &s, &v);
+	VS_RGBtoHSV(r, g, b, &h, &s, &v);
 	
 	h += hd;
 	v += vd;
 	s += sd;
 	
-	HSVtoRGB(&r, &g, &b, h, s, v);
+	VS_HSVtoRGB(&r, &g, &b, h, s, v);
 	
 	return [VSColorRGBA(r,g,b,a) retain];
 }
@@ -166,21 +166,21 @@ void HSVtoRGB( float *r, float *g, float *b, float h, float s, float v )
 - (CGFloat)hue {
 	const CGFloat* rgba = CGColorGetComponents(self.CGColor);
 	CGFloat h, s, v;
-	RGBtoHSV(rgba[0], rgba[1], rgba[2], &h, &s, &v);
+	VS_RGBtoHSV(rgba[0], rgba[1], rgba[2], &h, &s, &v);
 	return h;
 }
 
 - (CGFloat)saturation {
 	const CGFloat* rgba = CGColorGetComponents(self.CGColor);
 	CGFloat h, s, v;
-	RGBtoHSV(rgba[0], rgba[1], rgba[2], &h, &s, &v);
+	VS_RGBtoHSV(rgba[0], rgba[1], rgba[2], &h, &s, &v);
 	return s;
 }
 
 - (CGFloat)value {
 	const CGFloat* rgba = CGColorGetComponents(self.CGColor);
 	CGFloat h, s, v;
-	RGBtoHSV(rgba[0], rgba[1], rgba[2], &h, &s, &v);
+	VS_RGBtoHSV(rgba[0], rgba[1], rgba[2], &h, &s, &v);
 	return v;
 }
 
