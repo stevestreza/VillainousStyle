@@ -34,7 +34,7 @@
 		
 		[style draw:context];
 		if (!context.didDrawContent) {
-			[self drawContent:[context contentFrame]];
+//			[self drawContent:[context contentFrame]];
 		}
 	}
 }

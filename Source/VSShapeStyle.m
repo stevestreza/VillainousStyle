@@ -53,7 +53,18 @@
 	UIEdgeInsets shapeInsets = [_shape insetsForSize:context.frame.size];
 	context.contentFrame = VSRectInset(context.contentFrame, shapeInsets);
 	context.shape = _shape;
+	
+	CGContextRef ctx = UIGraphicsGetCurrentContext();
+	CGContextSaveGState(ctx);
+	
+	CGContextBeginPath(ctx);
+	
+	[_shape addToPath:context.contentFrame];
+	CGContextClip(ctx);
+	
 	[self.next draw:context];
+	
+	CGContextRestoreGState(ctx);
 }
 
 - (UIEdgeInsets)addToInsets:(UIEdgeInsets)insets forSize:(CGSize)size {
