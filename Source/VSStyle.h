@@ -42,4 +42,8 @@ static const NSInteger kDefaultLightSource = 125;
 
 - (CGGradientRef)newGradientWithColors:(VSColor**)colors count:(int)count ;
 
+// all child styles with no value in their next
+// uses an NSSet in case future styles can have split layouts
+- (NSSet *) finalStyles;
+
 @end

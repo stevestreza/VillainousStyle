@@ -129,6 +129,12 @@
 	return gradient;
 }
 
-
+- (NSSet *) finalStyles{
+	if(self.next){
+		return [self.next finalStyles];
+	}else{
+		return [NSSet setWithObject:self];
+	}
+}
 
 @end
