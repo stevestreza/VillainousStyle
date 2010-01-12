@@ -1,5 +1,5 @@
 //
-//  VSStyles.h
+//  VSContentStyle.h
 //  VillainousStyle
 //
 //  Licensed under the Apache License, Version 2.0 (the "License");
@@ -16,32 +16,13 @@
 //
 
 #import "VSGlobal.h"
-
-#import "VSStyleDelegate.h"
-
 #import "VSStyle.h"
-#import "VSPartStyle.h"
+#import "VSShape.h"
 
-#import "VSSolidFillStyle.h"
-#import "VSLinearGradientFillStyle.h"
-#import "VSReflectiveFillStyle.h"
+@interface VSContentStyle : VSStyle {
 
-#import "VSSolidBorderStyle.h"
-#import "VSBevelBorderStyle.h"
-#import "VSFourBorderStyle.h"
+}
 
-#import "VSShadowStyle.h"
-#import "VSInnerShadowStyle.h"
++ (VSContentStyle*)styleWithNext:(VSStyle*)next ;
 
-#import "VSBoxStyle.h"
-#import "VSInsetStyle.h"
-
-#import "VSTextStyle.h"
-#import "VSImageStyle.h"
-#import "VSContentStyle.h"
-#import "VSMaskStyle.h"
-#import "VSShapeStyle.h"
-
-#import "VSStyleSheet.h"
-
-#define VSStyleNamed(_SELECTOR) (VSStyle *)([[VSStyleSheet globalStyleSheet] styleWithSelector: @#_SELECTOR ])
+@end

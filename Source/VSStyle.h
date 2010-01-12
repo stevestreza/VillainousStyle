@@ -24,9 +24,11 @@ static const NSInteger kDefaultLightSource = 125;
 
 @interface VSStyle : NSObject {
 	VSStyle* _next;
+	VSStyle* _previous;
 }
 
 @property(nonatomic,retain) VSStyle* next;
+@property(nonatomic,readonly) VSStyle* previous;
 
 - (id)initWithNext:(VSStyle*)next;
 
@@ -46,4 +48,6 @@ static const NSInteger kDefaultLightSource = 125;
 // uses an NSSet in case future styles can have split layouts
 - (NSSet *) finalStyles;
 
+// the first node in a chain 
+- (VSStyle *)rootStyle;
 @end

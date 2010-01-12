@@ -25,11 +25,12 @@
 #endif
 
 #import "VSGlobal.h"
+#import "VSStyleDelegate.h"
 
 @class VSShape, VSStyleContext;
 @interface VSStyleContext : NSObject {
     //STUB add your instance variables here
-	id _delegate;
+	id<VSStyleDelegate> _delegate;
 	CGRect _frame;
 	CGRect _contentFrame;
 	VSShape* _shape;

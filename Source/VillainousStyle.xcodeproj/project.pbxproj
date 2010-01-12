@@ -84,6 +84,15 @@
 		1E31240810AD260400D72994 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E31240710AD260400D72994 /* Foundation.framework */; };
 		1E31240A10AD260400D72994 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E31240910AD260400D72994 /* UIKit.framework */; };
 		1E31243010AD28A700D72994 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E31242F10AD28A700D72994 /* CoreGraphics.framework */; };
+		1E3B533910FC30E5007036C9 /* VSContentStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E3B533710FC30E5007036C9 /* VSContentStyle.h */; };
+		1E3B533A10FC30E5007036C9 /* VSContentStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E3B533810FC30E5007036C9 /* VSContentStyle.m */; };
+		1E3B533B10FC30E5007036C9 /* VSContentStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E3B533710FC30E5007036C9 /* VSContentStyle.h */; };
+		1E3B533C10FC30E5007036C9 /* VSContentStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E3B533810FC30E5007036C9 /* VSContentStyle.m */; };
+		1E3B533D10FC30E5007036C9 /* VSContentStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E3B533710FC30E5007036C9 /* VSContentStyle.h */; };
+		1E3B533E10FC30E5007036C9 /* VSContentStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E3B533810FC30E5007036C9 /* VSContentStyle.m */; };
+		1E3B534010FC3193007036C9 /* VSStyleDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E3B533F10FC3193007036C9 /* VSStyleDelegate.h */; };
+		1E3B534110FC3193007036C9 /* VSStyleDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E3B533F10FC3193007036C9 /* VSStyleDelegate.h */; };
+		1E3B534210FC3193007036C9 /* VSStyleDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E3B533F10FC3193007036C9 /* VSStyleDelegate.h */; };
 		1E526FB810A3D8440008B89D /* VSStyleSheet.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E526FB610A3D8440008B89D /* VSStyleSheet.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1E526FB910A3D8440008B89D /* VSStyleSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E526FB710A3D8440008B89D /* VSStyleSheet.m */; };
 		1E5C001A10ED651A00B7B095 /* VSBevelBorderStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E0FDC5C101840EF007AFA92 /* VSBevelBorderStyle.m */; };
@@ -294,6 +303,9 @@
 		1E31240710AD260400D72994 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1E31240910AD260400D72994 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1E31242F10AD28A700D72994 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1E3B533710FC30E5007036C9 /* VSContentStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSContentStyle.h; sourceTree = "<group>"; };
+		1E3B533810FC30E5007036C9 /* VSContentStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSContentStyle.m; sourceTree = "<group>"; };
+		1E3B533F10FC3193007036C9 /* VSStyleDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSStyleDelegate.h; sourceTree = "<group>"; };
 		1E526FB610A3D8440008B89D /* VSStyleSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSStyleSheet.h; sourceTree = "<group>"; };
 		1E526FB710A3D8440008B89D /* VSStyleSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSStyleSheet.m; sourceTree = "<group>"; };
 		1E5CFFBA10ED61E600B7B095 /* libVillainousStyle.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libVillainousStyle.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -388,11 +400,11 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				1E0BEA2510EEEA1C007CF5C8 /* VillainousStyle.h */,
 				1E6820301018219E005A22F6 /* VSGlobal.h */,
 				1EAA4DB610F189C90001A531 /* Categories */,
 				1E681E3D101820CB005A22F6 /* VSShape */,
 				1E681985101816AF005A22F6 /* VSStyle */,
-				1E0BEA2510EEEA1C007CF5C8 /* VillainousStyle.h */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -429,6 +441,7 @@
 			isa = PBXGroup;
 			children = (
 				1E68220F1018324D005A22F6 /* VSStyles.h */,
+				1E3B533F10FC3193007036C9 /* VSStyleDelegate.h */,
 				1E681E0610181C6C005A22F6 /* VSStyleContext.h */,
 				1E681E0710181C6C005A22F6 /* VSStyleContext.m */,
 				1E6819CD10181810005A22F6 /* VSStyle.h */,
@@ -445,6 +458,8 @@
 				1E97CF32101B8049003135D3 /* VSImageStyle.m */,
 				1E97CFD2101B8CCE003135D3 /* VSTextStyle.h */,
 				1E97CFD3101B8CCE003135D3 /* VSTextStyle.m */,
+				1E3B533710FC30E5007036C9 /* VSContentStyle.h */,
+				1E3B533810FC30E5007036C9 /* VSContentStyle.m */,
 				1E6821AA10182DA0005A22F6 /* VSSolidBorderStyle.h */,
 				1E6821AB10182DA0005A22F6 /* VSSolidBorderStyle.m */,
 				1E6821C010182EBA005A22F6 /* VSShadowStyle.h */,
@@ -594,6 +609,8 @@
 				1E526FB810A3D8440008B89D /* VSStyleSheet.h in Headers */,
 				1E23702810CB42F000A03525 /* CALayer+VSStyle.h in Headers */,
 				1E0BEA2710EEEA1C007CF5C8 /* VillainousStyle.h in Headers */,
+				1E3B533910FC30E5007036C9 /* VSContentStyle.h in Headers */,
+				1E3B534010FC3193007036C9 /* VSStyleDelegate.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -603,6 +620,8 @@
 			files = (
 				1E23702A10CB42F000A03525 /* CALayer+VSStyle.h in Headers */,
 				1E0BEA2610EEEA1C007CF5C8 /* VillainousStyle.h in Headers */,
+				1E3B533B10FC30E5007036C9 /* VSContentStyle.h in Headers */,
+				1E3B534110FC3193007036C9 /* VSStyleDelegate.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -630,6 +649,8 @@
 				1E5C004910ED652700B7B095 /* VSLinearGradientFillStyle.h in Headers */,
 				1E5C004A10ED652700B7B095 /* VSSolidBorderStyle.h in Headers */,
 				1E0BEA2810EEEA1C007CF5C8 /* VillainousStyle.h in Headers */,
+				1E3B533D10FC30E5007036C9 /* VSContentStyle.h in Headers */,
+				1E3B534210FC3193007036C9 /* VSStyleDelegate.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -754,6 +775,7 @@
 				1E97CFD5101B8CCE003135D3 /* VSTextStyle.m in Sources */,
 				1E526FB910A3D8440008B89D /* VSStyleSheet.m in Sources */,
 				1E23702910CB42F000A03525 /* CALayer+VSStyle.m in Sources */,
+				1E3B533A10FC30E5007036C9 /* VSContentStyle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -791,6 +813,7 @@
 				1EC85FE310B51FB20017E68B /* VSPartStyle.m in Sources */,
 				1EC85FE410B51FB20017E68B /* VSStyleContext.m in Sources */,
 				1E23702B10CB42F000A03525 /* CALayer+VSStyle.m in Sources */,
+				1E3B533C10FC30E5007036C9 /* VSContentStyle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -828,6 +851,7 @@
 				1E5C003510ED651A00B7B095 /* NSView+VSStyle.m in Sources */,
 				1E5C003610ED651A00B7B095 /* VSImageStyle.m in Sources */,
 				1E5C003710ED651A00B7B095 /* VSShadowStyle.m in Sources */,
+				1E3B533E10FC30E5007036C9 /* VSContentStyle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

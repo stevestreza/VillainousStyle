@@ -103,7 +103,7 @@ const NSString *VSStyleSheetChangedNotification = @"VSStyleSheetChangedNotificat
 	if(!selector) return nil;
 	
 	VSStyle* style = [_styles objectForKey:selector];
-	if (!style) {
+	if (YES || !style) {
 		SEL sel = NSSelectorFromString(selector);
 		if ([self respondsToSelector:sel]) {
 			style = [self performSelector:sel withObject:nil];

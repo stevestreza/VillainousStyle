@@ -21,11 +21,12 @@
 
 @implementation VSStyle
 
-@synthesize next=_next;
+@synthesize next=_next, previous=_previous;
 
 - (id)initWithNext:(VSStyle*)next {
 	if (self = [super init]) {
 		_next = [next retain];
+		[next _setPrevious:self];
 	}
 	return self;
 }
@@ -135,6 +136,18 @@
 	}else{
 		return [NSSet setWithObject:self];
 	}
+}
+
+-(void)_setPrevious:(VSStyle *)previous{
+	_previous = previous;
+}
+
+-(VSStyle *)rootStyle{
+	VSStyle *style = self;
+	while([style previous]){
+		style = [style previous];
+	}
+	return style;
 }
 
 @end
