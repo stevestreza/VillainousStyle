@@ -46,8 +46,10 @@ Styles affect drawing and positioning. Most will affect the next VSStyle objects
  * VSBoxStyle - Adds a margin or padding to the content area
  * VSInsetStyle - Adds edge insets to the content area
 * Content
- * VSTextStyle - Draws text inside the current shape
- * VSImageStyle - Draws an image inside the current shape
+ * VSTextStyle - Draws text inside the current shape (see VSStyleDelegate)
+ * VSImageStyle - Draws an image inside the current shape (see VSStyleDelegate)
+ * VSContentStyle - Calls a delegate method to draw arbitrary content (see VSStyleDelegate)
+* Clipping
  * VSMaskStyle - Clips the drawing area to an image mask
  * VSShapeStyle - Clips the drawing area with a VSShape object
 
