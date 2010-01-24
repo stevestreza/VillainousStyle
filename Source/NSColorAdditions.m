@@ -133,7 +133,7 @@ void VS_HSVtoRGB( float *r, float *g, float *b, float h, float s, float v )
 	CGFloat g = rgba[1];
 	CGFloat b = rgba[2];
 	
-	return VSColorRGBA(r,g,b,newAlpha);
+	return [VSColorRGBA(r,g,b,newAlpha) copy];
 }
 
 - (VSColor*)addHue:(CGFloat)hd saturation:(CGFloat)sd value:(CGFloat)vd {

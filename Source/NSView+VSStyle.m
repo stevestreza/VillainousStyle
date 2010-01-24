@@ -33,9 +33,9 @@
 		context.contentFrame = context.frame;
 		
 		[style draw:context];
-		if (!context.didDrawContent) {
-//			[self drawContent:[context contentFrame]];
-		}
+//		if (!context.didDrawContent && [self respondsToSelector:@selector(drawLayer:withStyle:)]) {
+//			[self drawLayer:context withStyle:style];
+//		}
 	}
 }
 

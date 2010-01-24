@@ -17,7 +17,7 @@
 
 #import "VSGlobal.h"
 
-#ifdef TARGET_OS_IPHONE
+#if TARGET_OS_IPHONE
 #import <UIKit/UIKit.h>
 @interface UIColor (CGColorRef)
 #elif TARGET_OS_MAC

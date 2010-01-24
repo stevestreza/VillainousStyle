@@ -101,7 +101,10 @@ contentMode = _contentMode, size = _size;
 // VSStyle
 
 - (void)draw:(VSStyleContext*)context {
-	VSImage* image = [self imageForContext:context];
+	VSImage* image = _image;
+	if(!image){
+		image = [self imageForContext:context];
+	}
 	if (image) {
 		[image drawInRect:context.contentFrame contentMode:_contentMode];
 	}

@@ -31,7 +31,7 @@
 	CGContextClip(ctx);
 	
 	[context.shape addInverseToPath:context.frame];
-	[[VSColor whiteColor] setFill];
+//	[[VSColor whiteColor] setFill];
 	CGContextSetShadowWithColor(ctx, CGSizeMake(_offset.width, -_offset.height), _blur,
 								_color.CGColor);
 	CGContextEOFillPath(ctx);
