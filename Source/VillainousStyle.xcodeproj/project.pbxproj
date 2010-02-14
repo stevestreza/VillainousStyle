@@ -84,13 +84,13 @@
 		1E31240810AD260400D72994 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E31240710AD260400D72994 /* Foundation.framework */; };
 		1E31240A10AD260400D72994 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E31240910AD260400D72994 /* UIKit.framework */; };
 		1E31243010AD28A700D72994 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E31242F10AD28A700D72994 /* CoreGraphics.framework */; };
-		1E3B533910FC30E5007036C9 /* VSContentStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E3B533710FC30E5007036C9 /* VSContentStyle.h */; };
+		1E3B533910FC30E5007036C9 /* VSContentStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E3B533710FC30E5007036C9 /* VSContentStyle.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1E3B533A10FC30E5007036C9 /* VSContentStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E3B533810FC30E5007036C9 /* VSContentStyle.m */; };
 		1E3B533B10FC30E5007036C9 /* VSContentStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E3B533710FC30E5007036C9 /* VSContentStyle.h */; };
 		1E3B533C10FC30E5007036C9 /* VSContentStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E3B533810FC30E5007036C9 /* VSContentStyle.m */; };
 		1E3B533D10FC30E5007036C9 /* VSContentStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E3B533710FC30E5007036C9 /* VSContentStyle.h */; };
 		1E3B533E10FC30E5007036C9 /* VSContentStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E3B533810FC30E5007036C9 /* VSContentStyle.m */; };
-		1E3B534010FC3193007036C9 /* VSStyleDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E3B533F10FC3193007036C9 /* VSStyleDelegate.h */; };
+		1E3B534010FC3193007036C9 /* VSStyleDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E3B533F10FC3193007036C9 /* VSStyleDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1E3B534110FC3193007036C9 /* VSStyleDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E3B533F10FC3193007036C9 /* VSStyleDelegate.h */; };
 		1E3B534210FC3193007036C9 /* VSStyleDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E3B533F10FC3193007036C9 /* VSStyleDelegate.h */; };
 		1E526FB810A3D8440008B89D /* VSStyleSheet.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E526FB610A3D8440008B89D /* VSStyleSheet.h */; settings = {ATTRIBUTES = (Public, ); }; };
