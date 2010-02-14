@@ -17,7 +17,7 @@
 
 #import "NSColor+CGColor.h"
 
-#ifdef TARGET_OS_IPHONE
+#if TARGET_OS_IPHONE
 @implementation UIColor (CGColorRef)
 #else
 @implementation NSColor (CGColorRef)
