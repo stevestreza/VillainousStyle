@@ -36,6 +36,20 @@
 			remoteGlobalIDString = 1E3123CB10AD256C00D72994;
 			remoteInfo = libVillainousStyle.a;
 		};
+		1E874959115D7C340076FC51 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1E3123B410AD254C00D72994 /* VillainousStyle.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1E5CFFBA10ED61E600B7B095 /* libVillainousStyle.a */;
+			remoteInfo = "libVillainousStyle.a - Mac";
+		};
+		1E87498D115D7C890076FC51 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1E3123B410AD254C00D72994 /* VillainousStyle.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 1E2370F010CB6A4100A03525 /* Headers */;
+			remoteInfo = Headers;
+		};
 		1EFF7CC410B5146200354C65 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 1E3123B410AD254C00D72994 /* VillainousStyle.xcodeproj */;
@@ -118,6 +132,7 @@
 			children = (
 				1E3123C010AD254C00D72994 /* VillainousStyle.framework */,
 				1E3123D010AD258B00D72994 /* libVillainousStyle.a */,
+				1E87495A115D7C340076FC51 /* libVillainousStyle.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -191,6 +206,7 @@
 			);
 			dependencies = (
 				1EFF7CC510B5146200354C65 /* PBXTargetDependency */,
+				1E87498E115D7C890076FC51 /* PBXTargetDependency */,
 			);
 			name = iPhoneDemo;
 			productName = iPhoneDemo;
@@ -235,6 +251,13 @@
 			remoteRef = 1E3123CF10AD258B00D72994 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		1E87495A115D7C340076FC51 /* libVillainousStyle.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libVillainousStyle.a;
+			remoteRef = 1E874959115D7C340076FC51 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
@@ -266,6 +289,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		1E87498E115D7C890076FC51 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Headers;
+			targetProxy = 1E87498D115D7C890076FC51 /* PBXContainerItemProxy */;
+		};
 		1EFF7CC510B5146200354C65 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = libVillainousStyle.a;
@@ -283,7 +311,7 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = iPhoneDemo_Prefix.pch;
-				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../../Source/build/Release$(EFFECTIVE_PLATFORM_NAME)/Headers/\"";
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../../Source/build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Headers/\"";
 				INFOPLIST_FILE = "iPhoneDemo-Info.plist";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = iPhoneDemo;
@@ -297,7 +325,7 @@
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = iPhoneDemo_Prefix.pch;
-				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../../Source/build/Release$(EFFECTIVE_PLATFORM_NAME)/Headers/\"";
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../../Source/build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Headers/\"";
 				INFOPLIST_FILE = "iPhoneDemo-Info.plist";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = iPhoneDemo;
