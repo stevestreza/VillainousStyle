@@ -20,6 +20,7 @@
 -(id)initWithFrame:(CGRect)frameRect{
 	if(self = [super initWithFrame:frameRect]){
 		[self addObservers];
+		self.opaque = NO;
 	}
 	return self;
 }
@@ -27,6 +28,7 @@
 -(id)initWithCoder:(NSCoder *)aDecoder{
 	if(self = [super initWithCoder:aDecoder]){
 		[self addObservers];
+		self.opaque = NO;
 	}
 	return self;
 }
@@ -34,6 +36,7 @@
 -(id)init{
 	if(self = [super init]){
 		[self addObservers];
+		self.opaque = NO;
 	}
 	return self;
 }

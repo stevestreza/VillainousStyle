@@ -178,6 +178,12 @@
 		1E874980115D7C540076FC51 /* VSRoundedLeftArrowShape.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1E68222A10183602005A22F6 /* VSRoundedLeftArrowShape.h */; };
 		1E874981115D7C540076FC51 /* VSInnerShadowStyle.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1E0FDCD4101844D7007AFA92 /* VSInnerShadowStyle.h */; };
 		1E874982115D7C540076FC51 /* VSTextStyle.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1E97CFD2101B8CCE003135D3 /* VSTextStyle.h */; };
+		1E8749C9115D7F6B0076FC51 /* NSColor+CGColor.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1E68218A10182C4B005A22F6 /* NSColor+CGColor.h */; };
+		1E8749CA115D7F6B0076FC51 /* NSColorAdditions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1E0FDBCD1018395E007AFA92 /* NSColorAdditions.h */; };
+		1E8749CB115D7F6B0076FC51 /* NSImage+CGImage.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1E0FDD2410184C18007AFA92 /* NSImage+CGImage.h */; };
+		1E8749CC115D7F6B0076FC51 /* NSView+VSStyle.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1E682064101822B0005A22F6 /* NSView+VSStyle.h */; };
+		1E8749CD115D7F6B0076FC51 /* NSImage+ContentMode.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1E97CF39101B80F2003135D3 /* NSImage+ContentMode.h */; };
+		1E8749CE115D7F6B0076FC51 /* CALayer+VSStyle.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1E23702610CB42F000A03525 /* CALayer+VSStyle.h */; };
 		1E97CF33101B8049003135D3 /* VSImageStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E97CF31101B8049003135D3 /* VSImageStyle.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1E97CF34101B8049003135D3 /* VSImageStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E97CF32101B8049003135D3 /* VSImageStyle.m */; };
 		1E97CF3B101B80F2003135D3 /* NSImage+ContentMode.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E97CF39101B80F2003135D3 /* NSImage+ContentMode.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -255,9 +261,15 @@
 		1E2370EF10CB6A4100A03525 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
-			dstPath = /tmp/;
-			dstSubfolderSpec = 0;
+			dstPath = Headers;
+			dstSubfolderSpec = 16;
 			files = (
+				1E8749C9115D7F6B0076FC51 /* NSColor+CGColor.h in CopyFiles */,
+				1E8749CA115D7F6B0076FC51 /* NSColorAdditions.h in CopyFiles */,
+				1E8749CB115D7F6B0076FC51 /* NSImage+CGImage.h in CopyFiles */,
+				1E8749CC115D7F6B0076FC51 /* NSView+VSStyle.h in CopyFiles */,
+				1E8749CD115D7F6B0076FC51 /* NSImage+ContentMode.h in CopyFiles */,
+				1E8749CE115D7F6B0076FC51 /* CALayer+VSStyle.h in CopyFiles */,
 				1E874965115D7C540076FC51 /* VSRoundedRightArrowShape.h in CopyFiles */,
 				1E874966115D7C540076FC51 /* VSContentStyle.h in CopyFiles */,
 				1E874967115D7C540076FC51 /* VillainousStyle.h in CopyFiles */,

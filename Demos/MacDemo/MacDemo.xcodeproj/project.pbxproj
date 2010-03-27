@@ -13,9 +13,9 @@
 		1E311FDC10AA6D2200D72994 /* VSStyleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E311FD710AA6D2200D72994 /* VSStyleController.m */; };
 		1E311FDD10AA6D2200D72994 /* VSStyleLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E311FD910AA6D2200D72994 /* VSStyleLabel.m */; };
 		1E311FDE10AA6D2200D72994 /* VSStyleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E311FDB10AA6D2200D72994 /* VSStyleView.m */; };
-		1E3120B410AA7B9100D72994 /* VillainousStyle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E3120B310AA7B9100D72994 /* VillainousStyle.framework */; };
 		1E3120D810AA7B9F00D72994 /* VillainousStyle.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 1E3120B310AA7B9100D72994 /* VillainousStyle.framework */; };
 		1E31210410AA7E1900D72994 /* doom-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E31210310AA7E1900D72994 /* doom-icon.png */; };
+		1E874A42115D85D90076FC51 /* VillainousStyle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E3120B310AA7B9100D72994 /* VillainousStyle.framework */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
@@ -35,6 +35,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = 1E0FDD5A101A79DF007AFA92;
 			remoteInfo = VillainousStyle.framework;
+		};
+		1E8749F9115D7FF30076FC51 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1E31228210AA81B500D72994 /* VillainousStyle.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1E5CFFBA10ED61E600B7B095 /* libVillainousStyle.a */;
+			remoteInfo = "libVillainousStyle.a - Mac";
+		};
+		1E874A2A115D81FF0076FC51 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1E31228210AA81B500D72994 /* VillainousStyle.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 1E2370F010CB6A4100A03525 /* Headers */;
+			remoteInfo = Headers;
 		};
 		1EFF7C3C10B50B2700354C65 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -74,7 +88,7 @@
 		1E311FD910AA6D2200D72994 /* VSStyleLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSStyleLabel.m; sourceTree = "<group>"; };
 		1E311FDA10AA6D2200D72994 /* VSStyleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSStyleView.h; sourceTree = "<group>"; };
 		1E311FDB10AA6D2200D72994 /* VSStyleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSStyleView.m; sourceTree = "<group>"; };
-		1E3120B310AA7B9100D72994 /* VillainousStyle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VillainousStyle.framework; path = ../../Source/build/Release/VillainousStyle.framework; sourceTree = "<group>"; };
+		1E3120B310AA7B9100D72994 /* VillainousStyle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VillainousStyle.framework; path = ../../Source/build/Release/Mac/VillainousStyle.framework; sourceTree = "<group>"; };
 		1E31210310AA7E1900D72994 /* doom-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "doom-icon.png"; sourceTree = "<group>"; };
 		1E31228210AA81B500D72994 /* VillainousStyle.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = VillainousStyle.xcodeproj; path = ../../Source/VillainousStyle.xcodeproj; sourceTree = "<group>"; };
 		256AC3F00F4B6AF500CF3369 /* MacDemo_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MacDemo_Prefix.pch; sourceTree = "<group>"; };
@@ -90,7 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E3120B410AA7B9100D72994 /* VillainousStyle.framework in Frameworks */,
+				1E874A42115D85D90076FC51 /* VillainousStyle.framework in Frameworks */,
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -164,6 +178,7 @@
 			children = (
 				1E3122F310AA8B1A00D72994 /* VillainousStyle.framework */,
 				1EFF7C3D10B50B2700354C65 /* libVillainousStyle.a */,
+				1E8749FA115D7FF30076FC51 /* libVillainousStyle.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -225,6 +240,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				1E874A2B115D81FF0076FC51 /* PBXTargetDependency */,
 				1E478B5210B64A25003DA622 /* PBXTargetDependency */,
 			);
 			name = MacDemo;
@@ -262,6 +278,13 @@
 			fileType = wrapper.framework;
 			path = VillainousStyle.framework;
 			remoteRef = 1E3122F210AA8B1A00D72994 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1E8749FA115D7FF30076FC51 /* libVillainousStyle.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libVillainousStyle.a;
+			remoteRef = 1E8749F9115D7FF30076FC51 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		1EFF7C3D10B50B2700354C65 /* libVillainousStyle.a */ = {
@@ -308,6 +331,11 @@
 			name = VillainousStyle.framework;
 			targetProxy = 1E478B5110B64A25003DA622 /* PBXContainerItemProxy */;
 		};
+		1E874A2B115D81FF0076FC51 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Headers;
+			targetProxy = 1E874A2A115D81FF0076FC51 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -335,13 +363,17 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../Source/build/Release/Mac\"",
+				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = MacDemo_Prefix.pch;
-				HEADER_SEARCH_PATHS = "${PRODUCT_PATH}/Contents/Frameworks/**";
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../../Source/build/$(CONFIGURATION)/Headers/";
 				INFOPLIST_FILE = "Resources/MacDemo-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				PRODUCT_NAME = MacDemo;
@@ -355,10 +387,14 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../Source/build/Release/Mac\"",
+				);
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = MacDemo_Prefix.pch;
-				HEADER_SEARCH_PATHS = "${PRODUCT_PATH}/Contents/Frameworks/**";
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../../Source/build/$(CONFIGURATION)/Headers/";
 				INFOPLIST_FILE = "Resources/MacDemo-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				PRODUCT_NAME = MacDemo;

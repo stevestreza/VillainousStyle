@@ -21,7 +21,7 @@
 #if TARGET_OS_IPHONE
 #define VSColorHSV(h,s,v) [UIColor colorWithHue:h saturation:s value:v alpha:1.0]
 #else
-#define VSColorHSV(h,s,v) [NSColor colorWithCalibratedHue:(h) saturation:(s) value:(v) alpha:1.0]
+#define VSColorHSV(h,s,v) [NSColor colorWithCalibratedHue:(h) saturation:(s) brightness:(v) alpha:1.0]
 #endif
 #define ZEROLIMIT(_VALUE) (_VALUE < 0 ? 0 : (_VALUE > 1 ? 1 : _VALUE))
 

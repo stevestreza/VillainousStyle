@@ -205,8 +205,8 @@
 			buildRules = (
 			);
 			dependencies = (
-				1EFF7CC510B5146200354C65 /* PBXTargetDependency */,
 				1E87498E115D7C890076FC51 /* PBXTargetDependency */,
+				1EFF7CC510B5146200354C65 /* PBXTargetDependency */,
 			);
 			name = iPhoneDemo;
 			productName = iPhoneDemo;

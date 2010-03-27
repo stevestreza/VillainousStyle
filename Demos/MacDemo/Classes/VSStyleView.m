@@ -7,11 +7,11 @@
 //
 
 #import "VSStyleView.h"
-#import <VillainousStyle/NSView+VSStyle.h>
-#import <VillainousStyle/VSStyleSheet.h>
+#import "NSView+VSStyle.h"
+#import "VSStyleSheet.h"
 
-#import <VillainousStyle/VSStyles.h>
-#import <VillainousStyle/VSShapes.h>
+#import "VSStyles.h"
+#import "VSShapes.h"
 
 @implementation VSStyleView
 
@@ -75,7 +75,15 @@
 
 -(void)drawRect:(NSRect)aRect{
 //	NSLog(@"Drawing style in rect - %@", [[VSStyleSheet globalStyleSheet] className]);
-	[self drawStyle:style inRect:[self bounds]];
+	[self drawStyle:[self style] inRect:[self bounds]];
+}
+
+-(VSStyle *)style{
+	if(styleName){
+		return [[VSStyleSheet globalStyleSheet] styleWithSelector:styleName];
+	}else{
+		return style;
+	}
 }
 
 -(void)dealloc{

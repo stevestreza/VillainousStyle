@@ -2,10 +2,10 @@
 <archive type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="7.10">
 	<data>
 		<int key="IBDocument.SystemTarget">784</int>
-		<string key="IBDocument.SystemVersion">10B504</string>
+		<string key="IBDocument.SystemVersion">10C540</string>
 		<string key="IBDocument.InterfaceBuilderVersion">732</string>
-		<string key="IBDocument.AppKitVersion">1038.2</string>
-		<string key="IBDocument.HIToolboxVersion">437.00</string>
+		<string key="IBDocument.AppKitVersion">1038.25</string>
+		<string key="IBDocument.HIToolboxVersion">458.00</string>
 		<object class="NSMutableDictionary" key="IBDocument.PluginVersions">
 			<string key="NS.key.0">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 			<string key="NS.object.0">62</string>
@@ -99,9 +99,8 @@
 						<string key="NSFrameSize">{320, 460}</string>
 						<reference key="NSSuperview" ref="774585933"/>
 						<object class="NSColor" key="IBUIBackgroundColor">
-							<int key="NSColorSpace">3</int>
-							<bytes key="NSWhite">MQA</bytes>
-							<reference key="NSCustomColorSpace" ref="941018783"/>
+							<int key="NSColorSpace">1</int>
+							<bytes key="NSRGB">MC41MjE3MzkxMzA0IDAuNTIxNzM5MTMwNCAwLjUyMTczOTEzMDQAA</bytes>
 						</object>
 						<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
 					</object>
@@ -261,7 +260,7 @@
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>VSStyleView</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-					<string>{{438, 347}, {320, 480}}</string>
+					<string>{{404, 347}, {320, 480}}</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>VSStyleView</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
