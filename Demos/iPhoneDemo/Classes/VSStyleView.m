@@ -88,7 +88,16 @@
 
 -(void)drawRect:(CGRect)aRect{
 	//	NSLog(@"Drawing style in rect - %@", [[VSStyleSheet globalStyleSheet] className]);
-	[self drawStyle:style inRect:[self bounds]];
+	
+	[self drawStyle:[self style] inRect:[self bounds]];
+}
+
+-(VSStyle *)style{
+	if(styleName){
+		return [[VSStyleSheet globalStyleSheet] styleWithSelector:styleName];
+	}else{
+		return style;
+	}
 }
 
 -(void)dealloc{
