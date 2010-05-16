@@ -235,7 +235,6 @@
 		1EC85FD210B51FB20017E68B /* VSSpeechBubbleShape.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E0FDCAB101843DA007AFA92 /* VSSpeechBubbleShape.m */; };
 		1EC85FD310B51FB20017E68B /* VSMaskStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E0FDD1C10184B86007AFA92 /* VSMaskStyle.m */; };
 		1EC85FD410B51FB20017E68B /* VSInnerShadowStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E0FDCD5101844D7007AFA92 /* VSInnerShadowStyle.m */; };
-		1EC85FD510B51FB20017E68B /* NSColor+CGColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E68218B10182C4B005A22F6 /* NSColor+CGColor.m */; };
 		1EC85FD610B51FB20017E68B /* VSInsetStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E68212510182924005A22F6 /* VSInsetStyle.m */; };
 		1EC85FD710B51FB20017E68B /* VSShape.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E681DAF10181ABB005A22F6 /* VSShape.m */; };
 		1EC85FD810B51FB20017E68B /* VSShadowStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E6821C110182EBA005A22F6 /* VSShadowStyle.m */; };
@@ -868,7 +867,6 @@
 				1EC85FD210B51FB20017E68B /* VSSpeechBubbleShape.m in Sources */,
 				1EC85FD310B51FB20017E68B /* VSMaskStyle.m in Sources */,
 				1EC85FD410B51FB20017E68B /* VSInnerShadowStyle.m in Sources */,
-				1EC85FD510B51FB20017E68B /* NSColor+CGColor.m in Sources */,
 				1EC85FD610B51FB20017E68B /* VSInsetStyle.m in Sources */,
 				1EC85FD710B51FB20017E68B /* VSShape.m in Sources */,
 				1EC85FD810B51FB20017E68B /* VSShadowStyle.m in Sources */,
