@@ -19,6 +19,13 @@
 #import "VSPartStyle.h"
 #import "NSColor+CGColor.h"
 
+@interface VSStyle (Private)
+
+-(void)_setPrevious:(VSStyle *)previous;
+
+@end
+
+
 @implementation VSStyle
 
 @synthesize next=_next, previous=_previous;

@@ -16,7 +16,6 @@
 //
 
 #import "VSGlobal.h"
-#import "VSGlobal.h"
 
 @interface VSColor (Additions)
 

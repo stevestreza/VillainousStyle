@@ -75,4 +75,3 @@ typedef enum {
 
 static const CGFloat kArrowPointWidth = 2.8;
 static const CGFloat kArrowRadius = 2;
-static CGFloat kInsetWidth = 5;

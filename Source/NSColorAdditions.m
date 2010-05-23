@@ -24,8 +24,8 @@
 #define MAX3(a,b,c) (a > b ? (a > c ? a : c) : (b > c ? b : c))
 #define MIN3(a,b,c) (a < b ? (a < c ? a : c) : (b < c ? b : c))
 
-void VS_RGBtoHSV(float r, float g, float b, float* h, float* s, float* v) {
-	float min, max, delta;
+void VS_RGBtoHSV(CGFloat r, CGFloat g, CGFloat b, CGFloat* h, CGFloat* s, CGFloat* v) {
+	CGFloat min, max, delta;
 	min = MIN3(r, g, b);
 	max = MAX3(r, g, b);
 	*v = max;				// v
@@ -49,10 +49,10 @@ void VS_RGBtoHSV(float r, float g, float b, float* h, float* s, float* v) {
 		*h += 360;
 }
 
-void VS_HSVtoRGB( float *r, float *g, float *b, float h, float s, float v )
+void VS_HSVtoRGB( CGFloat *r, CGFloat *g, CGFloat *b, CGFloat h, CGFloat s, CGFloat v )
 {
 	int i;
-	float f, p, q, t;
+	CGFloat f, p, q, t;
 	if( s == 0 ) {
 		// achromatic (grey)
 		*r = *g = *b = v;

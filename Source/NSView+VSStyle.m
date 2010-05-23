@@ -17,6 +17,7 @@
 
 #import "NSView+VSStyle.h"
 #import "VSStyleContext.h"
+#import "VSStyle.h"
 
 #if TARGET_OS_IPHONE
 @implementation UIView (VSStyleAdditions)

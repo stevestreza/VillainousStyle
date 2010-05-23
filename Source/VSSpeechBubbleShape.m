@@ -17,6 +17,7 @@
 
 #import "VSSpeechBubbleShape.h"
 
+static CGFloat kInsetWidth = 5;
 
 @implementation VSSpeechBubbleShape
 

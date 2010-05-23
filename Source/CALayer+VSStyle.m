@@ -8,6 +8,7 @@
 
 #import "CALayer+VSStyle.h"
 #import "VSStyleContext.h"
+#import "VSStyle.h"
 
 @implementation CALayer (VSStyle)
 
@@ -19,9 +20,9 @@
 		context.contentFrame = context.frame;
 		
 		[style draw:context];
-		if (!context.didDrawContent) {
-			[self drawContent:self.bounds];
-		}
+//		if (!context.didDrawContent && [self respondsToSelector:@selector(drawLayer:withStyle:)]) {
+//			[self drawLayer:context withStyle:style];
+//		}
 	}
 }
 

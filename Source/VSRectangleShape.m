@@ -23,6 +23,7 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 // class public
 
+static VSRectangleShape* sharedRectangleShape = nil;
 + (VSRectangleShape*)shape {
 	if (!sharedRectangleShape) {
 		sharedRectangleShape = [[VSRectangleShape alloc] init];

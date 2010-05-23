@@ -136,7 +136,11 @@ contentMode = _contentMode, size = _size;
 - (VSImage*)image {
 	if (!_image && _imageURL) {
 //		_image = [[[VSURLCache sharedCache] imageForURL:_imageURL] retain];
-		_image = [[[VSImage alloc] initWithContentsOfURL:_imageURL] retain];
+		NSURL *url = (NSURL *)_imageURL;
+		if([url isKindOfClass:[NSString class]]){
+			url = [NSURL URLWithString:(NSString *)url];
+		}
+		_image = [[[VSImage alloc] initWithContentsOfURL:url] retain];
 	}
 	return _image;
 }

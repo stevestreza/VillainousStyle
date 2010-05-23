@@ -19,7 +19,6 @@
 #import "VSGlobal.h"
 
 @class VSRectangleShape;
-static VSRectangleShape* sharedRectangleShape = nil;
 
 @interface VSShape : NSObject {
     //STUB add your instance variables here

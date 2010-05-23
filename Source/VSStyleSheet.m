@@ -67,8 +67,8 @@ const NSString *VSStyleSheetChangedNotification = @"VSStyleSheetChangedNotificat
 	[gStyleSheet autorelease];
 	gStyleSheet = [styleSheet retain];
 	
-	[[NSNotificationCenter defaultCenter] postNotificationName: VSStyleSheetChangedNotification
-														object: gStyleSheet ];
+	[[NSNotificationCenter defaultCenter] postNotificationName: (NSString *)VSStyleSheetChangedNotification
+														object: (id)gStyleSheet ];
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
