@@ -133,8 +133,8 @@ verticalAlignment = _verticalAlignment, lineBreakMode = _lineBreakMode;
 	
 	CGRect rect = context.contentFrame;
 	CGRect titleRect = [self rectForText:text forSize:rect.size withFont:font];
-//	NSRect textRect = NSMakeRect(titleRect.origin.x+rect.origin.x, titleRect.origin.y+rect.origin.y,rect.size.width,rect.size.height);
-//	CGSize size = rect.size;
+	CGRect textRect = CGRectMake(titleRect.origin.x+rect.origin.x, titleRect.origin.y+rect.origin.y,rect.size.width,rect.size.height);
+	CGSize size = rect.size;
 	titleRect.size = VSStringSize();
 	
 #if TARGET_OS_IPHONE
@@ -203,7 +203,7 @@ verticalAlignment = _verticalAlignment, lineBreakMode = _lineBreakMode;
 - (CGSize)addToSize:(CGSize)size context:(VSStyleContext*)context {
 	if ([context.delegate respondsToSelector:@selector(textForLayerWithStyle:)]) {
 		NSString* text = [context.delegate textForLayerWithStyle:self];
-//		VSFont* font = _font ? _font : context.font;
+		VSFont* font = _font ? _font : context.font;
 		
 		CGSize textSize = VSStringSize();				
 		

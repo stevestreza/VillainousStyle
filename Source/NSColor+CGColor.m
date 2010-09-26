@@ -43,6 +43,13 @@
 		color = CGColorCreate(cgColorSpace, components);
 		free(components);
 	} @catch (NSException *e) {
+#if TARGET_OS_MAC
+		// I don't know how better to detect this
+		if([[e reason] rangeOfString:@"need to first convert colorspace"].location != NSNotFound){
+			NSColor *newColor = [self colorUsingColorSpace:[NSColorSpace deviceRGBColorSpace]];
+			return [newColor CGColor];
+		}
+#endif
 		// We were probably passed a pattern, which isn't going to work. Return clear color constant.
 #if TARGET_OS_IPHONE
 		return [[UIColor clearColor] CGColor];
