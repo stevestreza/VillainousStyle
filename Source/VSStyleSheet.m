@@ -43,7 +43,7 @@ const NSString *VSStyleSheetChangedNotification = @"VSStyleSheetChangedNotificat
 		
 		gAllStyleSheets = [allSheets copy];
 	}
-	return gAllStyleSheets;
+	return [[gAllStyleSheets copy] autorelease];
 }
 
 
@@ -57,7 +57,7 @@ const NSString *VSStyleSheetChangedNotification = @"VSStyleSheetChangedNotificat
 	}
  */
 	if (!gStyleSheet){
-		gStyleSheet = [[self allStyleSheets] lastObject];
+		gStyleSheet = [[[self allStyleSheets] lastObject] retain];
 	}
 	
 	return gStyleSheet;
