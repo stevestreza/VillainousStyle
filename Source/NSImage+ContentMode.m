@@ -8,8 +8,12 @@
 
 #import "NSImage+ContentMode.h"
 
-#if !TARGET_OS_IPHONE
+
+#if TARGET_OS_IPHONE
+@implementation UIImage (ContentMode)
+#else
 @implementation NSImage (ContentMode)
+#endif
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 // private
@@ -123,10 +127,14 @@
 	
 //	[self drawInRect:rect];
 	//TODO expose the operation and fraction values, in Mac only
+#if TARGET_OS_IPHONE
+	[self drawInRect:rect blendMode:kCGBlendModeNormal alpha:1.0];
+#else
 	[self drawInRect:NSRectFromCGRect(rect)
 			fromRect:NSMakeRect(0, 0, self.size.width, self.size.height)
 		   operation:NSCompositeSourceOver
 			fraction:1.0];
+#endif
 	
 	if (clip) {
 		CGContextRestoreGState(context);
@@ -151,5 +159,3 @@
 }
 
 @end
-
-#endif

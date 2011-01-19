@@ -366,7 +366,7 @@
 		1E0FDD1C10184B86007AFA92 /* VSMaskStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSMaskStyle.m; sourceTree = "<group>"; };
 		1E0FDD2410184C18007AFA92 /* NSImage+CGImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSImage+CGImage.h"; sourceTree = "<group>"; };
 		1E0FDD2510184C18007AFA92 /* NSImage+CGImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSImage+CGImage.m"; sourceTree = "<group>"; };
-		1E0FDD5B101A79DF007AFA92 /* VillainousStyle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = VillainousStyle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E0FDD5B101A79DF007AFA92 /* VillainousStyle */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.framework; path = VillainousStyle; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E0FDD5C101A79DF007AFA92 /* VillainousStyle-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VillainousStyle-Info.plist"; sourceTree = "<group>"; };
 		1E23702610CB42F000A03525 /* CALayer+VSStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+VSStyle.h"; sourceTree = "<group>"; };
 		1E23702710CB42F000A03525 /* CALayer+VSStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+VSStyle.m"; sourceTree = "<group>"; };
@@ -501,7 +501,7 @@
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1E0FDD5B101A79DF007AFA92 /* VillainousStyle.framework */,
+				1E0FDD5B101A79DF007AFA92 /* VillainousStyle */,
 				1E3123CB10AD256C00D72994 /* libVillainousStyle.a */,
 				1E5CFFBA10ED61E600B7B095 /* libVillainousStyle.a */,
 			);
@@ -743,7 +743,7 @@
 			);
 			name = VillainousStyle.framework;
 			productName = TTStyle;
-			productReference = 1E0FDD5B101A79DF007AFA92 /* VillainousStyle.framework */;
+			productReference = 1E0FDD5B101A79DF007AFA92 /* VillainousStyle */;
 			productType = "com.apple.product-type.framework";
 		};
 		1E3123CA10AD256C00D72994 /* libVillainousStyle.a - iPhone */ = {
@@ -788,7 +788,14 @@
 			isa = PBXProject;
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "VillainousStyle" */;
 			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
 			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* TTStyleMacTest */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -1033,7 +1040,7 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				PREBINDING = NO;
 				PRODUCT_NAME = VillainousStyle;
-				SDKROOT = iphoneos4.0;
+				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
@@ -1048,7 +1055,7 @@
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				PREBINDING = NO;
 				PRODUCT_NAME = VillainousStyle;
-				SDKROOT = iphoneos4.0;
+				SDKROOT = iphoneos;
 				ZERO_LINK = NO;
 			};
 			name = Release;
