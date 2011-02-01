@@ -92,7 +92,7 @@
 							  self.size.width, self.size.height);
 			clip = YES;
 		} else if (contentMode == UIViewContentModeScaleAspectFill) {
-			CGSize imageSize = NSSizeToCGSize(self.size);
+			CGSize imageSize = CGSizeMake(self.size.width, self.size.height);
 			if (imageSize.height < imageSize.width) {
 				imageSize.width = floor((imageSize.width/imageSize.height) * rect.size.height);
 				imageSize.height = rect.size.height;
@@ -104,7 +104,7 @@
 							  rect.origin.y + floor(rect.size.height/2 - imageSize.height/2),
 							  imageSize.width, imageSize.height);
 		} else if (contentMode == UIViewContentModeScaleAspectFit) {
-			CGSize imageSize = NSSizeToCGSize(self.size);
+			CGSize imageSize = CGSizeMake(self.size.width, self.size.height);
 			if (imageSize.height < imageSize.width) {
 				imageSize.height = floor((imageSize.height/imageSize.width) * rect.size.width);
 				imageSize.width = rect.size.width;
