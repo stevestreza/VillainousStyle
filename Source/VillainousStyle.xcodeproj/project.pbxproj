@@ -21,7 +21,7 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		1E0BEA2610EEEA1C007CF5C8 /* VillainousStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E0BEA2510EEEA1C007CF5C8 /* VillainousStyle.h */; };
+		1E0BEA2610EEEA1C007CF5C8 /* VillainousStyle.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1E0BEA2510EEEA1C007CF5C8 /* VillainousStyle.h */; };
 		1E0BEA2710EEEA1C007CF5C8 /* VillainousStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E0BEA2510EEEA1C007CF5C8 /* VillainousStyle.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1E0BEA2810EEEA1C007CF5C8 /* VillainousStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E0BEA2510EEEA1C007CF5C8 /* VillainousStyle.h */; };
 		1E0FDD6C101A7A0A007AFA92 /* NSColor+CGColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E68218B10182C4B005A22F6 /* NSColor+CGColor.m */; };
@@ -79,19 +79,19 @@
 		1E0FDDC1101A7A20007AFA92 /* VSStyles.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E68220F1018324D005A22F6 /* VSStyles.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1E23702810CB42F000A03525 /* CALayer+VSStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E23702610CB42F000A03525 /* CALayer+VSStyle.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1E23702910CB42F000A03525 /* CALayer+VSStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E23702710CB42F000A03525 /* CALayer+VSStyle.m */; };
-		1E23702A10CB42F000A03525 /* CALayer+VSStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E23702610CB42F000A03525 /* CALayer+VSStyle.h */; };
+		1E23702A10CB42F000A03525 /* CALayer+VSStyle.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1E23702610CB42F000A03525 /* CALayer+VSStyle.h */; };
 		1E23702B10CB42F000A03525 /* CALayer+VSStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E23702710CB42F000A03525 /* CALayer+VSStyle.m */; };
 		1E31240810AD260400D72994 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E31240710AD260400D72994 /* Foundation.framework */; };
 		1E31240A10AD260400D72994 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E31240910AD260400D72994 /* UIKit.framework */; };
 		1E31243010AD28A700D72994 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E31242F10AD28A700D72994 /* CoreGraphics.framework */; };
 		1E3B533910FC30E5007036C9 /* VSContentStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E3B533710FC30E5007036C9 /* VSContentStyle.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1E3B533A10FC30E5007036C9 /* VSContentStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E3B533810FC30E5007036C9 /* VSContentStyle.m */; };
-		1E3B533B10FC30E5007036C9 /* VSContentStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E3B533710FC30E5007036C9 /* VSContentStyle.h */; };
+		1E3B533B10FC30E5007036C9 /* VSContentStyle.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1E3B533710FC30E5007036C9 /* VSContentStyle.h */; };
 		1E3B533C10FC30E5007036C9 /* VSContentStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E3B533810FC30E5007036C9 /* VSContentStyle.m */; };
 		1E3B533D10FC30E5007036C9 /* VSContentStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E3B533710FC30E5007036C9 /* VSContentStyle.h */; };
 		1E3B533E10FC30E5007036C9 /* VSContentStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E3B533810FC30E5007036C9 /* VSContentStyle.m */; };
 		1E3B534010FC3193007036C9 /* VSStyleDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E3B533F10FC3193007036C9 /* VSStyleDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1E3B534110FC3193007036C9 /* VSStyleDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E3B533F10FC3193007036C9 /* VSStyleDelegate.h */; };
+		1E3B534110FC3193007036C9 /* VSStyleDelegate.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1E3B533F10FC3193007036C9 /* VSStyleDelegate.h */; };
 		1E3B534210FC3193007036C9 /* VSStyleDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E3B533F10FC3193007036C9 /* VSStyleDelegate.h */; };
 		1E526FB810A3D8440008B89D /* VSStyleSheet.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E526FB610A3D8440008B89D /* VSStyleSheet.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1E526FB910A3D8440008B89D /* VSStyleSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E526FB710A3D8440008B89D /* VSStyleSheet.m */; };
@@ -308,6 +308,10 @@
 			dstPath = Headers;
 			dstSubfolderSpec = 16;
 			files = (
+				1E23702A10CB42F000A03525 /* CALayer+VSStyle.h in CopyFiles */,
+				1E0BEA2610EEEA1C007CF5C8 /* VillainousStyle.h in CopyFiles */,
+				1E3B533B10FC30E5007036C9 /* VSContentStyle.h in CopyFiles */,
+				1E3B534110FC3193007036C9 /* VSStyleDelegate.h in CopyFiles */,
 				1EC85F6A10B51D480017E68B /* VSLinearGradientFillStyle.h in CopyFiles */,
 				1EC85F6B10B51D480017E68B /* VSGlobal.h in CopyFiles */,
 				1EC85F6C10B51D480017E68B /* VSShapes.h in CopyFiles */,
@@ -685,17 +689,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1E3123C710AD256C00D72994 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1E23702A10CB42F000A03525 /* CALayer+VSStyle.h in Headers */,
-				1E0BEA2610EEEA1C007CF5C8 /* VillainousStyle.h in Headers */,
-				1E3B533B10FC30E5007036C9 /* VSContentStyle.h in Headers */,
-				1E3B534110FC3193007036C9 /* VSStyleDelegate.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		1E5CFFB610ED61E600B7B095 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -750,7 +743,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1E31240610AD25C700D72994 /* Build configuration list for PBXNativeTarget "libVillainousStyle.a - iPhone" */;
 			buildPhases = (
-				1E3123C710AD256C00D72994 /* Headers */,
 				1E3123C810AD256C00D72994 /* Sources */,
 				1E3123C910AD256C00D72994 /* Frameworks */,
 				1EC85F5010B51BE20017E68B /* CopyFiles */,
