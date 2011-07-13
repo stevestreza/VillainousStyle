@@ -968,6 +968,7 @@
 				);
 				PRODUCT_NAME = VillainousStyle;
 				SDKROOT = macosx10.6;
+				VALID_ARCHS = "i386 x86_64";
 			};
 			name = Debug;
 		};
@@ -997,6 +998,7 @@
 				);
 				PRODUCT_NAME = VillainousStyle;
 				SDKROOT = macosx10.6;
+				VALID_ARCHS = "i386 x86_64";
 				ZERO_LINK = NO;
 			};
 			name = Release;
@@ -1095,6 +1097,7 @@
 					AppKit,
 				);
 				PRODUCT_NAME = VillainousStyle;
+				VALID_ARCHS = "i386 x86_64";
 				ZERO_LINK = NO;
 			};
 			name = Release;
