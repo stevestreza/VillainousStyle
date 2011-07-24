@@ -8,8 +8,8 @@
 
 #import "VSStyleController.h"
 
-#import <VillainousStyle/VSStyles.h>
-#import <VillainousStyle/VSShapes.h>
+#import "VillainousStyle/VSStyles.h"
+#import "VillainousStyle/VSShapes.h"
 
 #import "LightStyleSheet.h"
 #import "DarkStyleSheet.h"

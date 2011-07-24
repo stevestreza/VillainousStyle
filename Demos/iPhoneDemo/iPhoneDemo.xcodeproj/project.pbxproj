@@ -12,6 +12,7 @@
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		1E9FB1FF13DCD8610048873D /* libVillainousStyleIOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E9FB1EF13DCD79D0048873D /* libVillainousStyleIOS.a */; };
+		1E9FB20313DCE0B90048873D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E9FB20213DCE0B90048873D /* QuartzCore.framework */; };
 		1EC85F1010B519860017E68B /* VSStyleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EC85F0F10B519860017E68B /* VSStyleView.m */; };
 		1EFF7CD310B5156C00354C65 /* DarkStyleSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EFF7CD010B5156C00354C65 /* DarkStyleSheet.m */; };
 		1EFF7CD410B5156C00354C65 /* LightStyleSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EFF7CD210B5156C00354C65 /* LightStyleSheet.m */; };
@@ -52,6 +53,7 @@
 		1D6058910D05DD3D006BFB54 /* iPhoneDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iPhoneDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1E9FB1E713DCD79D0048873D /* VillainousStyle.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = VillainousStyle.xcodeproj; path = ../../VillainousStyle/VillainousStyle.xcodeproj; sourceTree = "<group>"; };
+		1E9FB20213DCE0B90048873D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		1EC85F0E10B519860017E68B /* VSStyleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSStyleView.h; sourceTree = "<group>"; };
 		1EC85F0F10B519860017E68B /* VSStyleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSStyleView.m; sourceTree = "<group>"; };
 		1EFF7CCF10B5156C00354C65 /* DarkStyleSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DarkStyleSheet.h; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E9FB20313DCE0B90048873D /* QuartzCore.framework in Frameworks */,
 				1E9FB1FF13DCD8610048873D /* libVillainousStyleIOS.a in Frameworks */,
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
@@ -129,6 +132,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				1E9FB20213DCE0B90048873D /* QuartzCore.framework */,
 				1E9FB1E713DCD79D0048873D /* VillainousStyle.xcodeproj */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
@@ -285,7 +289,10 @@
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				HEADER_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)/usr/local/include";
 				INFOPLIST_FILE = "iPhoneDemo-Info.plist";
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
 				PRODUCT_NAME = iPhoneDemo;
 			};
 			name = Debug;
@@ -300,7 +307,10 @@
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				HEADER_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)/usr/local/include";
 				INFOPLIST_FILE = "iPhoneDemo-Info.plist";
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
 				PRODUCT_NAME = iPhoneDemo;
 			};
 			name = Release;

@@ -760,7 +760,9 @@
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				OTHER_LDFLAGS = "-ObjC";
+				PRIVATE_HEADERS_FOLDER_PATH = /usr/local/include/VillainousStyle;
 				PRODUCT_NAME = VillainousStyle;
+				PUBLIC_HEADERS_FOLDER_PATH = /usr/local/include/VillainousStyle;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 			};
@@ -776,7 +778,9 @@
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				OTHER_LDFLAGS = "-ObjC";
+				PRIVATE_HEADERS_FOLDER_PATH = /usr/local/include/VillainousStyle;
 				PRODUCT_NAME = VillainousStyle;
+				PUBLIC_HEADERS_FOLDER_PATH = /usr/local/include/VillainousStyle;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				VALIDATE_PRODUCT = YES;

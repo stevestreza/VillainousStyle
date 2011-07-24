@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <VillainousStyle/VSStyleView.h>
+#import "VSStyleView.h"
 
 @interface iPhoneDemoViewController : UIViewController {
 	IBOutlet VSStyleView *backgroundView;

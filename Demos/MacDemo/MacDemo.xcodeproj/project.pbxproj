@@ -341,7 +341,7 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = MacDemo_Prefix.pch;
-				HEADER_SEARCH_PATHS = "$(SRCROOT)/../../Source/build/$(CONFIGURATION)/Headers/";
+				HEADER_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)/usr/local/include";
 				INFOPLIST_FILE = "Resources/MacDemo-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				PRODUCT_NAME = MacDemo;
@@ -362,7 +362,6 @@
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = MacDemo_Prefix.pch;
-				HEADER_SEARCH_PATHS = "$(SRCROOT)/../../Source/build/$(CONFIGURATION)/Headers/";
 				INFOPLIST_FILE = "Resources/MacDemo-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				PRODUCT_NAME = MacDemo;

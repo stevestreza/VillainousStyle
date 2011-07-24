@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <VillainousStyle/VSStyles.h>
+#import "VillainousStyle/VSStyles.h"
 
 @interface VSStyleView : NSView {
     //STUB add your instance variables here

@@ -7,8 +7,8 @@
 //
 
 #import "LightStyleSheet.h"
-#import <VillainousStyle/VSStyles.h>
-#import <VillainousStyle/VSShapes.h>
+#import "VillainousStyle/VSStyles.h"
+#import "VillainousStyle/VSShapes.h"
 
 @implementation LightStyleSheet
 

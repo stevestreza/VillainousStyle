@@ -6,12 +6,12 @@
 //  Copyright 2009 __MyCompanyName__. All rights reserved.
 //
 
-#import <VillainousStyle/VSStyleView.h>
+#import "VSStyleView.h"
 #import "NSView+VSStyle.h"			
-#import <VillainousStyle/VSStyleSheet.h>
+#import "VillainousStyle/VSStyleSheet.h"
 
-#import <VillainousStyle/VSStyles.h>
-#import <VillainousStyle/VSShapes.h>
+#import "VillainousStyle/VSStyles.h"
+#import "VillainousStyle/VSShapes.h"
 
 @implementation VSStyleView
 
