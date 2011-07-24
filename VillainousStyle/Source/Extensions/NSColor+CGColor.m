@@ -43,7 +43,7 @@
 		color = CGColorCreate(cgColorSpace, components);
 		free(components);
 	} @catch (NSException *e) {
-#if TARGET_OS_MAC
+#if !TARGET_OS_IPHONE   && !TARGET_IPHONE_SIMULATOR
 		// I don't know how better to detect this
 		if([[e reason] rangeOfString:@"need to first convert colorspace"].location != NSNotFound){
 			NSColor *newColor = [self colorUsingColorSpace:[NSColorSpace deviceRGBColorSpace]];

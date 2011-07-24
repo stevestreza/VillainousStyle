@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "VSStyles.h"
+#import <VillainousStyle/VSStyles.h>
 
 @interface VSStyleView : UIView {
 	VSStyle *style;

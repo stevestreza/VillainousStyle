@@ -7,8 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "VSStyleView.h"
-#import "VSStyleLabel.h"
+#import <VillainousStyle/VSStyleView.h>
+#import <VillainousStyle/VSStyleLabel.h>
 
 @interface VSStyleController : NSWindowController {
 	IBOutlet VSStyleView *backgroundView;

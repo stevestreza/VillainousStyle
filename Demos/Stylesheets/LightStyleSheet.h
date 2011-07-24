@@ -6,8 +6,8 @@
 //  Copyright 2009 __MyCompanyName__. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>#import <Foundation/Foundation.h>
-#import "VSStyleSheet.h"
+#import <Foundation/Foundation.h>
+#import <VillainousStyle/VSStyleSheet.h>
 
 @interface LightStyleSheet : VSStyleSheet {
 

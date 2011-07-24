@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 45;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,8 +11,8 @@
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		1E9FB1FF13DCD8610048873D /* libVillainousStyleIOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E9FB1EF13DCD79D0048873D /* libVillainousStyleIOS.a */; };
 		1EC85F1010B519860017E68B /* VSStyleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EC85F0F10B519860017E68B /* VSStyleView.m */; };
-		1EFF7CC610B5146D00354C65 /* libVillainousStyle.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E3123D010AD258B00D72994 /* libVillainousStyle.a */; };
 		1EFF7CD310B5156C00354C65 /* DarkStyleSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EFF7CD010B5156C00354C65 /* DarkStyleSheet.m */; };
 		1EFF7CD410B5156C00354C65 /* LightStyleSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EFF7CD210B5156C00354C65 /* LightStyleSheet.m */; };
 		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
@@ -22,40 +22,26 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		1E3123BF10AD254C00D72994 /* PBXContainerItemProxy */ = {
+		1E9FB1EC13DCD79D0048873D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 1E3123B410AD254C00D72994 /* VillainousStyle.xcodeproj */;
+			containerPortal = 1E9FB1E713DCD79D0048873D /* VillainousStyle.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = 1E0FDD5B101A79DF007AFA92;
-			remoteInfo = VillainousStyle;
+			remoteGlobalIDString = 1E9FB09413DCCFD80048873D;
+			remoteInfo = VillainousStyleMac;
 		};
-		1E3123CF10AD258B00D72994 /* PBXContainerItemProxy */ = {
+		1E9FB1EE13DCD79D0048873D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 1E3123B410AD254C00D72994 /* VillainousStyle.xcodeproj */;
+			containerPortal = 1E9FB1E713DCD79D0048873D /* VillainousStyle.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = 1E3123CB10AD256C00D72994;
-			remoteInfo = libVillainousStyle.a;
+			remoteGlobalIDString = 1E9FB0B013DCD0040048873D;
+			remoteInfo = VillainousStyleIOS;
 		};
-		1E874959115D7C340076FC51 /* PBXContainerItemProxy */ = {
+		1E9FB1FD13DCD85B0048873D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 1E3123B410AD254C00D72994 /* VillainousStyle.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 1E5CFFBA10ED61E600B7B095 /* libVillainousStyle.a */;
-			remoteInfo = "libVillainousStyle.a - Mac";
-		};
-		1E87498D115D7C890076FC51 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1E3123B410AD254C00D72994 /* VillainousStyle.xcodeproj */;
+			containerPortal = 1E9FB1E713DCD79D0048873D /* VillainousStyle.xcodeproj */;
 			proxyType = 1;
-			remoteGlobalIDString = 1E2370F010CB6A4100A03525 /* Headers */;
-			remoteInfo = Headers;
-		};
-		1EFF7CC410B5146200354C65 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1E3123B410AD254C00D72994 /* VillainousStyle.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 1E3123CA10AD256C00D72994;
-			remoteInfo = libVillainousStyle.a;
+			remoteGlobalIDString = 1E9FB0AF13DCD0040048873D;
+			remoteInfo = VillainousStyleIOS;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -65,7 +51,7 @@
 		1D3623250D0F684500981E51 /* iPhoneDemoAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iPhoneDemoAppDelegate.m; sourceTree = "<group>"; };
 		1D6058910D05DD3D006BFB54 /* iPhoneDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iPhoneDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		1E3123B410AD254C00D72994 /* VillainousStyle.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = VillainousStyle.xcodeproj; path = ../../Source/VillainousStyle.xcodeproj; sourceTree = "<group>"; };
+		1E9FB1E713DCD79D0048873D /* VillainousStyle.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = VillainousStyle.xcodeproj; path = ../../VillainousStyle/VillainousStyle.xcodeproj; sourceTree = "<group>"; };
 		1EC85F0E10B519860017E68B /* VSStyleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSStyleView.h; sourceTree = "<group>"; };
 		1EC85F0F10B519860017E68B /* VSStyleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSStyleView.m; sourceTree = "<group>"; };
 		1EFF7CCF10B5156C00354C65 /* DarkStyleSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DarkStyleSheet.h; sourceTree = "<group>"; };
@@ -87,7 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1EFF7CC610B5146D00354C65 /* libVillainousStyle.a in Frameworks */,
+				1E9FB1FF13DCD8610048873D /* libVillainousStyleIOS.a in Frameworks */,
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */,
@@ -119,20 +105,11 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1E3123B110AD251F00D72994 /* VillainousStyle */ = {
+		1E9FB1E813DCD79D0048873D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1E3123B410AD254C00D72994 /* VillainousStyle.xcodeproj */,
-			);
-			name = VillainousStyle;
-			sourceTree = "<group>";
-		};
-		1E3123BC10AD254C00D72994 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				1E3123C010AD254C00D72994 /* VillainousStyle.framework */,
-				1E3123D010AD258B00D72994 /* libVillainousStyle.a */,
-				1E87495A115D7C340076FC51 /* libVillainousStyle.a */,
+				1E9FB1ED13DCD79D0048873D /* VillainousStyleMac.framework */,
+				1E9FB1EF13DCD79D0048873D /* libVillainousStyleIOS.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -152,7 +129,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
-				1E3123B110AD251F00D72994 /* VillainousStyle */,
+				1E9FB1E713DCD79D0048873D /* VillainousStyle.xcodeproj */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
@@ -205,8 +182,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				1E87498E115D7C890076FC51 /* PBXTargetDependency */,
-				1EFF7CC510B5146200354C65 /* PBXTargetDependency */,
+				1E9FB1FE13DCD85B0048873D /* PBXTargetDependency */,
 			);
 			name = iPhoneDemo;
 			productName = iPhoneDemo;
@@ -218,15 +194,22 @@
 /* Begin PBXProject section */
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0410;
+			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "iPhoneDemo" */;
-			compatibilityVersion = "Xcode 3.1";
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
 			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 1E3123BC10AD254C00D72994 /* Products */;
-					ProjectRef = 1E3123B410AD254C00D72994 /* VillainousStyle.xcodeproj */;
+					ProductGroup = 1E9FB1E813DCD79D0048873D /* Products */;
+					ProjectRef = 1E9FB1E713DCD79D0048873D /* VillainousStyle.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -237,25 +220,18 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		1E3123C010AD254C00D72994 /* VillainousStyle.framework */ = {
+		1E9FB1ED13DCD79D0048873D /* VillainousStyleMac.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
-			path = VillainousStyle.framework;
-			remoteRef = 1E3123BF10AD254C00D72994 /* PBXContainerItemProxy */;
+			path = VillainousStyleMac.framework;
+			remoteRef = 1E9FB1EC13DCD79D0048873D /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		1E3123D010AD258B00D72994 /* libVillainousStyle.a */ = {
+		1E9FB1EF13DCD79D0048873D /* libVillainousStyleIOS.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
-			path = libVillainousStyle.a;
-			remoteRef = 1E3123CF10AD258B00D72994 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		1E87495A115D7C340076FC51 /* libVillainousStyle.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libVillainousStyle.a;
-			remoteRef = 1E874959115D7C340076FC51 /* PBXContainerItemProxy */;
+			path = libVillainousStyleIOS.a;
+			remoteRef = 1E9FB1EE13DCD79D0048873D /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -289,15 +265,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		1E87498E115D7C890076FC51 /* PBXTargetDependency */ = {
+		1E9FB1FE13DCD85B0048873D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = Headers;
-			targetProxy = 1E87498D115D7C890076FC51 /* PBXContainerItemProxy */;
-		};
-		1EFF7CC510B5146200354C65 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = libVillainousStyle.a;
-			targetProxy = 1EFF7CC410B5146200354C65 /* PBXContainerItemProxy */;
+			name = VillainousStyleIOS;
+			targetProxy = 1E9FB1FD13DCD85B0048873D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -311,7 +282,8 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = iPhoneDemo_Prefix.pch;
-				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../../Source/build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Headers/\"";
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				HEADER_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)/usr/local/include";
 				INFOPLIST_FILE = "iPhoneDemo-Info.plist";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = iPhoneDemo;
@@ -325,7 +297,8 @@
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = iPhoneDemo_Prefix.pch;
-				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../../Source/build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Headers/\"";
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				HEADER_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)/usr/local/include";
 				INFOPLIST_FILE = "iPhoneDemo-Info.plist";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = iPhoneDemo;
@@ -340,8 +313,7 @@
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				PREBINDING = NO;
-				SDKROOT = iphoneos3.1;
+				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
@@ -353,8 +325,7 @@
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				PREBINDING = NO;
-				SDKROOT = iphoneos3.1;
+				SDKROOT = iphoneos;
 			};
 			name = Release;
 		};
