@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:VillainousStyle.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Demos/MacDemo/MacDemo.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Demos/iPhoneDemo/iPhoneDemo.xcodeproj">
+   </FileRef>
+</Workspace>
