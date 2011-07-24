@@ -14,31 +14,31 @@
 		1E311FDD10AA6D2200D72994 /* VSStyleLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E311FD910AA6D2200D72994 /* VSStyleLabel.m */; };
 		1E311FDE10AA6D2200D72994 /* VSStyleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E311FDB10AA6D2200D72994 /* VSStyleView.m */; };
 		1E31210410AA7E1900D72994 /* doom-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E31210310AA7E1900D72994 /* doom-icon.png */; };
-		1E9FB20013DCDC7B0048873D /* VillainousStyleMac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E9FB1F613DCD7D60048873D /* VillainousStyleMac.framework */; };
-		1E9FB20113DCDC810048873D /* VillainousStyleMac.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 1E9FB1F613DCD7D60048873D /* VillainousStyleMac.framework */; };
+		1EF41B2113DCE2570068385E /* VillainousStyle.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 1EF41B1313DCE2480068385E /* VillainousStyle.framework */; };
+		1EF41B2213DCE2590068385E /* VillainousStyle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EF41B1313DCE2480068385E /* VillainousStyle.framework */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		1E9FB1F513DCD7D60048873D /* PBXContainerItemProxy */ = {
+		1EF41B1213DCE2480068385E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 1E9FB1F013DCD7D60048873D /* VillainousStyle.xcodeproj */;
+			containerPortal = 1EF41B0D13DCE2480068385E /* VillainousStyle.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 1E9FB09413DCCFD80048873D;
 			remoteInfo = VillainousStyleMac;
 		};
-		1E9FB1F713DCD7D60048873D /* PBXContainerItemProxy */ = {
+		1EF41B1413DCE2480068385E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 1E9FB1F013DCD7D60048873D /* VillainousStyle.xcodeproj */;
+			containerPortal = 1EF41B0D13DCE2480068385E /* VillainousStyle.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 1E9FB0B013DCD0040048873D;
 			remoteInfo = VillainousStyleIOS;
 		};
-		1E9FB1F913DCD7DC0048873D /* PBXContainerItemProxy */ = {
+		1EF41B1F13DCE2530068385E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 1E9FB1F013DCD7D60048873D /* VillainousStyle.xcodeproj */;
+			containerPortal = 1EF41B0D13DCE2480068385E /* VillainousStyle.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = 1E9FB09313DCCFD80048873D;
 			remoteInfo = VillainousStyleMac;
@@ -52,7 +52,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				1E9FB20113DCDC810048873D /* VillainousStyleMac.framework in Copy Frameworks */,
+				1EF41B2113DCE2570068385E /* VillainousStyle.framework in Copy Frameworks */,
 			);
 			name = "Copy Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -75,7 +75,7 @@
 		1E311FDA10AA6D2200D72994 /* VSStyleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSStyleView.h; sourceTree = "<group>"; };
 		1E311FDB10AA6D2200D72994 /* VSStyleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSStyleView.m; sourceTree = "<group>"; };
 		1E31210310AA7E1900D72994 /* doom-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "doom-icon.png"; sourceTree = "<group>"; };
-		1E9FB1F013DCD7D60048873D /* VillainousStyle.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = VillainousStyle.xcodeproj; path = ../../VillainousStyle/VillainousStyle.xcodeproj; sourceTree = "<group>"; };
+		1EF41B0D13DCE2480068385E /* VillainousStyle.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = VillainousStyle.xcodeproj; path = ../../VillainousStyle.xcodeproj; sourceTree = "<group>"; };
 		256AC3F00F4B6AF500CF3369 /* MacDemo_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MacDemo_Prefix.pch; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
@@ -89,8 +89,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1EF41B2213DCE2590068385E /* VillainousStyle.framework in Frameworks */,
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
-				1E9FB20013DCDC7B0048873D /* VillainousStyleMac.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,11 +149,11 @@
 			path = ../../Stylesheets;
 			sourceTree = "<group>";
 		};
-		1E9FB1F113DCD7D60048873D /* Products */ = {
+		1EF41B0E13DCE2480068385E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1E9FB1F613DCD7D60048873D /* VillainousStyleMac.framework */,
-				1E9FB1F813DCD7D60048873D /* libVillainousStyleIOS.a */,
+				1EF41B1313DCE2480068385E /* VillainousStyle.framework */,
+				1EF41B1513DCE2480068385E /* libVillainousStyle.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -161,7 +161,7 @@
 		29B97314FDCFA39411CA2CEA /* MacDemo */ = {
 			isa = PBXGroup;
 			children = (
-				1E9FB1F013DCD7D60048873D /* VillainousStyle.xcodeproj */,
+				1EF41B0D13DCE2480068385E /* VillainousStyle.xcodeproj */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
@@ -215,7 +215,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				1E9FB1FA13DCD7DC0048873D /* PBXTargetDependency */,
+				1EF41B2013DCE2530068385E /* PBXTargetDependency */,
 			);
 			name = MacDemo;
 			productInstallPath = "$(HOME)/Applications";
@@ -242,8 +242,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 1E9FB1F113DCD7D60048873D /* Products */;
-					ProjectRef = 1E9FB1F013DCD7D60048873D /* VillainousStyle.xcodeproj */;
+					ProductGroup = 1EF41B0E13DCE2480068385E /* Products */;
+					ProjectRef = 1EF41B0D13DCE2480068385E /* VillainousStyle.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -254,18 +254,18 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		1E9FB1F613DCD7D60048873D /* VillainousStyleMac.framework */ = {
+		1EF41B1313DCE2480068385E /* VillainousStyle.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
-			path = VillainousStyleMac.framework;
-			remoteRef = 1E9FB1F513DCD7D60048873D /* PBXContainerItemProxy */;
+			path = VillainousStyle.framework;
+			remoteRef = 1EF41B1213DCE2480068385E /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		1E9FB1F813DCD7D60048873D /* libVillainousStyleIOS.a */ = {
+		1EF41B1513DCE2480068385E /* libVillainousStyle.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
-			path = libVillainousStyleIOS.a;
-			remoteRef = 1E9FB1F713DCD7D60048873D /* PBXContainerItemProxy */;
+			path = libVillainousStyle.a;
+			remoteRef = 1EF41B1413DCE2480068385E /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -300,10 +300,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		1E9FB1FA13DCD7DC0048873D /* PBXTargetDependency */ = {
+		1EF41B2013DCE2530068385E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = VillainousStyleMac;
-			targetProxy = 1E9FB1F913DCD7DC0048873D /* PBXContainerItemProxy */;
+			targetProxy = 1EF41B1F13DCE2530068385E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

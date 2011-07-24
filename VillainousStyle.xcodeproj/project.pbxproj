@@ -143,10 +143,11 @@
 		1E9FB19B13DCD3DC0048873D /* NSView+VSStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E9FB19413DCD3DC0048873D /* NSView+VSStyle.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1E9FB19C13DCD3DC0048873D /* NSView+VSStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E9FB19513DCD3DC0048873D /* NSView+VSStyle.m */; };
 		1E9FB19D13DCD3DC0048873D /* NSView+VSStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E9FB19513DCD3DC0048873D /* NSView+VSStyle.m */; };
-		1E9FB1B213DCD4460048873D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1E9FB1AD13DCD4460048873D /* InfoPlist.strings */; };
-		1E9FB1B613DCD4700048873D /* VillainousStyle-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1E9FB1B513DCD4700048873D /* VillainousStyle-Info.plist */; };
 		1E9FB1B813DCD4A70048873D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E9FB1B713DCD4A70048873D /* QuartzCore.framework */; };
 		1E9FB1BA13DCD5F20048873D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E9FB1B913DCD5F20048873D /* QuartzCore.framework */; };
+		1EF41B2E13DCE2C80068385E /* VillainousStyle-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1EF41B2B13DCE2C80068385E /* VillainousStyle-Info.plist */; };
+		1EF41B2F13DCE2C80068385E /* VillainousStyle-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 1EF41B2C13DCE2C80068385E /* VillainousStyle-Prefix.pch */; };
+		1EF41B3213DCE2D90068385E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1EF41B3013DCE2D90068385E /* InfoPlist.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -224,12 +225,12 @@
 		1E9FB19313DCD3DC0048873D /* CALayer+VSStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+VSStyle.m"; sourceTree = "<group>"; };
 		1E9FB19413DCD3DC0048873D /* NSView+VSStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSView+VSStyle.h"; sourceTree = "<group>"; };
 		1E9FB19513DCD3DC0048873D /* NSView+VSStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSView+VSStyle.m"; sourceTree = "<group>"; };
-		1E9FB1AB13DCD4460048873D /* VillainousStyleIOS-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "VillainousStyleIOS-Prefix.pch"; sourceTree = "<group>"; };
-		1E9FB1AE13DCD4460048873D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		1E9FB1AF13DCD4460048873D /* VillainousStyle-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "VillainousStyle-Prefix.pch"; sourceTree = "<group>"; };
-		1E9FB1B513DCD4700048873D /* VillainousStyle-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "VillainousStyle-Info.plist"; sourceTree = "<group>"; };
 		1E9FB1B713DCD4A70048873D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		1E9FB1B913DCD5F20048873D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		1EF41B2713DCE2B70068385E /* VillainousStyleIOS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VillainousStyleIOS-Prefix.pch"; sourceTree = "<group>"; };
+		1EF41B2B13DCE2C80068385E /* VillainousStyle-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "VillainousStyle-Info.plist"; sourceTree = "<group>"; };
+		1EF41B2C13DCE2C80068385E /* VillainousStyle-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "VillainousStyle-Prefix.pch"; sourceTree = "<group>"; };
+		1EF41B3113DCE2D90068385E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -390,7 +391,8 @@
 				1E9FB0C613DCD1C70048873D /* VSShape */,
 				1E9FB0BC13DCD1C70048873D /* Extensions */,
 			);
-			path = Source;
+			name = Source;
+			path = Library;
 			sourceTree = "<group>";
 		};
 		1E9FB19E13DCD41E0048873D /* Libraries */ = {
@@ -400,13 +402,13 @@
 				1E9FB1AC13DCD4460048873D /* Mac */,
 			);
 			name = Libraries;
-			path = Source;
+			path = Library;
 			sourceTree = "<group>";
 		};
 		1E9FB1AA13DCD4460048873D /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				1E9FB1AB13DCD4460048873D /* VillainousStyleIOS-Prefix.pch */,
+				1EF41B2713DCE2B70068385E /* VillainousStyleIOS-Prefix.pch */,
 			);
 			path = iOS;
 			sourceTree = "<group>";
@@ -414,9 +416,9 @@
 		1E9FB1AC13DCD4460048873D /* Mac */ = {
 			isa = PBXGroup;
 			children = (
-				1E9FB1B513DCD4700048873D /* VillainousStyle-Info.plist */,
-				1E9FB1AD13DCD4460048873D /* InfoPlist.strings */,
-				1E9FB1AF13DCD4460048873D /* VillainousStyle-Prefix.pch */,
+				1EF41B3013DCE2D90068385E /* InfoPlist.strings */,
+				1EF41B2B13DCE2C80068385E /* VillainousStyle-Info.plist */,
+				1EF41B2C13DCE2C80068385E /* VillainousStyle-Prefix.pch */,
 			);
 			path = Mac;
 			sourceTree = "<group>";
@@ -464,6 +466,7 @@
 				1E9FB18713DCD1C70048873D /* VSTextStyle.h in Headers */,
 				1E9FB19613DCD3DC0048873D /* CALayer+VSStyle.h in Headers */,
 				1E9FB19A13DCD3DC0048873D /* NSView+VSStyle.h in Headers */,
+				1EF41B2F13DCE2C80068385E /* VillainousStyle-Prefix.pch in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -579,8 +582,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E9FB1B213DCD4460048873D /* InfoPlist.strings in Resources */,
-				1E9FB1B613DCD4700048873D /* VillainousStyle-Info.plist in Resources */,
+				1EF41B2E13DCE2C80068385E /* VillainousStyle-Info.plist in Resources */,
+				1EF41B3213DCE2D90068385E /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -666,10 +669,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		1E9FB1AD13DCD4460048873D /* InfoPlist.strings */ = {
+		1EF41B3013DCE2D90068385E /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				1E9FB1AE13DCD4460048873D /* en */,
+				1EF41B3113DCE2D90068385E /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -729,8 +732,8 @@
 				DYLIB_CURRENT_VERSION = 1;
 				FRAMEWORK_VERSION = A;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Source/Mac/VillainousStyle-Prefix.pch";
-				INFOPLIST_FILE = "Source/Mac/VillainousStyle-Info.plist";
+				GCC_PREFIX_HEADER = "Library/Mac/VillainousStyle-Prefix.pch";
+				INFOPLIST_FILE = "Library/Mac/VillainousStyle-Info.plist";
 				PRODUCT_NAME = VillainousStyle;
 				WRAPPER_EXTENSION = framework;
 			};
@@ -743,8 +746,8 @@
 				DYLIB_CURRENT_VERSION = 1;
 				FRAMEWORK_VERSION = A;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Source/Mac/VillainousStyle-Prefix.pch";
-				INFOPLIST_FILE = "Source/Mac/VillainousStyle-Info.plist";
+				GCC_PREFIX_HEADER = "Library/Mac/VillainousStyle-Prefix.pch";
+				INFOPLIST_FILE = "Library/Mac/VillainousStyle-Info.plist";
 				PRODUCT_NAME = VillainousStyle;
 				WRAPPER_EXTENSION = framework;
 			};
@@ -756,7 +759,7 @@
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				DSTROOT = /tmp/VillainousStyleIOS.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Source/iOS/VillainousStyleIOS-Prefix.pch";
+				GCC_PREFIX_HEADER = "Library/iOS/VillainousStyleIOS-Prefix.pch";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				OTHER_LDFLAGS = "-ObjC";
@@ -774,7 +777,7 @@
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				DSTROOT = /tmp/VillainousStyleIOS.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Source/iOS/VillainousStyleIOS-Prefix.pch";
+				GCC_PREFIX_HEADER = "Library/iOS/VillainousStyleIOS-Prefix.pch";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				OTHER_LDFLAGS = "-ObjC";
